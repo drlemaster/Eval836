@@ -1,0 +1,31 @@
+﻿define({
+    root: {
+        addText: 'Add',
+        deleteText: 'Delete',
+        saveText: 'Save',
+        cancelText: 'Cancel',
+        editText: 'Edit',
+        helpText: 'Help',
+        yesText: 'Yes',
+        noText: 'No',
+        okText: 'OK',
+        newPickList:'New Pick List',
+        items: 'Pick List Items',
+        number: 'Order',
+        enterValue: 'Enter Value',
+        lblMore: 'More',
+        picklistAlreadyExists: "Picklist '${0}' already exists.",
+        messageOnSave: 'Pick list, ${0}, has been saved. Please continue adding or editing the field information.',
+        permissionsToView: 'You do not have permissions to view.',
+        required: 'Required entry',
+        allowMultiples: 'Allow multiple selections',
+        valueMustExist: 'Text must match a list item',
+        alphaSorted: 'Sorted alphabetically',
+        noneEditable: 'Users cannot edit items'
+    },
+    "de": true,
+    "en": true,
+    "fr": true,
+    "it": true,
+    "ru": true
+});

@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+  <data class="icboe.Modules.AccountModule" property="erpStatusText" type="text">
+    <description/>
+    <value>erp status</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpCustomerText" type="text">
+    <description/>
+    <value>erp customer</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpPaymentTermText" type="text">
+    <description/>
+    <value>erp payment terms</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpFinanceLimitText" type="text">
+    <description/>
+    <value>finance limit</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpQuotesText" type="text">
+    <description/>
+    <value>Open Quotes</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpSalesOrdersText" type="text">
+    <description/>
+    <value>Sales Orders</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpShipmentsText" type="text">
+    <description/>
+    <value>Shipments</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpInvoicesText" type="text">
+    <description/>
+    <value>Invoices</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpReceivablesText" type="text">
+    <description/>
+    <value>Receivables</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpReturnsText" type="text">
+    <description/>
+    <value>Returns</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpBillToText" type="text">
+    <description/>
+    <value>Bill-To</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpShipToText" type="text">
+    <description/>
+    <value>Ship-To</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpSalesPersonText" type="text">
+    <description/>
+    <value>Sales Person</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="erpContactAssociationText" type="text">
+    <description/>
+    <value>Contact Associations</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="relatedERPItemsText" type="text">
+    <description/>
+    <value>Related Items (ERP)</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="dashboardText" type="text">
+    <description/>
+    <value>Dashboards</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="newTransactionsText" type="text">
+    <description/>
+    <value>New Transactions</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="openTransactionsText" type="text">
+    <description/>
+    <value>Open Transactions</value>
+  </data>
+  <data class="icboe.Modules.AccountModule" property="financialSnapshotText" type="text">
+    <description/>
+    <value>Financial Snapshot</value>
+  </data>
+  <data class="icboe.Modules.ContactModule" property="erpStatusText" type="text">
+    <description/>
+    <value>ERP Status</value>
+  </data>
+  <data class="icboe.Modules.ContactModule" property="erpContactIdText" type="text">
+    <description/>
+    <value>ERP Contact ID</value>
+  </data>
+  <data class="icboe.Modules.ContactModule" property="erpAccountAssociationsText" type="text">
+    <description/>
+    <value>Account Associations</value>
+  </data>
+  <data class="icboe.Modules.ContactModule" property="relatedERPItemsText" type="text">
+    <description/>
+    <value>Related Items (ERP)</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="recentText" type="text">
+    <description/>
+    <value>Recent</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="myPendingText" type="text">
+    <description/>
+    <value>My Pending</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="pendingText" type="text">
+    <description/>
+    <value>Pending</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="lateText" type="text">
+    <description/>
+    <value>Late</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="titleText" type="text">
+    <description/>
+    <value>Activities</value>
+  </data>
+  <data class="icboe.Views.Account.ActivityDashboardWidget" property="categoryText" type="text">
+    <description/>
+    <value>Select Number of Days</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="newQuotesText" type="text">
+    <description/>
+    <value>New Quotes</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="newOrdersText" type="text">
+    <description/>
+    <value>New Orders</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="newShipmentsText" type="text">
+    <description/>
+    <value>New Shipments</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="newInvoicesText" type="text">
+    <description/>
+    <value>New Invoices</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="newReceivablesText" type="text">
+    <description/>
+    <value>New Receivables</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="titleText" type="text">
+    <description/>
+    <value>New Transactions</value>
+  </data>
+  <data class="icboe.Views.Account.NewDashboardWidget" property="categoryText" type="text">
+    <description/>
+    <value>Select Days Ago from Today</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="openSalesOrdersText" type="text">
+    <description/>
+    <value>Open Sales Orders</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="openQuotesText" type="text">
+    <description/>
+    <value>Open Quotes</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="outstandingInvoicesText" type="text">
+    <description/>
+    <value>Outstanding Invoices</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="lateInvoicesText" type="text">
+    <description/>
+    <value>Late Invoices</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="lateSalesOrdersText" type="text">
+    <description/>
+    <value>Late Sales Orders</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="titleText" type="text">
+    <description/>
+    <value>Open Transactions</value>
+  </data>
+  <data class="icboe.Views.Account.OpenDashboardWidget" property="categoryText" type="text">
+    <description/>
+    <value>Select Days Ago Beyond</value>
+  </data>
+  <data class="icboe.Views.Account.SalesDashboardWidget" property="recentRevenueText" type="text">
+    <description/>
+    <value>Invoiced Revenue</value>
+  </data>
+  <data class="icboe.Views.Account.SalesDashboardWidget" property="recentCostText" type="text">
+    <description/>
+    <value>Invoiced Costs</value>
+  </data>
+  <data class="icboe.Views.Account.SalesDashboardWidget" property="recentProfitText" type="text">
+    <description/>
+    <value>Recent Profit</value>
+  </data>
+  <data class="icboe.Views.Account.SalesDashboardWidget" property="titleText" type="text">
+    <description/>
+    <value>Financial Snapshot</value>
+  </data>
+  <data class="icboe.Views.Account.SalesDashboardWidget" property="categoryText" type="text">
+    <description/>
+    <value>Select Days Ago from Today</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="titleText" type="text">
+    <description/>
+    <value>ERP Snapshot</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="itemsText" type="text">
+    <description/>
+    <value>Items</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpShipmentsText" type="text">
+    <description/>
+    <value>Open Shipments</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpOpenSalesOrdersText" type="text">
+    <description/>
+    <value>Open Sales Orders</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpOpenQuotesText" type="text">
+    <description/>
+    <value>Open Quotes</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpInvoicesText" type="text">
+    <description/>
+    <value>Open Invoices</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpPaymentMethodText" type="text">
+    <description/>
+    <value>payment method</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="accountNameText" type="text">
+    <description/>
+    <value>account name</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpPaymentTermText" type="text">
+    <description/>
+    <value>payment term</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="erpStatusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="potentialKpiText" type="text">
+    <description/>
+    <value>Total Sales Potential</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="actualKpiText" type="text">
+    <description/>
+    <value>Total Actual Amount</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="totalOpenKpiText" type="text">
+    <description/>
+    <value>Total of Open Orders</value>
+  </data>
+  <data class="icboe.Views.Account.Snapshot" property="totalKpiText" type="text">
+    <description/>
+    <value>Total of Orders</value>
+  </data>
+  <data class="icboe.Views.ERPAccountPersons.List" property="titleText" type="text">
+    <description/>
+    <value>Sales Person</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="titleText" type="text">
+    <description/>
+    <value>Bill-To Account</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="nameText" type="text">
+    <description/>
+    <value>name</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="addressText" type="text">
+    <description/>
+    <value>address</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="erpStatusText" type="text">
+    <description/>
+    <value>erp status</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="mainPhoneText" type="text">
+    <description/>
+    <value>main phone</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="faxText" type="text">
+    <description/>
+    <value>fax</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="emailText" type="text">
+    <description/>
+    <value>email</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="erpPaymentTermText" type="text">
+    <description/>
+    <value>payment term</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="accountsText" type="text">
+    <description/>
+    <value>Accounts</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="openQuotesText" type="text">
+    <description/>
+    <value>Open Quotes</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="salesOrdersText" type="text">
+    <description/>
+    <value>Sales Orders</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="invoicesText" type="text">
+    <description/>
+    <value>Invoices</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="receivablesText" type="text">
+    <description/>
+    <value>Receivables</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.Detail" property="returnsText" type="text">
+    <description/>
+    <value>Returns</value>
+  </data>
+  <data class="icboe.Views.ERPBillToAccounts.List" property="titleText" type="text">
+    <description/>
+    <value>Bill-To Accounts</value>
+  </data>
+  <data class="icboe.Views.ERPContactAssociations.List" property="titleText" type="text">
+    <description/>
+    <value>Contact Assocations</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="titleText" type="text">
+    <description/>
+    <value>Invoice Item</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="invoiceNumberText" type="text">
+    <description/>
+    <value>invoice number</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="lineText" type="text">
+    <description/>
+    <value>line</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="quantityText" type="text">
+    <description/>
+    <value>quantity</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="priceText" type="text">
+    <description/>
+    <value>price</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="amountText" type="text">
+    <description/>
+    <value>extended price</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="productNameText" type="text">
+    <description/>
+    <value>product name</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="descriptionText" type="text">
+    <description/>
+    <value>description</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="totalText" type="text">
+    <description/>
+    <value>total amount</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="unitOfMeasureText" type="text">
+    <description/>
+    <value>unit of measure</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="requestedDeliveryDateText" type="text">
+    <description/>
+    <value>requested delivery date</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="unitPriceText" type="text">
+    <description/>
+    <value>unit price</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="salesOrderNumberText" type="text">
+    <description/>
+    <value>sales order number</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="unitPricePerQuanityText" type="text">
+    <description/>
+    <value>unit price per quanity</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="unitPricePerQuanityUOMText" type="text">
+    <description/>
+    <value>unit price per quanity UOM</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="salesOrderLineNumberText" type="text">
+    <description/>
+    <value>sales order line number</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="extendedCostText" type="text">
+    <description/>
+    <value>extended cost</value>
+  </data>
+  <data class="icboe.Views.ERPInvociesItems.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="titleText" type="text">
+    <description/>
+    <value>Invoice Items</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="lineText" type="text">
+    <description/>
+    <value>Line</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="quantityText" type="text">
+    <description/>
+    <value>Quantity</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="priceText" type="text">
+    <description/>
+    <value>Price</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="amountText" type="text">
+    <description/>
+    <value>Amount</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="productNameText" type="text">
+    <description/>
+    <value>Product Name</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="descriptionText" type="text">
+    <description/>
+    <value>Description</value>
+  </data>
+  <data class="crm.Views.ERPInvoiceItems.List" property="invoiceIdText" type="text">
+    <description/>
+    <value>Invoice ID</value>
+  </data>
+  <data class="icboe.Views.ERPInvoicePersons.List" property="titleText" type="text">
+    <description/>
+    <value>Invoice Sales Person</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="titleText" type="text">
+    <description/>
+    <value>Invoices</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="accountText" type="text">
+    <description/>
+    <value>account</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="statusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="ownerText" type="text">
+    <description/>
+    <value>owner</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="termsText" type="text">
+    <description/>
+    <value>payment terms</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="statusDateText" type="text">
+    <description/>
+    <value>status date</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="unknownText" type="text">
+    <description/>
+    <value>Unknown</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="descriptionText" type="text">
+    <description/>
+    <value>description</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="invoiceNumberText" type="text">
+    <description/>
+    <value>invoice number</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="extendedBaseAmountText" type="text">
+    <description/>
+    <value>base extended amount</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="extendedAmountText" type="text">
+    <description/>
+    <value>extended amount</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="totalBaseText" type="text">
+    <description/>
+    <value>base total</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="totalText" type="text">
+    <description/>
+    <value>total</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="nameText" type="text">
+    <description/>
+    <value>name</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="mainPhoneText" type="text">
+    <description/>
+    <value>main phone</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="addressText" type="text">
+    <description/>
+    <value>address</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="invoiceItemsText" type="text">
+    <description/>
+    <value>Invoice Items</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="receivableItemsText" type="text">
+    <description/>
+    <value>Receivable Items</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="billToText" type="text">
+    <description/>
+    <value>Bill-To</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="shipToText" type="text">
+    <description/>
+    <value>Ship-To</value>
+  </data>
+  <data class="icboe.Views.ERPInvoices.Detail" property="salesPersonsText" type="text">
+    <description/>
+    <value>Sales Persons</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="titleText" type="text">
+    <description/>
+    <value>Invoices</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="invoiceNumberText" type="text">
+    <description/>
+    <value>Invoice #</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="baseCurrencyText" type="text">
+    <description/>
+    <value>Base Currency</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="accountText" type="text">
+    <description/>
+    <value>Account</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="descriptionText" type="text">
+    <description/>
+    <value>Description</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="statusText" type="text">
+    <description/>
+    <value>Status</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="termsText" type="text">
+    <description/>
+    <value>Terms</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="statusDateText" type="text">
+    <description/>
+    <value>Status Date</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="ownerText" type="text">
+    <description/>
+    <value>Owner</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="totalText" type="text">
+    <description/>
+    <value>Total</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="unknownText" type="text">
+    <description/>
+    <value>Unknown</value>
+  </data>
+  <data class="crm.Views.ERPInvoices.List" property="viewAccountActionText" type="text">
+    <description/>
+    <value>View Account</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="titleText" type="text">
+    <description/>
+    <value>Receivable Item</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="lineNumberText" type="text">
+    <description/>
+    <value>receivables line number</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="receivablesIdText" type="text">
+    <description/>
+    <value>receivables id</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="invoiceIdText" type="text">
+    <description/>
+    <value>invoice id</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="productNameText" type="text">
+    <description/>
+    <value>product name</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="productDescText" type="text">
+    <description/>
+    <value>product description</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="extPriceText" type="text">
+    <description/>
+    <value>extended price</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.Detail" property="lineTotalText" type="text">
+    <description/>
+    <value>erp line total</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="titleText" type="text">
+    <description/>
+    <value>Receivable Items</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="lineNumberText" type="text">
+    <description/>
+    <value>Line Number</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="receivablesIdText" type="text">
+    <description/>
+    <value>Receivables ID</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="productNameText" type="text">
+    <description/>
+    <value>Product Name</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="lineTotalText" type="text">
+    <description/>
+    <value>ERP Line Total</value>
+  </data>
+  <data class="icboe.Views.ERPReceivableItems.List" property="invoiceIDText" type="text">
+    <description/>
+    <value>Invoice ID</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="titleText" type="text">
+    <description/>
+    <value>Receivables</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="receivablesIdText" type="text">
+    <description/>
+    <value>receivables id</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="accountText" type="text">
+    <description/>
+    <value>account</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="invoiceNumberText" type="text">
+    <description/>
+    <value>invoice number</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="receivableAmountText" type="text">
+    <description/>
+    <value>receivable amount</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="receivedAmountText" type="text">
+    <description/>
+    <value>received amount</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="erpStatusText" type="text">
+    <description/>
+    <value>erp status</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="erpStatusDateText" type="text">
+    <description/>
+    <value>erp status date</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="paymentTermText" type="text">
+    <description/>
+    <value>payment term id</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="billToText" type="text">
+    <description/>
+    <value>bill-to</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="shipToText" type="text">
+    <description/>
+    <value>ship-to</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="payFromText" type="text">
+    <description/>
+    <value>pay-from</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.Detail" property="receivableItemsText" type="text">
+    <description/>
+    <value>Receivable Items</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="titleText" type="text">
+    <description/>
+    <value>Receivables</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="receivableIDText" type="text">
+    <description/>
+    <value>Receivable ID</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="invoiceIDText" type="text">
+    <description/>
+    <value>Invoice ID</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="erpStatusText" type="text">
+    <description/>
+    <value>ERP Status</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="erpStatusDateText" type="text">
+    <description/>
+    <value>ERP Status Date</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="receivedAmountText" type="text">
+    <description/>
+    <value>Received Amount</value>
+  </data>
+  <data class="icboe.Views.ERPReceivables.List" property="accountNameText" type="text">
+    <description/>
+    <value>Account</value>
+  </data>
+  <data class="icboe.Views.ERPSalesOrderPersons.List" property="titleText" type="text">
+    <description/>
+    <value>Sales Person</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="titleText" type="text">
+    <description/>
+    <value>Ship-To Account</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="nameText" type="text">
+    <description/>
+    <value>name</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="addressText" type="text">
+    <description/>
+    <value>address</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="statusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="mainPhoneText" type="text">
+    <description/>
+    <value>main phone</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="faxText" type="text">
+    <description/>
+    <value>fax</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="emailText" type="text">
+    <description/>
+    <value>email</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="paymentTermText" type="text">
+    <description/>
+    <value>payment term</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="carrierText" type="text">
+    <description/>
+    <value>carrier</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="accountsText" type="text">
+    <description/>
+    <value>Accounts</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="openQuotesText" type="text">
+    <description/>
+    <value>Open Quotes</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="salesOrdersText" type="text">
+    <description/>
+    <value>Sales Orders</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="invoicesText" type="text">
+    <description/>
+    <value>Invoices</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="shipmentsText" type="text">
+    <description/>
+    <value>Shipments</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="receivablesText" type="text">
+    <description/>
+    <value>Receivables</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="returnsText" type="text">
+    <description/>
+    <value>Returns</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="contactAssociationText" type="text">
+    <description/>
+    <value>Contact Associations</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="shipToText" type="text">
+    <description/>
+    <value>Ship-To</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="billToText" type="text">
+    <description/>
+    <value>Bill-To</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.Detail" property="salesPersonText" type="text">
+    <description/>
+    <value>Sales Person</value>
+  </data>
+  <data class="icboe.Views.ERPShipToAccounts.List" property="titleText" type="text">
+    <description/>
+    <value>Ship-To Accounts</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="titleText" type="text">
+    <description/>
+    <value>Shipment Item</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="shipmentLineNumberText" type="text">
+    <description/>
+    <value>shipment line number</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="shipmentIdText" type="text">
+    <description/>
+    <value>shipment id</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="salesOrderText" type="text">
+    <description/>
+    <value>sales order</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="productNameText" type="text">
+    <description/>
+    <value>product name</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="productDescriptionText" type="text">
+    <description/>
+    <value>product description</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="shippedQuantityText" type="text">
+    <description/>
+    <value>shipped quantity</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="orderedQuantityText" type="text">
+    <description/>
+    <value>ordered quantity</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="backOrderedQuantityText" type="text">
+    <description/>
+    <value>back ordered quantity</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="unitOfMeasureText" type="text">
+    <description/>
+    <value>unit of measure</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.Detail" property="erpUpcIdText" type="text">
+    <description/>
+    <value>erp upc id</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="titleText" type="text">
+    <description/>
+    <value>Shipment Items</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="productNameText" type="text">
+    <description/>
+    <value>Product Name</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="lineNumberText" type="text">
+    <description/>
+    <value>Line Number</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="shipmentIDText" type="text">
+    <description/>
+    <value>Shipment ID</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="shippedQuantityText" type="text">
+    <description/>
+    <value>Shipped</value>
+  </data>
+  <data class="icboe.Views.ERPShipmentItems.List" property="salesOrderText" type="text">
+    <description/>
+    <value>Sales Order</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="titleText" type="text">
+    <description/>
+    <value>Shipments</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="shipmentIdText" type="text">
+    <description/>
+    <value>shipment id</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="accountText" type="text">
+    <description/>
+    <value>account</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="datePromisedText" type="text">
+    <description/>
+    <value>date promised</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="actualShipDateText" type="text">
+    <description/>
+    <value>actual ship date</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="actualDeliveryDateText" type="text">
+    <description/>
+    <value>actual delivery date</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="carrierText" type="text">
+    <description/>
+    <value>carrier</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="erpStatusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="erpStatusDateText" type="text">
+    <description/>
+    <value>status date</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="warehouseLocationText" type="text">
+    <description/>
+    <value>warehouse location</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="partialShipAllowedText" type="text">
+    <description/>
+    <value>partial ship allowed</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="grossWeightText" type="text">
+    <description/>
+    <value>gross weight</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="declaredValueText" type="text">
+    <description/>
+    <value>declared value</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="shipmentTotalAmountText" type="text">
+    <description/>
+    <value>shipment total amount</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="paymentTermText" type="text">
+    <description/>
+    <value>payment term</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="shipToText" type="text">
+    <description/>
+    <value>ship-to</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.Detail" property="shipmentLinesText" type="text">
+    <description/>
+    <value>Shipment Lines</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.List" property="titleText" type="text">
+    <description/>
+    <value>Shipments</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.List" property="statusLabelText" type="text">
+    <description/>
+    <value>Status</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.List" property="shipmentIDLabelText" type="text">
+    <description/>
+    <value>Shipment ID</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.List" property="accountLabelText" type="text">
+    <description/>
+    <value>Account</value>
+  </data>
+  <data class="icboe.Views.ERPShipments.List" property="datePromisedLabelText" type="text">
+    <description/>
+    <value>Date Promised</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="titleText" type="text">
+    <description/>
+    <value>Quote Order Line</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="lineText" type="text">
+    <description/>
+    <value>line</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="quantityText" type="text">
+    <description/>
+    <value>quantity</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="priceText" type="text">
+    <description/>
+    <value>price</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="extendedAmountText" type="text">
+    <description/>
+    <value>extended amount</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="productNameText" type="text">
+    <description/>
+    <value>product name</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="descriptionText" type="text">
+    <description/>
+    <value>description</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="quoteIDText" type="text">
+    <description/>
+    <value>quote ID</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="skuText" type="text">
+    <description/>
+    <value>sku</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="basePriceText" type="text">
+    <description/>
+    <value>base price</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="discountText" type="text">
+    <description/>
+    <value>discount</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="adjustedPriceText" type="text">
+    <description/>
+    <value>adjusted price</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="statusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="shippedQuantityText" type="text">
+    <description/>
+    <value>shipped quantity</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="openQuantityText" type="text">
+    <description/>
+    <value>open quanttity</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="dropShipText" type="text">
+    <description/>
+    <value>drop shiped</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="backOrderedText" type="text">
+    <description/>
+    <value>back ordered</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="partialShipAllowedText" type="text">
+    <description/>
+    <value>partial shipment allowed</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="fixedPriceItemText" type="text">
+    <description/>
+    <value>fixed price item</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="rushRequestText" type="text">
+    <description/>
+    <value>rush request</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="warehouseText" type="text">
+    <description/>
+    <value>warehouse</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="substituteItemText" type="text">
+    <description/>
+    <value>substitute item</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="detailsText" type="text">
+    <description/>
+    <value>Details</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="titleText" type="text">
+    <description/>
+    <value>Quote Order Lines</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="lineText" type="text">
+    <description/>
+    <value>Line</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="quantityText" type="text">
+    <description/>
+    <value>Quantity</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="priceText" type="text">
+    <description/>
+    <value>Price</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="amountText" type="text">
+    <description/>
+    <value>Line Total</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="productNameText" type="text">
+    <description/>
+    <value>Product Name</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="descriptionText" type="text">
+    <description/>
+    <value>Description</value>
+  </data>
+  <data class="icboe.Views.QuoteLines.List" property="quoteOrderIdText" type="text">
+    <description/>
+    <value>Quote Order ID</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="titleText" type="text">
+    <description/>
+    <value>Quote</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="quoteNumberText" type="text">
+    <description/>
+    <value>quote number</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="orderIdText" type="text">
+    <description/>
+    <value>erp order id</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="accountText" type="text">
+    <description/>
+    <value>account</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="opportunityText" type="text">
+    <description/>
+    <value>opportunity</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="dateCreatedText" type="text">
+    <description/>
+    <value>date created</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="erpStatusText" type="text">
+    <description/>
+    <value>erp status</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="subTotalText" type="text">
+    <description/>
+    <value>sub total</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="grandTotalText" type="text">
+    <description/>
+    <value>grand total</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="billToText" type="text">
+    <description/>
+    <value>bill-to</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="shipToText" type="text">
+    <description/>
+    <value>ship-to</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="payFromText" type="text">
+    <description/>
+    <value>pay-from</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="quoteLinesText" type="text">
+    <description/>
+    <value>Quote Lines</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="attachmentsText" type="text">
+    <description/>
+    <value>Attachments</value>
+  </data>
+  <data class="icboe.Views.Quotes.Detail" property="salesPersonsText" type="text">
+    <description/>
+    <value>Sales Persons</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="titleText" type="text">
+    <description/>
+    <value>Quotes</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="quoteNumberText" type="text">
+    <description/>
+    <value>Quote Number</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="erpOrderIdText" type="text">
+    <description/>
+    <value>ERP Order ID</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="accountText" type="text">
+    <description/>
+    <value>Account</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="createDateText" type="text">
+    <description/>
+    <value>Date Created</value>
+  </data>
+  <data class="icboe.Views.Quotes.List" property="grandTotalLabelText" type="text">
+    <description/>
+    <value>Grand Total</value>
+  </data>
+  <data class="icboe.Views.Returns.List" property="titleText" type="text">
+    <description/>
+    <value>Returns</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="titleText" type="text">
+    <description/>
+    <value>Sales Order Line</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="lineText" type="text">
+    <description/>
+    <value>line</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="quantityText" type="text">
+    <description/>
+    <value>quantity</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="priceText" type="text">
+    <description/>
+    <value>price</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="extendedAmountText" type="text">
+    <description/>
+    <value>extended amount</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="productNameText" type="text">
+    <description/>
+    <value>product name</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="descriptionText" type="text">
+    <description/>
+    <value>description</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="salesOrderIdText" type="text">
+    <description/>
+    <value>sales order Id</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="skuText" type="text">
+    <description/>
+    <value>sku</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="basePriceText" type="text">
+    <description/>
+    <value>base price</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="discountText" type="text">
+    <description/>
+    <value>discount</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="adjustedPriceText" type="text">
+    <description/>
+    <value>adjusted price</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="statusText" type="text">
+    <description/>
+    <value>status</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="shippedQuantityText" type="text">
+    <description/>
+    <value>shipped quantity</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="openQuantityText" type="text">
+    <description/>
+    <value>open quanttity</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="dropShipText" type="text">
+    <description/>
+    <value>drop shiped</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="backOrderedText" type="text">
+    <description/>
+    <value>back ordered</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="partialShipAllowedText" type="text">
+    <description/>
+    <value>partial shipment allowed</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="fixedPriceItemText" type="text">
+    <description/>
+    <value>fixed price item</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="rushRequestText" type="text">
+    <description/>
+    <value>rush request</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="warehouseText" type="text">
+    <description/>
+    <value>warehouse</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="substituteItemText" type="text">
+    <description/>
+    <value>substitute item</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="detailsText" type="text">
+    <description/>
+    <value>Details</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="titleText" type="text">
+    <description/>
+    <value>Sales Order Lines</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="lineText" type="text">
+    <description/>
+    <value>Line</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="quantityText" type="text">
+    <description/>
+    <value>Quantity</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="priceText" type="text">
+    <description/>
+    <value>Price</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="amountText" type="text">
+    <description/>
+    <value>Line Total</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="productNameText" type="text">
+    <description/>
+    <value>Product Name</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="descriptionText" type="text">
+    <description/>
+    <value>Description</value>
+  </data>
+  <data class="icboe.Views.SalesOrderItems.List" property="salesOrderIdText" type="text">
+    <description/>
+    <value>Sales Order ID</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="titleText" type="text">
+    <description/>
+    <value>Sales Order</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="actionsText" type="text">
+    <description/>
+    <value>Quick Actions</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="relatedItemsText" type="text">
+    <description/>
+    <value>Related Items</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="moreDetailsText" type="text">
+    <description/>
+    <value>More Details</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="orderNumberText" type="text">
+    <description/>
+    <value>sales order number</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="orderIdText" type="text">
+    <description/>
+    <value>erp order id</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="customerPOText" type="text">
+    <description/>
+    <value>customer po</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="accountText" type="text">
+    <description/>
+    <value>account</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="opportunityText" type="text">
+    <description/>
+    <value>opportunity</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="dateCreatedText" type="text">
+    <description/>
+    <value>date created</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="orderDateText" type="text">
+    <description/>
+    <value>order date</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="erpStatusText" type="text">
+    <description/>
+    <value>erp status</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="subTotalText" type="text">
+    <description/>
+    <value>sub total</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="grandTotalText" type="text">
+    <description/>
+    <value>grand total</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="billToText" type="text">
+    <description/>
+    <value>bill-to</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="shipToText" type="text">
+    <description/>
+    <value>ship-to</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="payFromText" type="text">
+    <description/>
+    <value>pay-from</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="paymentMethodText" type="text">
+    <description/>
+    <value>payment method</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="paymentTermText" type="text">
+    <description/>
+    <value>payment term</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="backOrderedText" type="text">
+    <description/>
+    <value>back ordered</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="dropShipAllowedText" type="text">
+    <description/>
+    <value>drop ship allowed</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="shipEarlyAllowedText" type="text">
+    <description/>
+    <value>ship early allowed</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="invoiceImmediatelyText" type="text">
+    <description/>
+    <value>invoice immediately</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="partialShipAllowedText" type="text">
+    <description/>
+    <value>partial shipment allowed</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="taxExemptText" type="text">
+    <description/>
+    <value>tax exempt</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="orderItemsText" type="text">
+    <description/>
+    <value>Order Lines</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="attachmentsText" type="text">
+    <description/>
+    <value>Attachments</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="salesPersonsText" type="text">
+    <description/>
+    <value>Sales Persons</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="invoiceItemsText" type="text">
+    <description/>
+    <value>Invoice Lines</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.Detail" property="shipmentItemsText" type="text">
+    <description/>
+    <value>Shipment Lines</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="titleText" type="text">
+    <description/>
+    <value>Sales Orders</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="accountText" type="text">
+    <description/>
+    <value>Account</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="erpOrderIdText" type="text">
+    <description/>
+    <value>ERP Order ID</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="grandTotalText" type="text">
+    <description/>
+    <value>Grand Total</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="statusLabelText" type="text">
+    <description/>
+    <value>ERP Status</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="customerPONumberText" type="text">
+    <description/>
+    <value>Customer PO Number</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="orderDateText" type="text">
+    <description/>
+    <value>Order Date</value>
+  </data>
+  <data class="icboe.Views.SalesOrders.List" property="viewAccountActionText" type="text">
+    <description/>
+    <value>View Account</value>
+  </data>
+  <data class="icboe.Views._DashboardWidgetBase" property="titleText" type="text">
+    <description/>
+    <value>Dashboard</value>
+  </data>
+  <data class="icboe.Views._DashboardWidgetBase" property="categoryText" type="text">
+    <description/>
+    <value>Category</value>
+  </data>
+</localization>

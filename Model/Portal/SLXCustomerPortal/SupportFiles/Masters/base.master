@@ -1,0 +1,301 @@
+<%@ Master Language="C#" MasterPageFile="~/Masters/core.master" %>
+
+<%@ Import Namespace="Sage.Platform.WebPortal" %>
+<%@ Import Namespace="Sage.Platform.Application.UI.Web" %>
+<%@ Import Namespace="Sage.Platform.Application.UI" %>
+<%@ Import Namespace="Sage.SalesLogix" %>
+<%@ Import Namespace="Sage.SalesLogix.Security" %>
+<%@ Import Namespace="Sage.Platform.Application" %>
+<%@ Import Namespace="Sage.Platform.Security" %>
+<%@ Import Namespace="Sage.Entity.Interfaces" %>
+<%@ Register Assembly="Sage.SalesLogix.Client.GroupBuilder" Namespace="Sage.SalesLogix.Client.GroupBuilder" TagPrefix="SalesLogix" %>
+<%@ Register Assembly="Sage.Platform.WebPortal" Namespace="Sage.Platform.WebPortal.SmartParts" TagPrefix="smartParts" %>
+<%@ Register Assembly="Sage.Platform.WebPortal" Namespace="Sage.Platform.WebPortal.Workspaces" TagPrefix="workSpace" %>
+<%@ Register Assembly="Sage.Platform.WebPortal" Namespace="Sage.Platform.WebPortal.Workspaces.Tab" TagPrefix="tws" %>
+<%@ Register Assembly="Sage.SalesLogix.Web.Controls" Namespace="Sage.SalesLogix.Web.Controls.PickList" TagPrefix="SalesLogix" %>
+<%@ Register Assembly="Sage.SalesLogix.Web.Controls" Namespace="Sage.SalesLogix.Web.Controls" TagPrefix="SalesLogix" %>
+<%@ Register Assembly="Sage.SalesLogix.Web.Controls" Namespace="Sage.SalesLogix.Web.Controls.Lookup" TagPrefix="SalesLogix" %>
+<%@ Register Assembly="Sage.SalesLogix.Web.Controls" Namespace="Sage.SalesLogix.Web.Controls.Timeline" TagPrefix="SalesLogix" %>
+<%@ Register Assembly="Sage.SalesLogix.Web.Controls" Namespace="Sage.SalesLogix.Web.Controls.ScriptResourceProvider" TagPrefix="Saleslogix" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+
+<script runat="server">
+
+    public bool IncludeMiddlePane
+    {
+        get { return (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).IncludeMiddlePane; }
+        set { (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).IncludeMiddlePane = value; }
+    }
+
+    public bool IncludeMoreTabsTab
+    {
+        get { return (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).IncludeMoreTabsTab; }
+        set { (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).IncludeMoreTabsTab = value; }
+    }
+
+    public int DefaultVisibleTabCount
+    {
+        get { return (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).DefaultVisibleTabCount; }
+        set { (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).DefaultVisibleTabCount = value; }
+    }
+
+    [System.ComponentModel.Editor("Sage.Platform.WebPortal.Design.UITypeEditors.SmartPartTypeEditor, Sage.Platform.WebPortal.Design", typeof(System.Drawing.Design.UITypeEditor))]
+    public string OverrideActiveTab
+    {
+        get { return (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).OverrideActiveTab; }
+        set { (this.Master.FindControl("ContentPlaceHolderMain").FindControl("TabControl") as TabWorkspace).OverrideActiveTab = value; }
+    }
+
+    private bool _includeCollapseBtn = true;
+    public bool MainContentWorkspace_IncludeCollapseButton
+    {
+        get { return _includeCollapseBtn; }
+        set { _includeCollapseBtn = value; }
+    }
+
+    public bool IncludeTaskPane
+    {
+        get { return this.Master.FindControl("ContentPlaceHolderMain").FindControl("TaskPane").Visible; }
+        set { this.Master.FindControl("ContentPlaceHolderMain").FindControl("TaskPane").Visible = value; }
+    }
+
+    [System.ComponentModel.Browsable(false)]
+    public override string ID
+    {
+        get { return base.ID; }
+        set { base.ID = value; }
+    }
+
+    [System.ComponentModel.Browsable(false)]
+    public override bool Visible
+    {
+        get { return base.Visible; }
+        set { base.Visible = value; }
+    }
+
+    [System.ComponentModel.Browsable(false)]
+    public new string MasterPageFile
+    {
+        get { return base.MasterPageFile; }
+        set { base.MasterPageFile = value; }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        System.Globalization.CultureInfo currentCulture = System.Globalization.CultureInfo.CurrentUICulture;
+
+        // hide the task pane on all pages
+        IncludeTaskPane = false;
+
+        Page.Title = GetLocalResourceObject("BasePageTitle").ToString();
+        ClientGroupContextService clientGroupContext = new ClientGroupContextService();
+        Page.Form.Controls.Add(clientGroupContext);
+
+        WebPortalPage p = Page as WebPortalPage;
+        string WebHelpUrlFmtKey = "WebHelpUrlFmt";
+        string WebHelpUrlTargetKey = "WebHelpLinkTarget";
+
+        if (p != null)
+        {
+            if (!p.ClientContextService.CurrentContext.ContainsKey(WebHelpUrlFmtKey))
+            {
+                PageLink linkCtrl = new PageLink
+                {
+                    LinkType = enumPageLinkType.HelpFileName,
+                    NavigateUrl = "bogustopic",
+                    Target = "help"
+                };
+                var webHelpLink = linkCtrl.GetWebHelpLink();
+                p.ClientContextService.CurrentContext.Add(WebHelpUrlFmtKey, webHelpLink.Url.Replace("bogustopic", "${0}"));
+                p.ClientContextService.CurrentContext.Add(WebHelpUrlTargetKey, webHelpLink.Target);
+            }
+        }
+
+        Page.Header.DataBind();
+    }
+
+    public string HelpLink
+    {
+        get
+        {
+            string cacheKey = "HelpLink";
+            if (Cache[cacheKey] == null)
+            {
+                PageLink pageLink = new PageLink();
+                pageLink.LinkType = enumPageLinkType.HelpFileName;
+                pageLink.NavigateUrl = "Help";
+                pageLink.Target = "MCWebHelp";
+
+                Cache.Insert(cacheKey, pageLink.GetWebHelpLink().Url);
+            }
+
+            return Cache[cacheKey].ToString();
+        }
+    }
+
+    protected string GetSaveMsgSystemOption()
+    {
+        var systemInfo = Sage.Platform.Application.ApplicationContext.Current.Services.Get<Sage.SalesLogix.Services.ISystemOptionsService>(true);
+        return systemInfo.SendSlxSaveMSGFiles ? "true" : "false";
+    }
+
+</script>
+<asp:Content ContentPlaceHolderID="head" runat="Server">
+    <script pin="pin" type="text/javascript">
+        var localTitleTagId = '<%= localTitle.ClientID %>';
+    </script>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderScriptResource" runat="Server">
+
+    <SalesLogix:ScriptResourceProvider ID="MasterPageLinks" runat="server">
+        <Keys>
+            <SalesLogix:ResourceKeyName Key="IdleMessage" />
+            <SalesLogix:ResourceKeyName Key="LogOff" />
+            <SalesLogix:ResourceKeyName Key="LogoffMessage" />
+        </Keys>
+    </SalesLogix:ScriptResourceProvider>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
+
+    <div data-dojo-type="dijit.layout.BorderContainer" gutters="false" livesplitters="false" id="innerBorder" region="center" persist="true">
+        <!-- inner bordercontainer top -->
+        <div data-dojo-type="Sage.UI.TitleContentPane" id="titlePane" region="top" splitter="false">
+            <asp:UpdatePanel runat="server" ID="localTitleUpdatePanel" ClientIDMode="Static">
+                <ContentTemplate>
+                    <div runat="server" id="localTitle" class="titlebar" clientidmode="Static"></div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+            <div id="GroupsWrapper" style="clear: both;">
+                <div id="GroupTabs" data-dojo-type="Sage.UI.GroupTabPane">
+                </div>
+            </div>
+
+        </div>
+
+        <div data-dojo-type="dijit.layout.BorderContainer" splitter="true" gutters="false" livesplitters="true" region="center" id="centerContent">
+            <div data-dojo-type="Sage.Layout.MainContentDetailsPane" minsize="32" region="top" id="mainContentDetails" splitter="false">
+                <!-- main work area? inner bordercontainer center content-->
+                <asp:UpdatePanel runat="server" ID="mainformUpdatePanel" ChildrenAsTriggers="true" UpdateMode="conditional" ClientIDMode="Static">
+                    <ContentTemplate>
+                        <workSpace:MainContentWorkspace ID="MainContent" runat="server" SmartPartInfoStyle-CssClass="mainContentHeader" SmartPartContainerStyle-CssClass="mainContentContent" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                <tws:TabWorkspace runat="server" ID="TabControl" UseUIStateService="true">
+                    <MoreTabListTools>
+                        <SalesLogix:PageLink ID="moreTabsHelp" runat="server" LinkType="HelpFileName" ToolTip="<%$ resources: Portal, Help_ToolTip %>" Target="MCWebHelp" NavigateUrl="moretabs.aspx" ImageUrl="~/ImageResource.axd?scope=global&type=Global_Images&key=Help_16x16"></SalesLogix:PageLink>
+                    </MoreTabListTools>
+                </tws:TabWorkspace>
+            </div>
+        </div>
+        <!-- end inner border container center -->
+
+        <!-- inner bordercontainer right -->
+        <workSpace:TaskPaneWorkspace runat="server" ID="TaskPane" ClientIDMode="Static">
+            <Tools>
+                <SalesLogix:PageLink ID="taskPaneHelp" runat="server" LinkType="HelpFileName" ToolTip="<%$ resources: Portal, Help_ToolTip %>" Target="MCWebHelp" NavigateUrl="taskpane.aspx" ImageUrl="~/ImageResource.axd?scope=global&type=Global_Images&key=Help_16x16"></SalesLogix:PageLink>
+            </Tools>
+        </workSpace:TaskPaneWorkspace>
+    </div>
+    <!-- end inner border container-->
+</asp:Content>
+<asp:Content ContentPlaceHolderID="JsScriptFooter" runat="Server">
+    <script type="text/javascript">
+        require([
+            "dojo/ready",
+            "dojo/dom-class",
+            "dojo/has",
+            "dojo/_base/sniff",
+            "dojo/_base/window",
+            "Sage/Utility/PickList",
+            "Sage/Groups/GroupManager",
+            "Sage/Groups/GroupNavigator",
+            "Sage/Layout/MainContentDetailsPane",
+            "Sage/Link",
+            "Sage/MailMerge/Loader",
+            "Sage/MainView/ActivityMgr/ActivityCalendar",
+            "Sage/MainView/IntegrationContract/MatchingOptionsConfig",
+            "Sage/Services/ActivityAction",
+            "Sage/Services/ActivityActionProcessor",
+            "Sage/Services/ActivityService",
+            "Sage/Services/CalendarSecurityService",
+            "Sage/Services/ClientBindingManagerService",
+            "Sage/Services/ClientContextService",
+            "Sage/Services/ClientEntityContext",
+            "Sage/Services/RoleSecurityService",
+            "Sage/Services/SelectionContextService",
+            "Sage/Services/SystemOptions",
+            "Sage/Services/UserOptions",
+            "Sage/Services/_ServiceMixin",
+            "Sage/UI/ActivityList",
+            "Sage/UI/ActivityScheduler",
+            "Sage/UI/Alarms/AlarmButton",
+            "Sage/UI/Controls/CheckBox",
+            "Sage/UI/Controls/Currency",
+            "Sage/UI/Controls/HelpMenu",
+            "Sage/UI/Controls/LogOffButton",
+            "Sage/UI/Controls/Select",
+            "Sage/UI/Controls/SimpleTextarea",
+            "Sage/UI/Controls/PickListAsText",
+            "Sage/UI/Filters/FilterPanel",
+            "Sage/UI/Filters/EntityManagerFilterPanel",
+            "Sage/UI/Filters/GroupFilterConfigurationProvider",
+            "Sage/UI/GroupListConfigurationProvider",
+            "Sage/UI/GroupTabPane",
+            "Sage/UI/MenuBar",
+            "Sage/UI/NavBar",
+            "Sage/UI/NotesHistoryList",
+            "Sage/UI/SpeedSearch",
+            "Sage/UI/SummaryDetailPane",
+            "Sage/UI/TimeZoneItem",
+            "Sage/UI/TitleContentPane",
+            "Sage/Utility",
+            "Sage/Utility/Activity",
+            "Sage/Utility/SDataLookup",
+            "Sage/Utility/Validate",
+            "Sage/Utility/Groups",
+            "Sage/Utility/File",
+            "Sage/Utility/File/DragDropWatcher",
+            "Sage/Utility/File/DefaultDropHandler",
+            'dojo/_base/html',
+            'dijit/_base/manager',
+            'dojo/parser',
+            'dijit/Toolbar',
+            "dijit/layout/ContentPane",
+            "dijit/layout/BorderContainer",
+            "dijit/TitlePane",
+            "dijit/form/ValidationTextBox",
+            "dijit/form/SimpleTextarea",
+            "dijit/form/CheckBox",
+            "dijit/form/TextBox"
+        ], function (ready, domClass, has, sniff, window, PickListUtil) {
+            ready(function () {
+
+                //For IE8, which does not have Date.now()
+                if (!Date.now) {
+                    Date.now = function () {
+                        return new Date().valueOf();
+                    };
+                }
+                if (has("ie") == 10) {
+                    domClass.add(window.body(), "ie10");
+                }
+                PickListUtil.checkStaleCache();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            var loader = dojo.byId("loader");
+            dojo.fadeOut({
+                node: loader,
+                duration: 500,
+                onEnd: function () {
+                    loader.style.display = 'none';
+                }
+            }).play();
+        }, 500);
+    </script>
+    <%--Sage Common and Controls--%>
+    <script pin="pin" language="JavaScript" src="jscript/sage-common/sage-common.js" type="text/javascript"></script>
+</asp:Content>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="0330ee76-8e80-48e6-a75c-1124e4e06ef4" lastModifiedUtc="2015-01-05T21:14:29.7897628Z" name="CloneBodFieldMapping" methodType="Rule" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter>
+    <OrmEntityMethodParam id="43ffaa6e-50a5-413c-a46f-49ae2dce3c2d" paramName="copyFromBodFieldMapping" sequence="0" paramType="Object">
+      <description>The BOD Field Mapping used for the copy</description>
+    </OrmEntityMethodParam>
+  </parameter>
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="1bfe4486-af28-47ea-81a2-131143d74f94" lastModifiedUtc="2015-01-05T21:17:02.153981Z" targetType="Sage.SalesLogix.BODFieldMapping.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBodFieldMapping" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+</method>

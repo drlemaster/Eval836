@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="96e8c2b2-9c25-417d-94a6-a32b904923aa" lastModifiedUtc="2016-03-11T20:29:03" name="OnCreate" methodType="CrudEvent" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="52884d41-f7b4-436b-890e-7d3e03ca62c8" lastModifiedUtc="0001-01-01T00:00:00" targetType="Sage.SalesLogix.Contact.Rules, Sage.SalesLogix.BusinessRules" targetMethod="OnCreate" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets>
+    <methodTarget id="24c97be5-c4d8-4a88-9af0-f8345dc82d3d" lastModifiedUtc="2017-03-22T16:04:12.5964473Z" targetType="Sage.SalesLogix.Contact.Rules, Sage.SalesLogix.BusinessRules" targetMethod="SetDefaultBackOffice" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </postExecuteTargets>
+</method>

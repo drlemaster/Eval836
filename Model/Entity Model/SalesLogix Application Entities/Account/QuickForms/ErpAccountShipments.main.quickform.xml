@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="1abd27ea-30ce-4986-92ab-d8b745ff6690" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>ErpAccountShipments</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.SDataGrid.QFSDataGrid, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSDataGrid>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>grdShipments</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <GenerateMember>false</GenerateMember>
+        <ReadOnlyCondition>False</ReadOnlyCondition>
+        <AppliedSecurity />
+        <RelateToPropertyName />
+        <PreviewField />
+        <ResourceKind>
+          <Name>erpShipments</Name>
+          <GetPredicate />
+        </ResourceKind>
+        <PathSegments />
+        <Columns>
+          <QFSDataLinkCol>
+            <StyleScheme />
+            <DataField>ErpExtId</DataField>
+            <ColumnId>4d28005b-eca2-4675-aafb-7d5a1bebda5d</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpExtId</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>Id</EntityIdField>
+            <EntityTypeName>ERPShipment</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+            <HideCondition />
+            <Width>-1</Width>
+          </QFSDataLinkCol>
+          <QFSDataLinkCol>
+            <StyleScheme />
+            <DataField>ErpShipTo.Name</DataField>
+            <ColumnId>e257da67-a4e8-4ea8-b580-89f02e8565ec</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpShipTo.Name</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>ErpShipTo.Id</EntityIdField>
+            <EntityTypeName>ERPShipTo</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+            <HideCondition />
+            <Width>-1</Width>
+          </QFSDataLinkCol>
+          <QFSDataPickListCol>
+            <StyleScheme />
+            <DataField>ErpStatus</DataField>
+            <ColumnId>44e7e957-ae76-4a4e-94b5-2da36e79152d</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpStatus</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <PickListName>ErpShipmentStatus</PickListName>
+            <DisplayMode>AsText</DisplayMode>
+            <StorageMode>Code</StorageMode>
+          </QFSDataPickListCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>ErpCarrierParty</DataField>
+            <ColumnId>234a73e4-e751-462b-a0ae-665352db728f</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpCarrierParty</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFSDataCurrencyCol>
+            <StyleScheme />
+            <DataField>ErpDeclaredValue</DataField>
+            <ColumnId>d9a18966-db1c-4dfa-b7f7-043a34203277</ColumnId>
+            <HorizontalAlignment>right</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpDeclaredValue</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <CurrentCode>CurrencyCode</CurrentCode>
+            <ExchangeRate />
+            <ExchangeRateType>EntityRate</ExchangeRateType>
+            <DecimalDigits>4</DecimalDigits>
+          </QFSDataCurrencyCol>
+          <QFSDataDateTimeCol>
+            <StyleScheme />
+            <DataField>DatePromised</DataField>
+            <ColumnId>0c4fde37-1ca8-4316-9695-1db65ca753b8</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>DatePromised</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <DateOnly>true</DateOnly>
+          </QFSDataDateTimeCol>
+          <QFSDataDateTimeCol>
+            <StyleScheme />
+            <DataField>ErpActualShipDate</DataField>
+            <ColumnId>b07c552e-6562-4d82-bd6b-6ce6317d6fd4</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpActualShipDate</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <DateOnly>true</DateOnly>
+          </QFSDataDateTimeCol>
+          <QFSDataDateTimeCol>
+            <StyleScheme />
+            <DataField>ErpActualDeliveryDate</DataField>
+            <ColumnId>392f2c59-e92a-48c4-b4bf-7b2a1215bfaf</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpActualDeliveryDate</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <DateOnly>true</DateOnly>
+          </QFSDataDateTimeCol>
+          <QFSDataCheckBoxCol>
+            <StyleScheme />
+            <DataField>ErpPartialShipAllowed</DataField>
+            <ColumnId>dbf7c902-0fb8-47db-9521-a5e803bb4781</ColumnId>
+            <HorizontalAlignment>center</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpPartialShipAllowed</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFSDataCheckBoxCol>
+        </Columns>
+        <ConditionalWhere />
+        <Select>
+          <string>CurrencyCode</string>
+        </Select>
+        <Include />
+        <FeedCategory>InternalAppEntities</FeedCategory>
+        <OnGetMappingId />
+        <ParentRelationshipPropertyName>Account</ParentRelationshipPropertyName>
+        <ChildRelationshipPropertyName />
+        <OnDataChange />
+        <OnAdd />
+        <Tools />
+      </QFSDataGrid>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>b2b629ac6361409d9ebcdb533da09414</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>de9b30a3882746dba401940cc51df75c</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>false</UseEntityNameAsTitle>
+  <EntityTypeName>IAccount</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

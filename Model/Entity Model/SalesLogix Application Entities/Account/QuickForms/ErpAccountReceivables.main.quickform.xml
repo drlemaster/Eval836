@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="33c2d3a5-f0b9-4363-b3e8-f28e33324000" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2015-12-03T09:20:12.1558116Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>ErpAccountReceivables</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.SDataGrid.QFSDataGrid, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSDataGrid>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>grdReceivables</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <GenerateMember>false</GenerateMember>
+        <ReadOnlyCondition>False</ReadOnlyCondition>
+        <AppliedSecurity />
+        <RelateToPropertyName />
+        <PreviewField />
+        <ResourceKind>
+          <Name>erpReceivables</Name>
+          <GetPredicate />
+        </ResourceKind>
+        <PathSegments />
+        <Columns>
+          <QFSDataLinkCol>
+            <StyleScheme />
+            <DataField>ErpExtId</DataField>
+            <ColumnId>d7dc069d-081f-4cb5-a0b9-614447dd4b93</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ReceivableNumber</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>Id</EntityIdField>
+            <EntityTypeName>ERPReceivable</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+            <HideCondition />
+            <Width>-1</Width>
+          </QFSDataLinkCol>
+          <QFSDataPickListCol>
+            <StyleScheme />
+            <DataField>ErpStatus</DataField>
+            <ColumnId>aa49dfb4-e09a-474d-a0d2-c45c53568493</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpStatus</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <PickListName>ErpReceivableStatus</PickListName>
+            <DisplayMode>AsText</DisplayMode>
+            <StorageMode>Code</StorageMode>
+          </QFSDataPickListCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>ErpPaymentTermId</DataField>
+            <ColumnId>e0cc4dc7-be22-4981-9204-92e684a32bd4</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpPaymentTermId</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFSDataDateTimeCol>
+            <StyleScheme />
+            <DataField>ErpDocumentDate</DataField>
+            <ColumnId>3a9638e2-94a1-4737-bf52-5472ca8c2353</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ErpDocumentDate</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <DateOnly>true</DateOnly>
+          </QFSDataDateTimeCol>
+          <QFSDataCurrencyCol>
+            <StyleScheme />
+            <DataField>ReceivableAmount</DataField>
+            <ColumnId>80e8dae7-8ee3-46d1-8e49-04178ffa8f4f</ColumnId>
+            <HorizontalAlignment>right</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>ReceivableAmount</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+            <CurrentCode>CurrencyCode</CurrentCode>
+            <ExchangeRate />
+            <ExchangeRateType>EntityRate</ExchangeRateType>
+            <DecimalDigits>4</DecimalDigits>
+          </QFSDataCurrencyCol>
+        </Columns>
+        <ConditionalWhere />
+        <Select>
+          <string>CurrencyCode</string>
+        </Select>
+        <Include />
+        <FeedCategory>InternalAppEntities</FeedCategory>
+        <OnGetMappingId />
+        <ParentRelationshipPropertyName>Account</ParentRelationshipPropertyName>
+        <ChildRelationshipPropertyName />
+        <OnDataChange />
+        <OnAdd />
+        <Tools />
+      </QFSDataGrid>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>1e334c6654356ae4c4de32d531778</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>aab3cf11a6418ab7ca69d288bca6e3</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>false</UseEntityNameAsTitle>
+  <EntityTypeName>IAccount</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

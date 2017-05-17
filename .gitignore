@@ -1,0 +1,40 @@
+# Files created from merge tools
+*.BACKUP.*.xml
+*.BASE.*.xml
+*.LOCAL.*.xml
+*.REMOTE.*.xml
+*.orig
+ 
+# Model files that are auto-generated
+ModelIndex.xml
+ExportedFiles.xml
+ 
+# Standard Deploy files
+[Mm]odel/[Dd]eployment
+
+# Ignore files build by Visual Studio
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+
+# Force include utilities
+!Utilities/*
+
+# Force include SupportFiles
+!Model/Portal/*/SupportFiles/[Bb]in/
+!Model/Portal/PortalTemplates/*/SupportFiles/[Bb]in

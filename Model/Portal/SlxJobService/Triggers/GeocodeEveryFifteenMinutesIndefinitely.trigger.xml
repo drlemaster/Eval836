@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<SchedulerTrigger xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="f960626f-6041-43ac-87cc-88604a8627cd">
+  <InstanceId>b207c539784d44168e8d57e7f5629e0a</InstanceId>
+  <JobId>5cbd1817b59442e8849273bc1f110572</JobId>
+  <Name>GeocodeEveryFifteenMinutesIndefinitely</Name>
+  <StartTimeUtc xsi:nil="true" />
+  <EndTimeUtc xsi:nil="true" />
+  <CronExpression>0 0/15 * * * ? *</CronExpression>
+  <Priority xsi:nil="true" />
+  <Parameters />
+</SchedulerTrigger>

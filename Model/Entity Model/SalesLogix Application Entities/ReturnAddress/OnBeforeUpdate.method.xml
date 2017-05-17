@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="5856a15a-7ca0-4555-8a8f-0d08fe597ca6" lastModifiedUtc="2008-01-21T21:57:13.3156237Z" name="OnBeforeUpdate" methodType="CrudEvent" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="a4708f8a-5167-4c19-87a3-dc51da0dbfde" lastModifiedUtc="2011-06-24T17:06:11.1794Z" targetType="Sage.SalesLogix.ReturnAddress.Rules, Sage.SalesLogix.BusinessRules" targetMethod="OnBeforeUpdate" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets>
+    <methodTarget id="44010226-b718-4bd6-a3a4-52861ab9cd80" lastModifiedUtc="2015-12-15T23:06:09.8058897Z" targetType="Sage.SalesLogix.ReturnAddress.Rules, Sage.SalesLogix.BusinessRules" targetMethod="ValidateCountryCode" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </postExecuteTargets>
+</method>

@@ -1,0 +1,1 @@
+define({ logOffText: '注销' });

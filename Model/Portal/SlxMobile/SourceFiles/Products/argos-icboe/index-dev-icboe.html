@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="gtie9 modern">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+
+    <title>Infor CRM</title>
+
+    <link rel="apple-touch-icon-precomposed" href="content/images/icon.png" />
+    <link rel="apple-touch-startup-image" href="content/images/loading.png">
+
+    <!-- less files -->
+    <link rel="stylesheet/less" type="text/css" href="../../argos-sdk/content/css/themes/crm.less" />
+    <link rel="stylesheet/less" type="text/css" href="content/css/app.less" />
+    <link rel="stylesheet/less" type="text/css" href="../argos-icboe/content/css/icboe.less" />
+
+    <!-- less -->
+    <script type="text/javascript">
+        less = {
+            env: "development", // or "production"
+            async: false,       // load imports async
+            fileAsync: false,   // load imports async when in a page under
+                                // a file protocol
+            poll: 1000,         // when in watch mode, time in ms between polls
+            functions: {},      // user functions, keyed by name
+            dumpLineNumbers: "all", // or "mediaQuery" or "all"
+            relativeUrls: true,// whether to adjust url's to be relative
+                                // if false, url's are already relative to the
+                                // entry less file
+            rootpath: ""// a path to add on to the start of every url
+                                //resource
+        };
+    </script>
+    <script type="text/javascript" src="../../argos-sdk/libraries/less/less.min.js"></script>
+
+    <!-- SData Client Library -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/sdata/sdata-client-dependencies-debug.js"></script>
+    <script type="text/javascript" src="../../argos-sdk/libraries/sdata/sdata-client-debug.js"></script>
+
+    <!-- Rx.js -->
+    <script src="../../argos-sdk/libraries/rx/rx.all.js"></script>
+
+    <!-- Babel -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/babel/browser-polyfill.min.js"></script>
+
+    <!-- moment -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/moment/moment-with-locales.js"></script>
+
+    <!-- PouchDB -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/PouchDB/pouchdb-4.0.1.min.js"></script>
+
+    <!-- L20N.js -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/l20n/l20n.js"></script>
+
+    <!-- Simplate -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/Simplate.js"></script>
+
+    <!-- canvas2image for when HTMLCanvasElement.prototype.toDataURL doesn't work -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/canvas2image.js"></script>
+
+    <!-- Deep Diff -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/deep-diff/deep-diff-0.2.0.min.js"></script>
+
+    <!-- Chart.js -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/Chart.min.js"></script>
+
+    <!-- Dojo -->
+    <script type="text/javascript" src="../../argos-sdk/libraries/dojo/dojo/dojo.js" data-dojo-config="parseOnLoad:true, async:true, blankGif:'content/images/blank.gif'"></script>
+    <script type="text/javascript">
+    require({
+        baseUrl: "./",
+        packages: [
+            { name: 'dojo', location: '../../argos-sdk/libraries/dojo/dojo' },
+            { name: 'dijit', location: '../../argos-sdk/libraries/dojo/dijit' },
+            { name: 'snap', location: '../../argos-sdk/libraries/snap', main: 'snap' },
+            { name: 'argos', location: '../../argos-sdk/src-out' },
+            { name: 'crm', location: 'src-out' },
+            { name: 'configuration', location: 'configuration' },
+            { name: 'localization', location: 'localization' },
+            { name: 'icboe', location: '../argos-icboe/src-out' },
+            { name: 'configuration/icboe', location: '../argos-icboe/configuration' },
+            { name: 'localization/icboe', location: '../argos-icboe/localization' }
+        ],
+        map: {
+            '*': {
+                'Sage/Platform/Mobile': 'argos',
+                'Mobile/SalesLogix': 'crm',
+                'ion': 'icboe'
+            }
+        },
+        paths: {
+            'configuration/icboe': '../argos-icboe/configuration',
+            'localization/icboe': '../argos-icboe/localization'
+        }
+    });
+    </script>
+
+    <script type="text/javascript">
+    (function() {
+      function buildContext() {
+        var filePaths = {
+          './localization/locales/crm': [
+            'strings.l20n',
+            'regional.l20n'
+          ],
+          '../../argos-sdk/localization/locales/argos': [
+            'strings.l20n',
+            'regional.l20n'
+          ],
+          '../argos-icboe/localization/locales/icboe': [
+            'strings.l20n',
+            'regional.l20n'
+          ]
+        };
+        var supportedLocales = [
+          'en',
+          'en-GB',
+          'de',
+          'fr',
+          'it',
+          'ru',
+          'zh-CN',
+          'zh-TW'
+        ]
+        var ctx = L20n.getContext();
+        var defaultLocale = 'en';
+        var currentLocale = 'en';
+
+        Object.keys(filePaths).forEach(function(path) {
+          var files = filePaths[path];
+          files.forEach(function(file) {
+            ctx.linkResource(function(locale) {
+              return [path, locale, file].join('/');
+            });
+          });
+        });
+        ctx.registerLocales(defaultLocale, supportedLocales);
+        ctx.requestLocales(currentLocale);
+        window.localeContext = ctx;
+        return ctx;
+      }
+      var application = 'crm/Application';
+      var configuration = [
+        'configuration/icboe/development'
+      ];
+      var ctx = buildContext();
+      ctx.ready(function() {
+        require([application].concat(configuration), function(application, configuration) {
+          var completed = false;
+
+          // Legacy Localization scripts
+          var localization = [
+            'localization/icboe/en',
+            'localization/saleslogix/en'
+          ];
+
+          var fallBackLocalization = [
+            'localization/icboe/en',
+            'localization/saleslogix/en'
+          ];
+
+          var bootstrap = function(requires) {
+            require(requires.concat('dojo/domReady!'), function() {
+              if (completed) {
+                return;
+              }
+
+              moment.locale('en');
+              var instance = new application(configuration);
+              instance.localeContext = ctx;
+              instance.activate();
+              instance.init();
+              instance.run();
+              completed = true;
+            });
+          };
+
+          require.on('error', function(error) {
+            console.log('Error loading localization, falling back to "en"');
+            bootstrap(fallBackLocalization);
+          });
+
+          bootstrap(localization);
+        });
+      });
+    })();
+    </script>
+</head>
+<body>
+</body>
+</html>

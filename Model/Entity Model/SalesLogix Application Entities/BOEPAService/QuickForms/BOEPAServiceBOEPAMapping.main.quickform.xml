@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="f407538f-3d99-45f9-9bd0-56b31de5d3d2" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2016-04-18T15:08:54.5685592Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>BOEPAServiceBOEPAMapping</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.SDataGrid.QFSDataGrid, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSDataGrid>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>grdBOEPAServices</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <GenerateMember>false</GenerateMember>
+        <ReadOnlyCondition>False</ReadOnlyCondition>
+        <AppliedSecurity />
+        <RelateToPropertyName />
+        <PreviewField />
+        <ResourceKind>
+          <Name>bOEPAMappings</Name>
+          <GetPredicate />
+        </ResourceKind>
+        <PathSegments />
+        <Columns>
+          <QFSDataLinkCol>
+            <StyleScheme />
+            <DataField>PAMappingName</DataField>
+            <ColumnId>28c7c15f-fbf3-41bc-aa03-1f5b95e82455</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>PAMappingName</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>Id</EntityIdField>
+            <EntityTypeName>BOEPAMapping</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+            <HideCondition />
+            <Width>-1</Width>
+          </QFSDataLinkCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>Description</DataField>
+            <ColumnId>f8fa4556-c663-4e3f-bfe9-b101f23e382e</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Description</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>Entity</DataField>
+            <ColumnId>2ba853ca-9c63-48d9-9b7b-ba4c797068f9</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Entity</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>Property</DataField>
+            <ColumnId>a1cd93c6-1e10-4c50-bb46-d2f70df03d5f</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Property</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>IsRequired</DataField>
+            <ColumnId>944a9d59-b192-45a0-bbfa-7bdaf6967074</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>IsRequired</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>IsCustom</DataField>
+            <ColumnId>d75d01e7-4764-4949-ae3d-dfdf9c48f86d</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>IsCustom</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>IsActive</DataField>
+            <ColumnId>51991bd3-2d44-4934-a07c-d7b918cd41cb</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>IsActive</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+        </Columns>
+        <ConditionalWhere />
+        <Select />
+        <Include />
+        <FeedCategory>InternalAppEntities</FeedCategory>
+        <OnGetMappingId />
+        <ParentRelationshipPropertyName>BOEPAService</ParentRelationshipPropertyName>
+        <ChildRelationshipPropertyName />
+        <OnDataChange />
+        <OnAdd />
+        <Tools>
+          <SDataGridDeleteTool>
+            <Name>Delete</Name>
+            <Image>[Localization!Global_Images:Delete_16x16]</Image>
+            <DisplayInInsert>false</DisplayInInsert>
+            <MergePosition>After</MergePosition>
+            <MergeControlId>btnAdd</MergeControlId>
+            <OnClick />
+            <StyleScheme />
+            <AppliedSecurity />
+          </SDataGridDeleteTool>
+        </Tools>
+      </QFSDataGrid>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>ff487e01c664ad8ba8902252213602b</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>c0138c085648bc93cd3aaf604c2a1d</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms">
+      <QFButton>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>btnAdd</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <ButtonType>Icon</ButtonType>
+        <Image>[Localization!Global_Images:plus_16x16]</Image>
+        <OnClientClick />
+        <OnClickAction>
+          <ResourceKey>btnAdd</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.DialogActionItem, Sage.Platform.QuickForms">
+            <DialogActionItem>
+              <SmartPart>AddEditBOEPAMapping</SmartPart>
+              <Height>400</Height>
+              <Width>600</Width>
+              <Top>0</Top>
+              <Left>0</Left>
+              <EntityType>BOEPAMapping</EntityType>
+              <ResourceKey>300c4567-ad2f-4bf6-87ec-b36dd4ad5c2c</ResourceKey>
+              <CenterDialog>True</CenterDialog>
+            </DialogActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnClickAction>
+      </QFButton>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>true</UseEntityNameAsTitle>
+  <EntityTypeName>IBOEPAService</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

@@ -1,0 +1,44 @@
+{
+	"projectName": "Infor CRM ICBOE Module",
+	"licenseText": "",
+	"deployDir": "deploy/",
+	"pkgs": [
+    {
+      "name": "Infor CRM BOE Module",
+      "file": "content/javascript/argos-icboe.js",
+      "isDebug": true,
+			"fileIncludes": [<% files.forEach(function(file, i) { %>{
+						"text": "<%- file.fileName %>",
+						"path": "<%- file.folderName %>/"
+					}<% if (i < files.length - 1) {%>, <% } %><%});%>
+			]
+		}
+	],
+	"resources": [
+    {
+      "src": "../content",
+      "dest": "content",
+      "filters": ".*(\\.css|\\.jpg|\\.png|\\.gif)"
+    },
+    {
+      "src": "../min",
+      "dest": "content",
+      "filters": ".*(\\.css)"
+    },
+    {
+      "src": "../configuration",
+      "dest": "configuration/icboe",
+      "filters": ".*\\.js"
+    },
+    {
+      "src": "../localization/locales/icboe",
+      "dest": "localization/locales/icboe",
+      "filters": ".*(\\.l20n)",
+    },
+    {
+      "src": "../help",
+      "dest": "help",
+      "filters": ".*\\.html"
+    }
+	]
+}

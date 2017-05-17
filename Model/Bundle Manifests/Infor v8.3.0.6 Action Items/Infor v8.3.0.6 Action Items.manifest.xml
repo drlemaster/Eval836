@@ -1,0 +1,2381 @@
+<?xml version="1.0"?>
+<BundleManifest id="28ad109d-bbe3-4db5-a62e-493cbe2a0082">
+  <bundleProperties>
+    <name>Infor v8.3.0.6 Action Items</name>
+    <description><![CDATA[]]></description>
+    <address><![CDATA[]]></address>
+    <company>Infor</company>
+    <copyright><![CDATA[]]></copyright>
+    <majorVersion>8</majorVersion>
+    <minorVersion>3</minorVersion>
+    <revision>6</revision>
+    <build>138</build>
+    <autoIncrement>false</autoIncrement>
+    <installDate>2017-03-22T16:18:48.3790415Z</installDate>
+    <installPassword />
+    <formatVersion>8.3.0.1221</formatVersion>
+  </bundleProperties>
+  <bundleItemHierarchy>
+    <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.Platform.BundleModel.BundleManifestItem, Sage.Platform.BundleModel">
+      <BundleManifestItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ItemId>28ad109d-bbe3-4db5-a62e-493cbe2a0082</ItemId>
+        <Url>\</Url>
+        <BundleItemType>Container</BundleItemType>
+        <Caption>Infor v8.3.0.6 Action Items</Caption>
+      </BundleManifestItem>
+    </bundleItem>
+  </bundleItemHierarchy>
+  <bundleActionHierarchy>
+    <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.Platform.BundleModel.RootBundleAction, Sage.Platform.BundleModel">
+      <RootBundleAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ItemId>\Actions</ItemId>
+        <Url>\Actions</Url>
+        <BundleItemType>Container</BundleItemType>
+        <Caption>Bundle Actions</Caption>
+      </RootBundleAction>
+      <children>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_3fd6967f-2829-4ebc-a847-4fddaa8cae7b_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_3fd6967f-2829-4ebc-a847-4fddaa8cae7b_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:FixAttendeeRolePicklist (Oracle)</Caption>
+            <ActionData>
+              <ActionId>3fd6967f-2829-4ebc-a847-4fddaa8cae7b</ActionId>
+              <ActionTitle>FixAttendeeRolePicklist</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE PICKLIST SET ITEMID = 'kSYSF0000424' WHERE ITEMID='kSYST0000424' AND PICKLISTID = 'kSYST0000420'</Statement>
+                  <Title>Fix_ListenerPicklistItem</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE PICKLIST SET ITEMID = 'kSYSF0000425' WHERE ITEMID='kSYST0000425' AND PICKLISTID = 'kSYST0000420'</Statement>
+                  <Title>Fix_RecorderPicklistItem</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_cf74761e-4d5b-4d43-a314-469d03c221a1_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_cf74761e-4d5b-4d43-a314-469d03c221a1_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:AttendeeRemoteSync (All)</Caption>
+            <ActionData>
+              <ActionId>cf74761e-4d5b-4d43-a314-469d03c221a1</ActionId>
+              <ActionTitle>AttendeeRemoteSync</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE RESYNCTABLEDEFS SET OMNIDIRECTIONAL = 'T' WHERE TABLENAME='ACTIVITYATTENDEE'</Statement>
+                  <Title>ActivityAttendeeScript</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE SYSDBA.RESYNCTABLEDEFS SET OMNIDIRECTIONAL = 'T' WHERE TABLENAME='HISTORYATTENDEE'</Statement>
+                  <Title>HistoryAttendeeScript</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\CUSTOMSETTINGS_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\CUSTOMSETTINGS_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into CUSTOMSETTINGS</Caption>
+            <SelectedColumns>
+              <string>MODIFYUSER</string>
+              <string>MODIFYDATE</string>
+              <string>CATEGORY</string>
+              <string>DESCRIPTION</string>
+              <string>VERSIONNUMBER</string>
+              <string>DATATYPE</string>
+              <string>DATAVALIDATION</string>
+              <string>DATAVALUE</string>
+              <string>SECCODEID</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>CUSTOMSETTINGS</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>IdList</SelectionType>
+            <PrimaryKeyName>CUSTOMSETTINGSID</PrimaryKeyName>
+            <PrimaryKeyValues>
+              <string>IONCUSSET016</string>
+              <string>OBMCUSSET022</string>
+              <string>OBMCUSSET025</string>
+              <string>OBMCUSSET026</string>
+              <string>OBMCUSSET027</string>
+              <string>OBMCUSSET028</string>
+              <string>OBMCUSSET024</string>
+              <string>OBMCUSSET023</string>
+              <string>GEOCUSSET001</string>
+              <string>SICUSSET0001</string>
+              <string>SICUSSET0002</string>
+            </PrimaryKeyValues>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000D5.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000D5.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [Calculation Methods]</Caption>
+            <PickListId>kDEMOA0000D5</PickListId>
+            <PickListName>Calculation Methods</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000D9.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000D9.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [QuoteStatus]</Caption>
+            <PickListId>kDEMOA0000D9</PickListId>
+            <PickListName>QuoteStatus</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000DM.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000DM.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [ErpQuoteStatus]</Caption>
+            <PickListId>kDEMOA0000DM</PickListId>
+            <PickListName>ErpQuoteStatus</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000DW.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000DW.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [SyncStatus]</Caption>
+            <PickListId>kDEMOA0000DW</PickListId>
+            <PickListName>SyncStatus</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000E5.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000E5.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [SearchClause]</Caption>
+            <PickListId>kDEMOA0000E5</PickListId>
+            <PickListName>SearchClause</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000E8.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000E8.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [ErpAccountStatus]</Caption>
+            <PickListId>kDEMOA0000E8</PickListId>
+            <PickListName>ErpAccountStatus</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000IX.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000IX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [DashboardWidget] System:Group List (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000IX</PluginId>
+            <Name>Group List</Name>
+            <Family>System</Family>
+            <PluginType>DashboardWidget</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.Security.AddSecuredActionsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddSecuredActionsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddSecuredActions\SecAc129707d2-7bb7-4c3d-8235-ff3bfcc980ce.xml</ItemId>
+            <Url>\Actions\AddSecuredActions\SecAc129707d2-7bb7-4c3d-8235-ff3bfcc980ce.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Add Secured Action(s)</Caption>
+            <ActionData>
+              <SecuredActions>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Quote/GetOrderTotal</Name>
+                  <Description>Allows a user to request a quote total from the pricing service.</Description>
+                  <Parent>Entities/Quote</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Quote/RePriceQuote</Name>
+                  <Description>Allows a user to request a refresh of pricing information on the quote.</Description>
+                  <Parent>Entities/Quote</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/SalesOrder/GetOrderTotal</Name>
+                  <Description>Allows a user to request an order total from the pricing service.</Description>
+                  <Parent>Entities/SalesOrder</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/SalesOrder/RePriceOrder</Name>
+                  <Description>Allows a user to request a refresh of pricing information on the order.</Description>
+                  <Parent>Entities/SalesOrder</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Opportunity/Promote</Name>
+                  <Description>Allows a user to promote and opportunity.</Description>
+                  <Parent>Entities/Opportunity</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/User/Promote</Name>
+                  <Description>Allows a user to promote an users.</Description>
+                  <Parent>Entities/User</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Role/Promote</Name>
+                  <Description>Allows a user to promote an roles.</Description>
+                  <Parent>Entities/Role</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Administration/GroupManager/Groups/ToggleUserDefault</Name>
+                  <Description>Allows the user to enable or disable the New User Default setting on a Group.</Description>
+                  <Parent>Administration/GroupManager/Groups</Parent>
+                </SecuredActionBundleItem>
+              </SecuredActions>
+              <ActionId>129707d2-7bb7-4c3d-8235-ff3bfcc980ce</ActionId>
+              <ReplaceList>false</ReplaceList>
+            </ActionData>
+          </AddSecuredActionsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000IY.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000IY.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [DashboardWidget] System:SData Feed (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000IY</PluginId>
+            <Name>SData Feed</Name>
+            <Family>System</Family>
+            <PluginType>DashboardWidget</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000IZ.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000IZ.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] BODMAPPING:CustomBODMappings (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000IZ</PluginId>
+            <Name>CustomBODMappings</Name>
+            <Family>BODMAPPING</Family>
+            <PluginType>Group</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J0.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J0.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] BODMAPPING:StandardBODMappings (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000J0</PluginId>
+            <Name>StandardBODMappings</Name>
+            <Family>BODMAPPING</Family>
+            <PluginType>Group</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J1.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J1.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] BODMAPPING:InactiveBODMappings (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000J1</PluginId>
+            <Name>InactiveBODMappings</Name>
+            <Family>BODMAPPING</Family>
+            <PluginType>Group</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J2.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J2.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] BODMAPPING:AllBODMapping (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000J2</PluginId>
+            <Name>AllBODMapping</Name>
+            <Family>BODMAPPING</Family>
+            <PluginType>Group</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J3.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J3.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] BODMAPPING:Active BOD Mappings (INFOR 8.301)</Caption>
+            <PluginId>pDEMOA0000J3</PluginId>
+            <Name>Active BOD Mappings</Name>
+            <Family>BODMAPPING</Family>
+            <PluginType>Group</PluginType>
+            <Company>INFOR</Company>
+            <CompanyVersion>8.301</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\BACKOFFICE_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\BACKOFFICE_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into BACKOFFICE</Caption>
+            <SelectedColumns>
+              <string>MODIFYUSER</string>
+              <string>MODIFYDATE</string>
+              <string>COUNTRYCODEFORMAT</string>
+              <string>VERSION</string>
+              <string>LANGUAGEATTRIBUTE</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>BACKOFFICE</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>BACKOFFICEID</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="BACKOFFICEID" inverted="false" operator="=" value="ICRMSR000001" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000EG.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000EG.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [SystemOfRecord]</Caption>
+            <PickListId>kDEMOA0000EG</PickListId>
+            <PickListName>SystemOfRecord</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\BODMAPPING_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\BODMAPPING_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into BODMAPPING</Caption>
+            <SelectedColumns>
+              <string>MODIFYUSER</string>
+              <string>MODIFYDATE</string>
+              <string>BODMAPPINGNAME</string>
+              <string>NOUN</string>
+              <string>ENTITYNAME</string>
+              <string>UNIQUEIDXPATH</string>
+              <string>UNIQUEIDNODE</string>
+              <string>PRIORITY</string>
+              <string>OUTBOUNDTEMPLATE</string>
+              <string>ISCUSTOM</string>
+              <string>HANDLERCLASSNAME</string>
+              <string>DELETEBEHAVIOR</string>
+              <string>PARENTBODMAPPINGID</string>
+              <string>RELEASEID</string>
+              <string>VERSIONID</string>
+              <string>OUTBOUNDONCREATE</string>
+              <string>OUTBOUNDONUPDATE</string>
+              <string>OUTBOUNDONDELETE</string>
+              <string>GENOUTTEMPLATE</string>
+              <string>SECCODEID</string>
+              <string>SYSISACTIVE</string>
+              <string>STDBODMAPPINGID</string>
+              <string>SYSTEMOFRECORD</string>
+              <string>SYNCTEMPLATE</string>
+              <string>ACKNOWLEDGETEMPLATE</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>BODMAPPING</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>BODMAPPINGID</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="BACKOFFICEID" inverted="false" operator="=" value="ICRMSR000001" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\BODFIELDMAPPING_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\BODFIELDMAPPING_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into BODFIELDMAPPING</Caption>
+            <SelectedColumns>
+              <string>MODIFYUSER</string>
+              <string>MODIFYDATE</string>
+              <string>ENTITY</string>
+              <string>PROPERTY</string>
+              <string>FIELDMAPPINGNAME</string>
+              <string>PARENTENTITY</string>
+              <string>ENTITYXPATH</string>
+              <string>PROPERTYXPATH</string>
+              <string>ISREQUIRED</string>
+              <string>DEFAULTVALUE</string>
+              <string>ISCUSTOM</string>
+              <string>SYNCDIRECTION</string>
+              <string>SECCODEID</string>
+              <string>BODELEMENTSEQUENCE</string>
+              <string>SYSISACTIVE</string>
+              <string>STDBODFIELDMAPPINGID</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>BODFIELDMAPPING</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>BODFIELDMAPPINGID</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="BODMAPPINGID" inverted="false" operator="=" value="IBMSR0000018" />
+                <clause groupChange="0" logicalOperator="Or" field="BODMAPPINGID" inverted="false" operator="=" value="IBMSR0000003" />
+                <clause groupChange="0" logicalOperator="Or" field="BODMAPPINGID" inverted="false" operator="=" value="IBMSR0000002" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_92f13055-2c64-496c-b061-d86920012497_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_92f13055-2c64-496c-b061-d86920012497_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:ProdPackageKitView Add ErpStatus Column (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>92f13055-2c64-496c-b061-d86920012497</ActionId>
+              <ActionTitle>PRODPACKAGEKITVIEW</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>
+                                  IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'[sysdba].[PRODPACKAGEKITVIEW]'))
+                                  DROP VIEW [sysdba].[PRODPACKAGEKITVIEW]
+									</Statement>
+                  <Title>Remove Existing View</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>
+                                  CREATE VIEW [sysdba].[PRODPACKAGEKITVIEW]
+                                  AS
+                                  SELECT
+                                  PACKAGES.PACKAGESID AS PRODPACKAGEKITVIEWID,
+                                  'PKG' AS PRODPACKAGEKITTYPE,
+                                  PACKAGES.NAME AS [NAME],
+                                  null AS ACTUALID,
+                                  null AS FAMILY,
+                                  null AS PRICE,
+                                  null AS PRODUCTGROUP,
+                                  null AS STATUS,
+                                  null AS UNIT,
+                                  null AS STOCKVOLUME,
+                                  null AS STOCKWEIGHT,
+                                  null AS STOCKITEM,
+                                  null AS SUPPLIER,
+                                  null AS VENDOR,
+                                  null AS SITEID,
+                                  null AS WAREHOUSELOCATION,
+                                  null AS COMMISSIONABLE,
+                                  null AS TAXABLE,
+                                  null AS ACCOUNTINGPERIOD,
+                                  null AS GLACCOUNTNUMBER,
+                                  null AS GLSUBACCOUNTNUMBER,
+                                  null AS DATAOWNER,
+                                  null AS TYPE,
+                                  null AS FIXEDCOST,
+                                  null AS GLOBALSYNCID,
+                                  null AS APPID,
+                                  null AS COMMODITYGROUPID,
+                                  null AS ACTIVEFLAG,
+                                  null AS SELLINGALLOWEDFLAG,
+                                  null AS UNITOFMEASUREID,
+                                  null AS SELLINGUOMID,
+                                  null AS SELLINGUOMNUMBER,
+                                  null AS CLASSIFICATION,
+                                  NULL AS COMMODITYTYPE,
+                                  NULL AS ERPLOGICALID,
+								  NULL AS ERPACCOUNTINGENTITYID,
+                                  NULL AS ERPSTATUS
+                                  FROM   PACKAGES
+                                  UNION
+                                  SELECT
+                                  PRODUCT.PRODUCTID AS PRODPACKAGEKITVIEWID,
+                                  'KIT' AS PRODPACKAGEKITTYPE,
+                                  PRODUCT.NAME,
+                                  PRODUCT.ACTUALID,
+                                  PRODUCT.FAMILY,
+                                  PRODUCT.PRICE,
+                                  PRODUCT.PRODUCTGROUP,
+                                  PRODUCT.STATUS,
+                                  PRODUCT.UNIT,
+                                  PRODUCT.STOCKVOLUME,
+                                  PRODUCT.STOCKWEIGHT,
+                                  PRODUCT.STOCKITEM,
+                                  PRODUCT.SUPPLIER,
+                                  PRODUCT.VENDOR,
+                                  PRODUCT.SITEID,
+                                  PRODUCT.WAREHOUSELOCATION,
+                                  PRODUCT.COMMISSIONABLE,
+                                  PRODUCT.TAXABLE,
+                                  PRODUCT.ACCOUNTINGPERIOD,
+                                  PRODUCT.GLACCOUNTNUMBER,
+                                  PRODUCT.GLSUBACCOUNTNUMBER,
+                                  PRODUCT.DATAOWNER,
+                                  PRODUCT.TYPE,
+                                  PRODUCT.FIXEDCOST,
+                                  PRODUCT.GLOBALSYNCID,
+                                  PRODUCT.APPID,
+                                  PRODUCT.COMMODITYGROUPID,
+                                  PRODUCT.ACTIVEFLAG,
+                                  PRODUCT.SELLINGALLOWEDFLAG,
+                                  PRODUCT.UNITOFMEASUREID,
+                                  PRODUCT.SELLINGUOMID,
+                                  PRODUCT.SELLINGUOMNUMBER,
+                                  PRODUCT.CLASSIFICATION,
+                                  PRODUCT.COMMODITYTYPE,
+                                  PRODUCT.ERPLOGICALID,
+								  PRODUCT.ERPACCOUNTINGENTITYID,
+                                  PRODUCT.ERPSTATUS
+                                  FROM    PRODUCT
+                                  WHERE	PRODUCT.COMMODITYTYPE = 'Kit'
+                                  UNION
+                                  SELECT
+                                  PRODUCT.PRODUCTID AS PRODPACKAGEKITVIEWID,
+                                  'PRD' AS PRODPACKAGEKITTYPE,
+                                  PRODUCT.NAME,
+                                  PRODUCT.ACTUALID,
+                                  PRODUCT.FAMILY,
+                                  PRODUCT.PRICE,
+                                  PRODUCT.PRODUCTGROUP,
+                                  PRODUCT.STATUS,
+                                  PRODUCT.UNIT,
+                                  PRODUCT.STOCKVOLUME,
+                                  PRODUCT.STOCKWEIGHT,
+                                  PRODUCT.STOCKITEM,
+                                  PRODUCT.SUPPLIER,
+                                  PRODUCT.VENDOR,
+                                  PRODUCT.SITEID,
+                                  PRODUCT.WAREHOUSELOCATION,
+                                  PRODUCT.COMMISSIONABLE,
+                                  PRODUCT.TAXABLE,
+                                  PRODUCT.ACCOUNTINGPERIOD,
+                                  PRODUCT.GLACCOUNTNUMBER,
+                                  PRODUCT.GLSUBACCOUNTNUMBER,
+                                  PRODUCT.DATAOWNER,
+                                  PRODUCT.TYPE,
+                                  PRODUCT.FIXEDCOST,
+                                  PRODUCT.GLOBALSYNCID,
+                                  PRODUCT.APPID,
+                                  PRODUCT.COMMODITYGROUPID,
+                                  PRODUCT.ACTIVEFLAG,
+                                  PRODUCT.SELLINGALLOWEDFLAG,
+                                  PRODUCT.UNITOFMEASUREID,
+                                  PRODUCT.SELLINGUOMID,
+                                  PRODUCT.SELLINGUOMNUMBER,
+                                  PRODUCT.CLASSIFICATION,
+                                  PRODUCT.COMMODITYTYPE,
+                                  PRODUCT.ERPLOGICALID,
+								  PRODUCT.ERPACCOUNTINGENTITYID,
+                                  PRODUCT.ERPSTATUS
+                                  FROM    PRODUCT
+                                  WHERE	PRODUCT.COMMODITYTYPE IS NULL OR PRODUCT.COMMODITYTYPE &lt;&gt; 'Kit'
+									</Statement>
+                  <Title>Add ErpStatus Column</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>View</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_5fdf5efa-d8de-496a-89d5-a60a7e919720_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_5fdf5efa-d8de-496a-89d5-a60a7e919720_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:ProdPackageKitView Add ErpStatus Column (Oracle)</Caption>
+            <ActionData>
+              <ActionId>5fdf5efa-d8de-496a-89d5-a60a7e919720</ActionId>
+              <ActionTitle>PRODPACKAGEKITVIEW</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>
+                                  CREATE OR REPLACE VIEW sysdba.PRODPACKAGEKITVIEW
+                                  AS
+                                  SELECT
+                                  PACKAGES.PACKAGESID AS PRODPACKAGEKITVIEWID,
+                                  'PKG' AS PRODPACKAGEKITTYPE,
+                                  PACKAGES.NAME AS NAME,
+                                  null AS ACTUALID,
+                                  null AS FAMILY,
+                                  null AS PRICE,
+                                  null AS PRODUCTGROUP,
+                                  null AS STATUS,
+                                  null AS UNIT,
+                                  null AS STOCKVOLUME,
+                                  null AS STOCKWEIGHT,
+                                  null AS STOCKITEM,
+                                  null AS SUPPLIER,
+                                  null AS VENDOR,
+                                  null AS SITEID,
+                                  null AS WAREHOUSELOCATION,
+                                  null AS COMMISSIONABLE,
+                                  null AS TAXABLE,
+                                  null AS ACCOUNTINGPERIOD,
+                                  null AS GLACCOUNTNUMBER,
+                                  null AS GLSUBACCOUNTNUMBER,
+                                  null AS DATAOWNER,
+                                  null AS TYPE,
+                                  null AS FIXEDCOST,
+                                  null AS GLOBALSYNCID,
+                                  null AS APPID,
+                                  null AS COMMODITYGROUPID,
+                                  null AS ACTIVEFLAG,
+                                  null AS SELLINGALLOWEDFLAG,
+                                  null AS UNITOFMEASUREID,
+                                  null AS SELLINGUOMID,
+                                  null AS SELLINGUOMNUMBER,
+                                  null AS CLASSIFICATION,
+                                  NULL AS COMMODITYTYPE,
+                                  NULL AS ERPLOGICALID,
+								  NULL AS ERPACCOUNTINGENTITYID,
+                                  NULL AS ERPSTATUS
+                                  FROM   PACKAGES
+                                  UNION
+                                  SELECT
+                                  PRODUCT.PRODUCTID AS PRODPACKAGEKITVIEWID,
+                                  'KIT' AS PRODPACKAGEKITTYPE,
+                                  PRODUCT.NAME,
+                                  PRODUCT.ACTUALID,
+                                  PRODUCT.FAMILY,
+                                  PRODUCT.PRICE,
+                                  PRODUCT.PRODUCTGROUP,
+                                  PRODUCT.STATUS,
+                                  PRODUCT.UNIT,
+                                  PRODUCT.STOCKVOLUME,
+                                  PRODUCT.STOCKWEIGHT,
+                                  PRODUCT.STOCKITEM,
+                                  PRODUCT.SUPPLIER,
+                                  PRODUCT.VENDOR,
+                                  PRODUCT.SITEID,
+                                  PRODUCT.WAREHOUSELOCATION,
+                                  PRODUCT.COMMISSIONABLE,
+                                  PRODUCT.TAXABLE,
+                                  PRODUCT.ACCOUNTINGPERIOD,
+                                  PRODUCT.GLACCOUNTNUMBER,
+                                  PRODUCT.GLSUBACCOUNTNUMBER,
+                                  PRODUCT.DATAOWNER,
+                                  PRODUCT.TYPE,
+                                  PRODUCT.FIXEDCOST,
+                                  PRODUCT.GLOBALSYNCID,
+                                  PRODUCT.APPID,
+                                  PRODUCT.COMMODITYGROUPID,
+                                  PRODUCT.ACTIVEFLAG,
+                                  PRODUCT.SELLINGALLOWEDFLAG,
+                                  PRODUCT.UNITOFMEASUREID,
+                                  PRODUCT.SELLINGUOMID,
+                                  PRODUCT.SELLINGUOMNUMBER,
+                                  PRODUCT.CLASSIFICATION,
+                                  PRODUCT.COMMODITYTYPE,
+                                  PRODUCT.ERPLOGICALID,
+								  PRODUCT.ERPACCOUNTINGENTITYID,
+                                  PRODUCT.ERPSTATUS
+                                  FROM    PRODUCT
+                                  WHERE	PRODUCT.COMMODITYTYPE = 'Kit'
+                                  UNION
+                                  SELECT
+                                  PRODUCT.PRODUCTID AS PRODPACKAGEKITVIEWID,
+                                  'PRD' AS PRODPACKAGEKITTYPE,
+                                  PRODUCT.NAME,
+                                  PRODUCT.ACTUALID,
+                                  PRODUCT.FAMILY,
+                                  PRODUCT.PRICE,
+                                  PRODUCT.PRODUCTGROUP,
+                                  PRODUCT.STATUS,
+                                  PRODUCT.UNIT,
+                                  PRODUCT.STOCKVOLUME,
+                                  PRODUCT.STOCKWEIGHT,
+                                  PRODUCT.STOCKITEM,
+                                  PRODUCT.SUPPLIER,
+                                  PRODUCT.VENDOR,
+                                  PRODUCT.SITEID,
+                                  PRODUCT.WAREHOUSELOCATION,
+                                  PRODUCT.COMMISSIONABLE,
+                                  PRODUCT.TAXABLE,
+                                  PRODUCT.ACCOUNTINGPERIOD,
+                                  PRODUCT.GLACCOUNTNUMBER,
+                                  PRODUCT.GLSUBACCOUNTNUMBER,
+                                  PRODUCT.DATAOWNER,
+                                  PRODUCT.TYPE,
+                                  PRODUCT.FIXEDCOST,
+                                  PRODUCT.GLOBALSYNCID,
+                                  PRODUCT.APPID,
+                                  PRODUCT.COMMODITYGROUPID,
+                                  PRODUCT.ACTIVEFLAG,
+                                  PRODUCT.SELLINGALLOWEDFLAG,
+                                  PRODUCT.UNITOFMEASUREID,
+                                  PRODUCT.SELLINGUOMID,
+                                  PRODUCT.SELLINGUOMNUMBER,
+                                  PRODUCT.CLASSIFICATION,
+                                  PRODUCT.COMMODITYTYPE,
+                                  PRODUCT.ERPLOGICALID,
+								  PRODUCT.ERPACCOUNTINGENTITYID,
+                                  PRODUCT.ERPSTATUS
+                                  FROM    PRODUCT
+                                  WHERE	PRODUCT.COMMODITYTYPE IS NULL OR PRODUCT.COMMODITYTYPE &lt;&gt; 'Kit'
+									</Statement>
+                  <Title>Add ErpStatus Column</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_24a84967-1245-4736-8beb-3cfe8d0ee592_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_24a84967-1245-4736-8beb-3cfe8d0ee592_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:PackageKitChildView Add ErpStatus (Oracle)</Caption>
+            <ActionData>
+              <ActionId>24a84967-1245-4736-8beb-3cfe8d0ee592</ActionId>
+              <ActionTitle>PACKAGEKITCHILDVIEW</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>
+                                  CREATE OR REPLACE VIEW sysdba.PACKAGEKITCHILDVIEW
+                                  AS
+                                  SELECT
+                                  PP.PACKAGEPRODUCTID AS PACKAGEKITCHILDVIEWID,
+                                  PP.PACKAGESID AS PARENTID,
+                                  PP.QUANTITY,
+                                  P.PRODUCTID,
+                                  P.NAME,
+                                  P.ACTUALID,
+                                  P.FAMILY,
+                                  P.PRICE,
+                                  P.PRODUCTGROUP,
+                                  P.STATUS,
+                                  P.UNIT,
+                                  P.STOCKVOLUME,
+                                  P.STOCKWEIGHT,
+                                  P.STOCKITEM,
+                                  P.SUPPLIER,
+                                  P.VENDOR,
+                                  P.SITEID,
+                                  P.WAREHOUSELOCATION,
+                                  P.COMMISSIONABLE,
+                                  P.TAXABLE,
+                                  P.ACCOUNTINGPERIOD,
+                                  P.GLACCOUNTNUMBER,
+                                  P.GLSUBACCOUNTNUMBER,
+                                  P.DATAOWNER,
+                                  P.TYPE,
+                                  P.FIXEDCOST,
+                                  P.GLOBALSYNCID,
+                                  P.APPID,
+                                  P.COMMODITYGROUPID,
+                                  P.ACTIVEFLAG,
+                                  P.SELLINGALLOWEDFLAG,
+                                  P.UNITOFMEASUREID,
+                                  P.SELLINGUOMID,
+                                  P.SELLINGUOMNUMBER,
+                                  P.CLASSIFICATION,
+                                  P.COMMODITYTYPE,
+                                  P.ERPLOGICALID,
+								  P.ERPACCOUNTINGENTITYID,
+                                  P.ERPSTATUS
+                                  FROM PACKAGEPRODUCT PP
+                                  JOIN PRODUCT P ON PP.PRODUCTID = P.PRODUCTID
+                                  WHERE PP.PACKAGESID IS NOT NULL
+                                  UNION
+                                  SELECT
+                                  PP.PACKAGEPRODUCTID AS PACKAGEKITCHILDVIEWID,
+                                  PP.PARENTPRODUCTID AS PARENTID,
+                                  PP.QUANTITY,
+                                  P.PRODUCTID,
+                                  P.NAME,
+                                  P.ACTUALID,
+                                  P.FAMILY,
+                                  P.PRICE,
+                                  P.PRODUCTGROUP,
+                                  P.STATUS,
+                                  P.UNIT,
+                                  P.STOCKVOLUME,
+                                  P.STOCKWEIGHT,
+                                  P.STOCKITEM,
+                                  P.SUPPLIER,
+                                  P.VENDOR,
+                                  P.SITEID,
+                                  P.WAREHOUSELOCATION,
+                                  P.COMMISSIONABLE,
+                                  P.TAXABLE,
+                                  P.ACCOUNTINGPERIOD,
+                                  P.GLACCOUNTNUMBER,
+                                  P.GLSUBACCOUNTNUMBER,
+                                  P.DATAOWNER,
+                                  P.TYPE,
+                                  P.FIXEDCOST,
+                                  P.GLOBALSYNCID,
+                                  P.APPID,
+                                  P.COMMODITYGROUPID,
+                                  P.ACTIVEFLAG,
+                                  P.SELLINGALLOWEDFLAG,
+                                  P.UNITOFMEASUREID,
+                                  P.SELLINGUOMID,
+                                  P.SELLINGUOMNUMBER,
+                                  P.CLASSIFICATION,
+                                  P.COMMODITYTYPE,
+                                  P.ERPLOGICALID,
+								  P.ERPACCOUNTINGENTITYID,
+                                  P.ERPSTATUS
+                                  FROM PACKAGEPRODUCT PP
+                                  JOIN PRODUCT P ON PP.PRODUCTID = P.PRODUCTID
+                                  WHERE PP.PARENTPRODUCTID IS NOT NULL
+									</Statement>
+                  <Title>PackageKitChildView Add ErpStatus</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>View</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_024a9cec-7e4e-474b-b1eb-9d859b69ff6f_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_024a9cec-7e4e-474b-b1eb-9d859b69ff6f_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:PackageKitChildView Add ErpStatus (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>024a9cec-7e4e-474b-b1eb-9d859b69ff6f</ActionId>
+              <ActionTitle>PACKAGEKITCHILDVIEW</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>
+                                  IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'[sysdba].[PACKAGEKITCHILDVIEW]'))
+                                  DROP VIEW [sysdba].[PACKAGEKITCHILDVIEW]
+									</Statement>
+                  <Title>Drop PackageKitChildView View</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>
+                                  CREATE VIEW [sysdba].[PACKAGEKITCHILDVIEW]
+                                  AS
+                                  SELECT
+                                  PP.PACKAGEPRODUCTID AS PACKAGEKITCHILDVIEWID,
+                                  PP.PACKAGESID AS PARENTID,
+                                  PP.QUANTITY,
+                                  P.PRODUCTID,
+                                  P.NAME,
+                                  P.ACTUALID,
+                                  P.FAMILY,
+                                  P.PRICE,
+                                  P.PRODUCTGROUP,
+                                  P.STATUS,
+                                  P.UNIT,
+                                  P.STOCKVOLUME,
+                                  P.STOCKWEIGHT,
+                                  P.STOCKITEM,
+                                  P.SUPPLIER,
+                                  P.VENDOR,
+                                  P.SITEID,
+                                  P.WAREHOUSELOCATION,
+                                  P.COMMISSIONABLE,
+                                  P.TAXABLE,
+                                  P.ACCOUNTINGPERIOD,
+                                  P.GLACCOUNTNUMBER,
+                                  P.GLSUBACCOUNTNUMBER,
+                                  P.DATAOWNER,
+                                  P.TYPE,
+                                  P.FIXEDCOST,
+                                  P.GLOBALSYNCID,
+                                  P.APPID,
+                                  P.COMMODITYGROUPID,
+                                  P.ACTIVEFLAG,
+                                  P.SELLINGALLOWEDFLAG,
+                                  P.UNITOFMEASUREID,
+                                  P.SELLINGUOMID,
+                                  P.SELLINGUOMNUMBER,
+                                  P.CLASSIFICATION,
+                                  P.COMMODITYTYPE,
+                                  P.ERPLOGICALID,
+								  P.ERPACCOUNTINGENTITYID,
+                                  P.ERPSTATUS
+                                  FROM PACKAGEPRODUCT PP
+                                  JOIN PRODUCT P ON PP.PRODUCTID = P.PRODUCTID
+                                  WHERE PP.PACKAGESID IS NOT NULL
+                                  UNION
+                                  SELECT
+                                  PP.PACKAGEPRODUCTID AS PACKAGEKITCHILDVIEWID,
+                                  PP.PARENTPRODUCTID AS PARENTID,
+                                  PP.QUANTITY,
+                                  P.PRODUCTID,
+                                  P.NAME,
+                                  P.ACTUALID,
+                                  P.FAMILY,
+                                  P.PRICE,
+                                  P.PRODUCTGROUP,
+                                  P.STATUS,
+                                  P.UNIT,
+                                  P.STOCKVOLUME,
+                                  P.STOCKWEIGHT,
+                                  P.STOCKITEM,
+                                  P.SUPPLIER,
+                                  P.VENDOR,
+                                  P.SITEID,
+                                  P.WAREHOUSELOCATION,
+                                  P.COMMISSIONABLE,
+                                  P.TAXABLE,
+                                  P.ACCOUNTINGPERIOD,
+                                  P.GLACCOUNTNUMBER,
+                                  P.GLSUBACCOUNTNUMBER,
+                                  P.DATAOWNER,
+                                  P.TYPE,
+                                  P.FIXEDCOST,
+                                  P.GLOBALSYNCID,
+                                  P.APPID,
+                                  P.COMMODITYGROUPID,
+                                  P.ACTIVEFLAG,
+                                  P.SELLINGALLOWEDFLAG,
+                                  P.UNITOFMEASUREID,
+                                  P.SELLINGUOMID,
+                                  P.SELLINGUOMNUMBER,
+                                  P.CLASSIFICATION,
+                                  P.COMMODITYTYPE,
+                                  P.ERPLOGICALID,
+								  P.ERPACCOUNTINGENTITYID,
+                                  P.ERPSTATUS
+                                  FROM PACKAGEPRODUCT PP
+                                  JOIN PRODUCT P ON PP.PRODUCTID = P.PRODUCTID
+                                  WHERE PP.PARENTPRODUCTID IS NOT NULL
+									</Statement>
+                  <Title>PackageKitChildView Add ErpStatus</Title>
+                  <ContinueOnError>false</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>View</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\BACKOFFICEACCTENTITY_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\BACKOFFICEACCTENTITY_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into BACKOFFICEACCTENTITY</Caption>
+            <SelectedColumns>
+              <string>BACKOFFICEID</string>
+              <string>MODIFYUSER</string>
+              <string>MODIFYDATE</string>
+              <string>NAME</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>BACKOFFICEACCTENTITY</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>BACKOFFICEACCTENTITYID</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="BACKOFFICEID" inverted="false" operator="=" value="ICRMSR000001" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\APPIDMAPPING_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\APPIDMAPPING_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into APPIDMAPPING</Caption>
+            <SelectedColumns />
+            <ConflictRule>Skip</ConflictRule>
+            <ReplacementRule>AllFields</ReplacementRule>
+            <TableName>APPIDMAPPING</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>APPID</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="APPID" inverted="false" operator="=" value="IDAESRAIM001" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_6c81a462-1e4e-45e1-a559-699305a749b0_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_6c81a462-1e4e-45e1-a559-699305a749b0_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:DeleteObsoleteSmartParts (All)</Caption>
+            <ActionData>
+              <ActionId>6c81a462-1e4e-45e1-a559-699305a749b0</ActionId>
+              <ActionTitle>DeleteObsoleteSmartParts</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>
+                                  DELETE FROM SYSDBA.VIRTUALFILESYSTEM WHERE ITEMPATH = '\Model\Portal\SlxClient\ChildPages\Quote\SmartParts\AddEditDiscountChargeItem.smartpart.xml' AND ITEMNAME = 'AddEditDiscountChargeItem.smartpart.xml'
+									</Statement>
+                  <Title>DeleteObsoleteSmartParts_Quote</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM SYSDBA.VIRTUALFILESYSTEM WHERE ITEMPATH = '\Model\Portal\SlxClient\ChildPages\ERPReceivable\SmartParts\AddEditDiscountChargeItem.smartpart.xml' AND ITEMNAME = 'AddEditDiscountChargeItem.smartpart.xml'</Statement>
+                  <Title>DeleteObsoleteSmartParts_Receivable</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM SYSDBA.VIRTUALFILESYSTEM WHERE ITEMPATH = '\Model\Portal\SlxClient\ChildPages\SalesOrder\SmartParts\AddEditDiscountChargeItem.smartpart.xml' AND ITEMNAME = 'AddEditDiscountChargeItem.smartpart.xml'</Statement>
+                  <Title>DeleteObsoleteSmartParts_SalesOrder</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_5ddebb1a-a945-4f56-a9ba-37904d96878d_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_5ddebb1a-a945-4f56-a9ba-37904d96878d_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:Remove duplicate CustomSetting records (All)</Caption>
+            <ActionData>
+              <ActionId>5ddebb1a-a945-4f56-a9ba-37904d96878d</ActionId>
+              <ActionTitle>Remove duplicate CustomSetting records</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>DELETE FROM SYSDBA.CUSTOMSETTINGS
+WHERE CUSTOMSETTINGSID NOT IN ('IONCUSSET016','OBMCUSSET022','OBMCUSSET025','OBMCUSSET026','OBMCUSSET027','OBMCUSSET028')
+AND
+ (
+	 (CATEGORY = 'Outbound Message' AND DESCRIPTION  = 'ERPSalesOrder' AND DATAVALUE IS NULL)
+	OR
+	 (CATEGORY = 'Back Office Extension' AND DESCRIPTION = 'Default Quote Duration (in days)' AND DATAVALUE='30')
+	OR
+	 (CATEGORY = 'Outbound Message' AND DESCRIPTION  = 'DiscountChargeItem' AND DATAVALUE IN ('SODistributedCharge.Account','SODistributedTax.Account','SalesOrder#SOItemDistributedTax.Account','SOItemDistributedCharge.Account'))
+ ) </Statement>
+                  <Title>Delete Duplicate CUSTOMSETTINGS</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM SYSDBA.CUSTOMSETTINGS WHERE CATEGORY = 'Back Office Extension' AND DESCRIPTION = 'Location'</Statement>
+                  <Title>Delete Duplicate CUSTOMSETTINGS</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM SYSDBA.CUSTOMSETTINGS WHERE CATEGORY = 'Back Office Extension' AND DESCRIPTION = 'Account Entity ID'</Statement>
+                  <Title>Delete Duplicate CUSTOMSETTINGS</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_b97f96ea-ce28-4cc1-8893-eaccd5ccfabc_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_b97f96ea-ce28-4cc1-8893-eaccd5ccfabc_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:UpdateMSSQLConfigurationID (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>b97f96ea-ce28-4cc1-8893-eaccd5ccfabc</ActionId>
+              <ActionTitle>UpdateMSSQLConfigurationID</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONID = QUOTEID
+											FROM sysdba.QUOTEITEM T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONDETAILID = QUOTEITEMID
+											FROM sysdba.QUOTEITEM T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONID = SALESORDERID
+											FROM sysdba.SALESORDERITEMS T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONDETAILID = SALESORDERITEMSID
+											FROM sysdba.SALESORDERITEMS T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONID = OPPORTUNITYID
+											FROM sysdba.OPPORTUNITY_PRODUCT T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE T1
+											SET CONFIGURATIONDETAILID = OPPPRODUCTID
+											FROM sysdba.OPPORTUNITY_PRODUCT T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T'</Statement>
+                  <Title>UpdateMSSQLConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_d8738979-a2f2-4215-b9f9-64f929fbf593_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_d8738979-a2f2-4215-b9f9-64f929fbf593_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:UpdateOracleConfigurationID (Oracle)</Caption>
+            <ActionData>
+              <ActionId>d8738979-a2f2-4215-b9f9-64f929fbf593</ActionId>
+              <ActionTitle>UpdateOracleConfigurationID</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONID as CONFIGURATIONID, T1.QUOTEID as QUOTEID
+											FROM sysdba.QUOTEITEM T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONID = T.QUOTEID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONDETAILID as CONFIGURATIONDETAILID, T1.QUOTEID as QUOTEID
+											FROM sysdba.QUOTEITEM T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONDETAILID = T.QUOTEID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONID as CONFIGURATIONID, T1.SALESORDERID as SALESORDERID
+											FROM sysdba.SALESORDERITEMS T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONID = T.SALESORDERID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONDETAILID as CONFIGURATIONDETAILID, T1.SALESORDERID as SALESORDERID
+											FROM sysdba.SALESORDERITEMS T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONDETAILID = T.SALESORDERID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONID as CONFIGURATIONID, T1.OPPORTUNITYID as OPPORTUNITYID
+											FROM sysdba.OPPORTUNITY_PRODUCT T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONID = T.OPPORTUNITYID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>UPDATE
+											(SELECT T1.CONFIGURATIONDETAILID as CONFIGURATIONDETAILID, T1.OPPORTUNITYID as OPPORTUNITYID
+											FROM sysdba.OPPORTUNITY_PRODUCT T1
+											INNER JOIN sysdba.PRODUCT T2 ON T1.PRODUCTID = T2.PRODUCTID
+											WHERE T1.CONFIGURATIONDETAILID IS NULL AND T2.ERPCONFIGUREDITEM = 'T') T
+											SET T.CONFIGURATIONDETAILID = T.OPPORTUNITYID</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>commit</Statement>
+                  <Title>UpdateOracleConfigurationID</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_34a78bc8-4021-48b0-bea3-be61ae70376a_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_34a78bc8-4021-48b0-bea3-be61ae70376a_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_FEDERATEDIDENTITY_LENGTH_A (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>34a78bc8-4021-48b0-bea3-be61ae70376a</ActionId>
+              <ActionTitle>USERSECURITY_FEDERATEDIDENTITY_LENGTH_A</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>ALTER TABLE sysdba.USERSECURITY ALTER COLUMN FEDERATEDIDENTITY VARCHAR(128)</Statement>
+                  <Title>Increase the USERSECURITY.FEDERATEDIDENTITY field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Ansi</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_4506f2d5-ad3f-42d1-8279-91dea4f5039b_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_4506f2d5-ad3f-42d1-8279-91dea4f5039b_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_FEDERATEDIDENTITY_LENGTH_U (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>4506f2d5-ad3f-42d1-8279-91dea4f5039b</ActionId>
+              <ActionTitle>USERSECURITY_FEDERATEDIDENTITY_LENGTH_U</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>ALTER TABLE sysdba.USERSECURITY ALTER COLUMN FEDERATEDIDENTITY NVARCHAR(128)</Statement>
+                  <Title>Increase the USERSECURITY.FEDERATEDIDENTITY field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Unicode</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_700740d2-10cc-4006-8265-a3af16faf877_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_700740d2-10cc-4006-8265-a3af16faf877_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_FEDERATEDIDENTITY_LENGTH_A (Oracle)</Caption>
+            <ActionData>
+              <ActionId>700740d2-10cc-4006-8265-a3af16faf877</ActionId>
+              <ActionTitle>USERSECURITY_FEDERATEDIDENTITY_LENGTH_A</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>Alter TABLE sysdba.USERSECURITY MODIFY FEDERATEDIDENTITY VARCHAR2(128)</Statement>
+                  <Title>Increase the USERSECURITY.FEDERATEDIDENTITY field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Ansi</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_40bc41f3-a29a-4e13-8bd1-fe83cef1df01_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_40bc41f3-a29a-4e13-8bd1-fe83cef1df01_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_FEDERATEDIDENTITY_LENGTH_U (Oracle Unicode)</Caption>
+            <ActionData>
+              <ActionId>40bc41f3-a29a-4e13-8bd1-fe83cef1df01</ActionId>
+              <ActionTitle>USERSECURITY_FEDERATEDIDENTITY_LENGTH_U</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>Alter TABLE sysdba.USERSECURITY MODIFY FEDERATEDIDENTITY NVARCHAR2(128)</Statement>
+                  <Title>Increase the USERSECURITY.FEDERATEDIDENTITY field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Unicode</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_700740d2-10cc-4006-8265-a3af16faf888_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_700740d2-10cc-4006-8265-a3af16faf888_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_USERNAME_LENGTH_A (Oracle)</Caption>
+            <ActionData>
+              <ActionId>700740d2-10cc-4006-8265-a3af16faf888</ActionId>
+              <ActionTitle>USERSECURITY_USERNAME_LENGTH_A</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>Alter TABLE sysdba.USERSECURITY MODIFY USERCODE VARCHAR2(128)</Statement>
+                  <Title>Increase the USERSECURITY.USERNAME field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Ansi</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_40bc41f3-a29a-4e13-8bd1-fe83cef1df12_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_40bc41f3-a29a-4e13-8bd1-fe83cef1df12_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_USERNAME_LENGTH_U (Oracle Unicode)</Caption>
+            <ActionData>
+              <ActionId>40bc41f3-a29a-4e13-8bd1-fe83cef1df12</ActionId>
+              <ActionTitle>USERSECURITY_USERNAME_LENGTH_U</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>Alter TABLE sysdba.USERSECURITY MODIFY USERCODE NVARCHAR2(128)</Statement>
+                  <Title>Increase the USERSECURITY.USERNAME field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>Oracle</DatabaseType>
+              <EncodingTarget>Unicode</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_34a78bc8-4021-48b0-bea3-be61ae70387a_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_34a78bc8-4021-48b0-bea3-be61ae70387a_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_USERNAME_LENGTH_A (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>34a78bc8-4021-48b0-bea3-be61ae70387a</ActionId>
+              <ActionTitle>USERSECURITY_USERNAME_LENGTH_A</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>ALTER TABLE sysdba.USERSECURITY ALTER COLUMN USERCODE VARCHAR(128)</Statement>
+                  <Title>Increase the USERSECURITY.USERNAME field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Ansi</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_4506f2d5-ad3f-42d1-8279-91dea4f5040b_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_4506f2d5-ad3f-42d1-8279-91dea4f5040b_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:USERSECURITY_USERNAME_LENGTH_U (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>4506f2d5-ad3f-42d1-8279-91dea4f5040b</ActionId>
+              <ActionTitle>USERSECURITY_USERNAME_LENGTH_U</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>ALTER TABLE sysdba.USERSECURITY ALTER COLUMN USERCODE NVARCHAR(128)</Statement>
+                  <Title>Increase the USERSECURITY.USERNAME field size to 128</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Unicode</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_513d542d-1bb0-4ed4-992c-358db3ab7f16_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_513d542d-1bb0-4ed4-992c-358db3ab7f16_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:Remove Invalid ObjectNames (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>513d542d-1bb0-4ed4-992c-358db3ab7f16</ActionId>
+              <ActionTitle>Remove Invalid ObjectNames</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>delete from DB_OBJECTDEFINITION where OBJECTNAME = 'Add ErpLogicalId Column'</Statement>
+                  <Title>Add ErpLogicalId Column</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM DB_OBJECTDEFINITION WHERE OBJECTNAME = 'PackageKitChildView Add ErpLogicalId'</Statement>
+                  <Title>PackageKitChildView Add ErpLogicalId</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>delete from DB_OBJECTDEFINITION where OBJECTNAME = 'Add ErpAccountingEntityId Column'</Statement>
+                  <Title>Add ErpAccountingEntityId Column</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM DB_OBJECTDEFINITION WHERE OBJECTNAME = 'PackageKitChildView Add ErpAccountingEntityId'</Statement>
+                  <Title>PackageKitChildView Add ErpAccountingEntityId</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>DELETE FROM DB_OBJECTDEFINITION WHERE OBJECTNAME = 'PickListItemView: Add Filter Column'</Statement>
+                  <Title>PickListItemView: Add Filter Column</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_6f7b78fc-7c02-4da3-bcf6-7981851f8b51_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_6f7b78fc-7c02-4da3-bcf6-7981851f8b51_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:PickListItemView (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>6f7b78fc-7c02-4da3-bcf6-7981851f8b51</ActionId>
+              <ActionTitle>PickListItemView</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'[sysdba].[PickListItemView]'))
+    DROP VIEW [sysdba].[PickListItemView]</Statement>
+                  <Title>Drop View PickListItemView</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+                <DbStatement>
+                  <Statement>CREATE view [sysdba].[PickListItemView] as
+                    (
+                    SELECT PL.ItemID as PicklistItemId, PL.PicklistId,  PL.TEXT , PL.ShortText as Code,
+                    PL.FILTER as Filter, Pl.Id as OrderSeq, PL.UserId, PL.CreateDate, PL.CreateUser, PL.ModifyDate, PL.ModifyUser
+                    FROM sysdba.PICKLIST PL
+                    WHERE PL.PICKLISTID &lt;&gt; 'PICKLISTLIST'
+                    )</Statement>
+                  <Title>Create View PickListItemView</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>View</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J4.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J4.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [CrystalReport] Opportunity:Opportunity Detail (Infor 8.304)</Caption>
+            <PluginId>pDEMOA0000J4</PluginId>
+            <Name>Opportunity Detail</Name>
+            <Family>Opportunity</Family>
+            <PluginType>CrystalReport</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>8.304</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_8b9ed59a-a5f0-4cdf-88e6-0079c9105ce3_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_8b9ed59a-a5f0-4cdf-88e6-0079c9105ce3_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:CRMPREFIXFORROLES (All)</Caption>
+            <ActionData>
+              <ActionId>8b9ed59a-a5f0-4cdf-88e6-0079c9105ce3</ActionId>
+              <ActionTitle>CRMPREFIXFORROLES</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE sysdba.ROLE SET ERPROLENAME = REPLACE ((CASE WHEN ROLENAME NOT LIKE 'CRM-%' THEN CONCAT('CRM-', ROLENAME)
+WHEN ROLENAME LIKE 'CRM-%' THEN ROLENAME END) , ' ' , '_' )</Statement>
+                  <Title>CRMPREFIXTOROLESSCRIPT</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\USEROPTIONDEF_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\USEROPTIONDEF_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into USEROPTIONDEF</Caption>
+            <SelectedColumns />
+            <ConflictRule>Skip</ConflictRule>
+            <ReplacementRule>AllFields</ReplacementRule>
+            <TableName>USEROPTIONDEF</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>Query</SelectionType>
+            <PrimaryKeyName>NAME|CATEGORY</PrimaryKeyName>
+            <PrimaryKeyValues />
+            <Query>
+              <clauses>
+                <clause groupChange="0" field="CATEGORY" inverted="false" operator="=" value="DefaultGroup" />
+                <clause groupChange="0" logicalOperator="And" field="NAME" inverted="false" operator="in" value="LEAD,SALESORDER,QUOTE" />
+              </clauses>
+            </Query>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\INTEGRATION_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\INTEGRATION_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into INTEGRATION</Caption>
+            <SelectedColumns />
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>AllFields</ReplacementRule>
+            <TableName>INTEGRATION</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>IdList</SelectionType>
+            <PrimaryKeyName>INTEGRATIONID</PrimaryKeyName>
+            <PrimaryKeyValues>
+              <string>ICRMGEO00001</string>
+              <string>ICRMCSI00001</string>
+            </PrimaryKeyValues>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.Security.AddSecuredActionsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddSecuredActionsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddSecuredActions\SecAca40382ec-cbbc-4a56-9ea8-69bb6887b76c.xml</ItemId>
+            <Url>\Actions\AddSecuredActions\SecAca40382ec-cbbc-4a56-9ea8-69bb6887b76c.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Add Secured Action(s)</Caption>
+            <ActionData>
+              <SecuredActions>
+                <SecuredActionBundleItem>
+                  <Name>Contour/Map/Group</Name>
+                  <Description>Allows for searching for and viewing groups on a map.</Description>
+                  <Parent>Contour/Map</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/Add</Name>
+                  <Description>Allows for access to add a Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/Delete</Name>
+                  <Description>Allows for access to delete a Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/View</Name>
+                  <Description>Allows for access to delete a Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/Share</Name>
+                  <Description>Allows for access to share a Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/ShareDelete</Name>
+                  <Description>Allows for access to delete a shared Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/ShareEdit</Name>
+                  <Description>Allows for access to edit a shared Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Entities/Place/Edit</Name>
+                  <Description>Allows for access to edit a Place.</Description>
+                  <Parent>Entities/Place</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Contour/Map/Account</Name>
+                  <Description>Allows for searching for and viewing accounts on a map.</Description>
+                  <Parent>Contour/Map</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Contour/Map/Contact</Name>
+                  <Description>Allows for searching for and viewing contacts on a map.</Description>
+                  <Parent>Contour/Map</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Contour/Map/Menu</Name>
+                  <Description>Allows for access to the Contour menu.</Description>
+                  <Parent>Contour/Map</Parent>
+                </SecuredActionBundleItem>
+              </SecuredActions>
+              <ActionId>a40382ec-cbbc-4a56-9ea8-69bb6887b76c</ActionId>
+              <ReplaceList>false</ReplaceList>
+            </ActionData>
+          </AddSecuredActionsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.Security.AddSecuredActionsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddSecuredActionsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddSecuredActions\SecAc7985677c-7395-48d5-87c3-6910ec5d5bca.xml</ItemId>
+            <Url>\Actions\AddSecuredActions\SecAc7985677c-7395-48d5-87c3-6910ec5d5bca.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Add Secured Action(s)</Caption>
+            <ActionData>
+              <SecuredActions>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Administration/View</Name>
+                  <Description>View Administration Navigation Menu</Description>
+                  <Parent>Navigation/Administration</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Sales/View</Name>
+                  <Description>View Sales Navigation Menu</Description>
+                  <Parent>Navigation/Sales</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Marketing/View</Name>
+                  <Description>View Marking Navigation Menu</Description>
+                  <Parent>Navigation/Marketing</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Service/View</Name>
+                  <Description>View Service Navigation Menu</Description>
+                  <Parent>Navigation/Service</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Support/View</Name>
+                  <Description>View Support Navigation Menu</Description>
+                  <Parent>Navigation/Support</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Navigation/Integration/View</Name>
+                  <Description>View Integration Navigation Menu</Description>
+                  <Parent>Navigation/Integration</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/New/View</Name>
+                  <Description>View New Toolbar Menu</Description>
+                  <Parent>Toolbar/New</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Schedule/View</Name>
+                  <Description>View Schedule Toolbar Menu</Description>
+                  <Parent>Toolbar/Schedule</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Tools/View</Name>
+                  <Description>View Tools Toolbar Menu</Description>
+                  <Parent>Toolbar/Tools</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Administration/View</Name>
+                  <Description>View Administration Toolbar Menu</Description>
+                  <Parent>Toolbar/Administration</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Tools/LiteratureRequestManagement/View</Name>
+                  <Description>View Literature Request Management Tools Menu Item</Description>
+                  <Parent>Toolbar/Tools/LiteratureRequestManagement</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Tools/ImportHistory/View</Name>
+                  <Description>View Import History Tools Menu Item</Description>
+                  <Parent>Toolbar/Tools/ImportHistory</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Tools/Options/View</Name>
+                  <Description>View Options Tools Menu Item</Description>
+                  <Parent>Toolbar/Tools/Options</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Toolbar/Tools/AdvancedSpeedsearch/View</Name>
+                  <Description>View Advanced Speedsearch Tools Menu item</Description>
+                  <Parent>Toolbar/Tools/AdvancedSpeedsearch</Parent>
+                </SecuredActionBundleItem>
+              </SecuredActions>
+              <ActionId>7985677c-7395-48d5-87c3-6910ec5d5bca</ActionId>
+              <ReplaceList>false</ReplaceList>
+            </ActionData>
+          </AddSecuredActionsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.Security.AddSecuredActionsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddSecuredActionsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddSecuredActions\SecAca6a574d3-d7f3-43a1-a2ef-6204bef682d1.xml</ItemId>
+            <Url>\Actions\AddSecuredActions\SecAca6a574d3-d7f3-43a1-a2ef-6204bef682d1.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Add Secured Action(s)</Caption>
+            <ActionData>
+              <SecuredActions>
+                <SecuredActionBundleItem>
+                  <Name>Administration/CustomSetting/Add</Name>
+                  <Description>Allow adding of new custom setting</Description>
+                  <Parent>Administration/CustomSetting</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Administration/CustomSetting/Edit</Name>
+                  <Description>Allows editing of an existing custom setting</Description>
+                  <Parent>Administration/CustomSetting</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Administration/CustomSetting/Delete</Name>
+                  <Description>Allow deletion of a custom setting</Description>
+                  <Parent>Administration/CustomSetting</Parent>
+                </SecuredActionBundleItem>
+                <SecuredActionBundleItem>
+                  <Name>Administration/CustomSetting/View</Name>
+                  <Description>Allow viewing of custom Settings</Description>
+                  <Parent>Administration/CustomSetting</Parent>
+                </SecuredActionBundleItem>
+              </SecuredActions>
+              <ActionId>a6a574d3-d7f3-43a1-a2ef-6204bef682d1</ActionId>
+              <ReplaceList>false</ReplaceList>
+            </ActionData>
+          </AddSecuredActionsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.Security.AddRolesAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddRolesAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddRoles\Roles_Data.xml</ItemId>
+            <Url>\Actions\AddRoles\Roles_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Add Role(s)</Caption>
+            <RoleData>
+              <ReplaceAllActions>false</ReplaceAllActions>
+              <Roles>
+                <RoleBundleItem>
+                  <RoleName>Standard User</RoleName>
+                  <Description>Access to all standard sales client functionality</Description>
+                  <RelatedActions>
+                    <string>Entities/Quote/ConvertToSalesOrder</string>
+                    <string>Entities/Quote/GetOrderTotal</string>
+                    <string>Entities/SalesOrder/GetOrderTotal</string>
+                    <string>Navigation/Administration/View</string>
+                    <string>Navigation/Sales/View</string>
+                    <string>Navigation/Marketing/View</string>
+                    <string>Navigation/Service/View</string>
+                    <string>Navigation/Support/View</string>
+                    <string>Navigation/Integration/View</string>
+                    <string>Toolbar/New/View</string>
+                    <string>Toolbar/Schedule/View</string>
+                    <string>Toolbar/Tools/View</string>
+                    <string>Toolbar/Administration/View</string>
+                  </RelatedActions>
+                </RoleBundleItem>
+                <RoleBundleItem>
+                  <RoleName>Contour</RoleName>
+                  <Description>Access Contour features</Description>
+                  <RelatedActions>
+                    <string>Entities/Place/Edit</string>
+                    <string>Entities/Place/Add</string>
+                    <string>Entities/Place/Share</string>
+                    <string>Entities/Place/ShareDelete</string>
+                    <string>Entities/Place/ShareEdit</string>
+                    <string>Entities/Place/View</string>
+                    <string>Entities/Place/Delete</string>
+                    <string>Contour/Map/Account</string>
+                    <string>Contour/Map/Contact</string>
+                    <string>Contour/Map/Group</string>
+                    <string>Contour/Map/Menu</string>
+                  </RelatedActions>
+                </RoleBundleItem>
+                <RoleBundleItem>
+                  <RoleName>Administrator</RoleName>
+                  <Description>Responsible for Administration of portal functionality</Description>
+                  <RelatedActions>
+                    <string>Administration/CustomSetting/Add</string>
+                    <string>Administration/CustomSetting/Edit</string>
+                    <string>Administration/CustomSetting/Delete</string>
+                    <string>Administration/CustomSetting/View</string>
+                    <string>Administration/GroupManager/Groups/ToggleUserDefault</string>
+                  </RelatedActions>
+                </RoleBundleItem>
+              </Roles>
+            </RoleData>
+          </AddRolesAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J5.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J5.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] PLACE:AllPlaces (Infor 1)</Caption>
+            <PluginId>pDEMOA0000J5</PluginId>
+            <Name>AllPlaces</Name>
+            <Family>PLACE</Family>
+            <PluginType>Group</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>1</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J6.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J6.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] PLACE:MyPlaces (Infor 1)</Caption>
+            <PluginId>pDEMOA0000J6</PluginId>
+            <Name>MyPlaces</Name>
+            <Family>PLACE</Family>
+            <PluginType>Group</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>1</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J7.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J7.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] PLACE:SharedPlaces (Infor 1)</Caption>
+            <PluginId>pDEMOA0000J7</PluginId>
+            <Name>SharedPlaces</Name>
+            <Family>PLACE</Family>
+            <PluginType>Group</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>1</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_f8a73c1c-56b0-4050-a461-1e30991b7027_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_f8a73c1c-56b0-4050-a461-1e30991b7027_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:PlaceRemoteSync (All)</Caption>
+            <ActionData>
+              <ActionId>f8a73c1c-56b0-4050-a461-1e30991b7027</ActionId>
+              <ActionTitle>PlaceRemoteSync</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE SYSDBA.RESYNCTABLEDEFS SET OMNIDIRECTIONAL = 'T' WHERE TABLENAME='PLACE'</Statement>
+                  <Title>PlaceScript</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\JOINDATA_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\JOINDATA_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into JOINDATA</Caption>
+            <SelectedColumns />
+            <ConflictRule>Skip</ConflictRule>
+            <ReplacementRule>AllFields</ReplacementRule>
+            <TableName>JOINDATA</TableName>
+            <GenerateNewIds>true</GenerateNewIds>
+            <SelectionType>IdList</SelectionType>
+            <PrimaryKeyName>JOINID</PrimaryKeyName>
+            <PrimaryKeyValues>
+              <string>jDEMOA00003H</string>
+              <string>jDEMOA00003G</string>
+            </PrimaryKeyValues>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.InsertRecordsAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <InsertRecordsAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\InsertRecords\INDEXDEFINITION_Data.xml</ItemId>
+            <Url>\Actions\Schema\InsertRecords\INDEXDEFINITION_Data.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Records into INDEXDEFINITION</Caption>
+            <SelectedColumns>
+              <string>METADATA</string>
+            </SelectedColumns>
+            <ConflictRule>Overwrite</ConflictRule>
+            <ReplacementRule>SpecificFields</ReplacementRule>
+            <TableName>INDEXDEFINITION</TableName>
+            <GenerateNewIds>false</GenerateNewIds>
+            <SelectionType>IdList</SelectionType>
+            <PrimaryKeyName>INDEXID</PrimaryKeyName>
+            <PrimaryKeyValues>
+              <string>QDEMOA006M8P</string>
+              <string>QDEMOA006M8Q</string>
+              <string>QDEMOA006M93</string>
+              <string>QDEMOA006M9B</string>
+              <string>QDEMOA006M8Y</string>
+              <string>kSYST0000004</string>
+            </PrimaryKeyValues>
+            <PreCleanTable>false</PreCleanTable>
+          </InsertRecordsAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J8.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J8.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [DashboardWidget] System:Column Chart (SalesLogix 8.305)</Caption>
+            <PluginId>pDEMOA0000J8</PluginId>
+            <Name>Column Chart</Name>
+            <Family>System</Family>
+            <PluginType>DashboardWidget</PluginType>
+            <Company>SalesLogix</Company>
+            <CompanyVersion>8.305</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_fa6d0731-ca5f-4612-8276-894cca3da7dd_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_fa6d0731-ca5f-4612-8276-894cca3da7dd_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:DependencyLookupControl (All)</Caption>
+            <ActionData>
+              <ActionId>fa6d0731-ca5f-4612-8276-894cca3da7dd</ActionId>
+              <ActionTitle>DependencyLookupControl</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE SYSDBA.SYSTEMINFO  SET ISSUEMATCH = 'T' WHERE ISSUEMATCH IS NULL</Statement>
+                  <Title>DependencyLookupControl</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_5fd2671c-89e6-4835-8fe5-73f15651463b_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_5fd2671c-89e6-4835-8fe5-73f15651463b_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:FixOpportunityDateOpenedType (All)</Caption>
+            <ActionData>
+              <ActionId>5fd2671c-89e6-4835-8fe5-73f15651463b</ActionId>
+              <ActionTitle>FixOpportunityDateOpenedType</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE SYSDBA.SECTABLEDEFS SET DATETIMETYPE = 'D' WHERE TABLENAME = 'OPPORTUNITY' AND FIELDNAME = 'DATEOPENED'</Statement>
+                  <Title>FixOpportunityDateOpenedType</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateFieldAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateFieldAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateField\PLUGIN.CUSTOMFLAG.xml</ItemId>
+            <Url>\Actions\Schema\CreateField\PLUGIN.CUSTOMFLAG.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Field PLUGIN.CUSTOMFLAG</Caption>
+            <ColumnTypeName>Sage.SalesLogix.SchemaSupport.SlxDataColumn, Sage.SalesLogix.SchemaSupport</ColumnTypeName>
+            <TableName>PLUGIN</TableName>
+            <FieldName>CUSTOMFLAG</FieldName>
+          </CreateFieldAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_545a0c89-3842-448f-a5bf-d43454d2e195_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_545a0c89-3842-448f-a5bf-d43454d2e195_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:SetMaxFavoriteGroups (All)</Caption>
+            <ActionData>
+              <ActionId>545a0c89-3842-448f-a5bf-d43454d2e195</ActionId>
+              <ActionTitle>SetMaxFavoriteGroups</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>UPDATE sysdba.BRANCHOPTIONS SET MAXIMUMFAVORITEGROUPS = 30 WHERE MAXIMUMFAVORITEGROUPS IS NULL</Statement>
+                  <Title>SetMaxFavortieGroups</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>All</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000J9.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000J9.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [ACOGroup] ACCOUNT:Sales Intelligence (Infor 1)</Caption>
+            <PluginId>pDEMOA0000J9</PluginId>
+            <Name>Sales Intelligence</Name>
+            <Family>ACCOUNT</Family>
+            <PluginType>ACOGroup</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>8.306</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000JA.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000JA.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [ACOGroup] Contact:Sales Intelligence (Infor 1)</Caption>
+            <PluginId>pDEMOA0000JA</PluginId>
+            <Name>Sales Intelligence</Name>
+            <Family>Contact</Family>
+            <PluginType>ACOGroup</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>8.306</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\SICUSTOMER.SICUSTOMER_CUSTOMERID.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\SICUSTOMER.SICUSTOMER_CUSTOMERID.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index SICUSTOMER.SICUSTOMER_CUSTOMERID</Caption>
+            <TableName>SICUSTOMER</TableName>
+            <IndexName>SICUSTOMER_CUSTOMERID</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\SIRECOMMENDATION.SIRECOMMENDATION_CUSTOMERID.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\SIRECOMMENDATION.SIRECOMMENDATION_CUSTOMERID.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index SIRECOMMENDATION.SIRECOMMENDATION_CUSTOMERID</Caption>
+            <TableName>SIRECOMMENDATION</TableName>
+            <IndexName>SIRECOMMENDATION_CUSTOMERID</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.ExecuteSql.ExecuteSqlAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <ExecuteSqlAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\ExecuteSqlAction\ex_5b544995-f449-4956-b37b-5e88c4f155aa_dml.xml</ItemId>
+            <Url>\Actions\ExecuteSqlAction\ex_5b544995-f449-4956-b37b-5e88c4f155aa_dml.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Database Object Definition:Foreign Key For SIRecommendation - SIRationale (MSSQL)</Caption>
+            <ActionData>
+              <ActionId>5b544995-f449-4956-b37b-5e88c4f155aa</ActionId>
+              <ActionTitle>Foreign Key For SIRecommendation - SIRationale</ActionTitle>
+              <Statements>
+                <DbStatement>
+                  <Statement>IF NOT EXISTS (SELECT 1 FROM SYS.OBJECTS where object_id = OBJECT_ID(N'[SIRATIONALE_SIRECOMMENDATION_FK]') AND parent_object_id = OBJECT_ID('SIRATIONALE'))
+ALTER TABLE [sysdba].[SIRATIONALE]  WITH CHECK ADD  CONSTRAINT [SIRATIONALE_SIRECOMMENDATION_FK] FOREIGN KEY([SIRECOMMENDATIONID])
+REFERENCES [sysdba].[SIRECOMMENDATION] ([SIRECOMMENDATIONID])
+</Statement>
+                  <Title>Foreign Key for SIRecommendation/SIRationale</Title>
+                  <ContinueOnError>true</ContinueOnError>
+                  <SplitOnSemiColon>false</SplitOnSemiColon>
+                </DbStatement>
+              </Statements>
+              <DatabaseType>MSSQL</DatabaseType>
+              <EncodingTarget>Both</EncodingTarget>
+              <DbObjectType>Other</DbObjectType>
+            </ActionData>
+          </ExecuteSqlAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000JB.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000JB.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [ACOGroup] Contact:Duplicate Emails (Infor 8.306)</Caption>
+            <PluginId>pDEMOA0000JB</PluginId>
+            <Name>Duplicate Emails</Name>
+            <Family>Contact</Family>
+            <PluginType>ACOGroup</PluginType>
+            <Company>Infor</Company>
+            <CompanyVersion>8.306</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PluginAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PluginAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InstallPlugin\pDEMOA0000JC.xml</ItemId>
+            <Url>\Actions\InstallPlugin\pDEMOA0000JC.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Install Plugin [Group] CUSTOMSETTINGS:All Custom Settings (SalesLogix)</Caption>
+            <PluginId>pDEMOA0000JC</PluginId>
+            <Name>All Custom Settings</Name>
+            <Family>CUSTOMSETTINGS</Family>
+            <PluginType>Group</PluginType>
+            <Company>SalesLogix</Company>
+            <CompanyVersion>8.306</CompanyVersion>
+          </PluginAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CustomSetting.AddCustomSettingAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddCustomSettingAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddCustomSettingAction\setting_3976f761-0ff7-4f08-aff0-c7bb265569ba.xml</ItemId>
+            <Url>\Actions\AddCustomSettingAction\setting_3976f761-0ff7-4f08-aff0-c7bb265569ba.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Custom Setting:[Groups] CreatePivot = True</Caption>
+            <Validation>True or False</Validation>
+            <Category>Groups</Category>
+            <Description>CreatePivot</Description>
+            <DataType>True / False</DataType>
+            <DataValue>True</DataValue>
+            <VersionNumber>8.306</VersionNumber>
+            <Id>3976f761-0ff7-4f08-aff0-c7bb265569ba</Id>
+          </AddCustomSettingAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CustomSetting.AddCustomSettingAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <AddCustomSettingAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\AddCustomSettingAction\setting_96b8e68a-986e-418a-a68c-26bee13f7509.xml</ItemId>
+            <Url>\Actions\AddCustomSettingAction\setting_96b8e68a-986e-418a-a68c-26bee13f7509.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Custom Setting:[Groups] MaxExportRecordCount = 65000</Caption>
+            <Validation>Numbers Only</Validation>
+            <Category>Groups</Category>
+            <Description>MaxExportRecordCount</Description>
+            <DataType>Number</DataType>
+            <DataValue>65000</DataValue>
+            <VersionNumber>8.306</VersionNumber>
+            <Id>96b8e68a-986e-418a-a68c-26bee13f7509</Id>
+          </AddCustomSettingAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>DISTRIBUTEDTAXSOID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOITEMID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOITEMID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.DISTRIBUTEDTAXSOITEMID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>DISTRIBUTEDTAXSOITEMID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.INVOICEID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.INVOICEID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.INVOICEID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>INVOICEID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.INVOICEITEMID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.INVOICEITEMID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.INVOICEITEMID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>INVOICEITEMID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.QuoteId_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.QuoteId_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.QuoteId_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>QuoteId_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.QuoteItemId_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.QuoteItemId_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.QuoteItemId_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>QuoteItemId_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.ReceivableId_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.ReceivableId_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.ReceivableId_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>ReceivableId_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.SALESORDERID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.SALESORDERID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.SALESORDERID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>SALESORDERID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.SALESORDERITEMSID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.SALESORDERITEMSID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.SALESORDERITEMSID_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>SALESORDERITEMSID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.ShipmentId_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\DISCOUNTCHARGEITEM.ShipmentId_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index DISCOUNTCHARGEITEM.ShipmentId_IDX</Caption>
+            <TableName>DISCOUNTCHARGEITEM</TableName>
+            <IndexName>ShipmentId_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.CreateIndexAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <CreateIndexAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\Schema\CreateIndex\BACKOFFICE.LOGICALID_IDX.xml</ItemId>
+            <Url>\Actions\Schema\CreateIndex\BACKOFFICE.LOGICALID_IDX.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Create Index BACKOFFICE.LOGICALID_IDX</Caption>
+            <TableName>BACKOFFICE</TableName>
+            <IndexName>LOGICALID_IDX</IndexName>
+            <IndexTypeName>Sage.SalesLogix.SchemaSupport.SlxIndex, Sage.SalesLogix.SchemaSupport</IndexTypeName>
+          </CreateIndexAction>
+        </bundleItem>
+      </children>
+    </bundleItem>
+  </bundleActionHierarchy>
+  <itemsToDelete />
+  <globalResources />
+</BundleManifest>

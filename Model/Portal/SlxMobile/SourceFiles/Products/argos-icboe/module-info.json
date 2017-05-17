@@ -1,0 +1,9 @@
+{
+    "name": "icboe",
+    "displayName": "ICBOE for Mobile",
+    "description": "",
+    "majorVersion": 2,
+    "minorVersion": 0,
+    "buildNumber": 5,
+    "targetProduct": "saleslogix"
+}

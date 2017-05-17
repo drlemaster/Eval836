@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="44421ad1-f4d8-431d-b078-42a6f9ccb988" lastModifiedUtc="2015-01-08T23:10:55.4544332Z" name="CloneBodMapping" methodType="Rule" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter>
+    <OrmEntityMethodParam id="e5da71e7-fb15-487e-adf4-ca706b526487" paramName="copyFromBodMapping" sequence="0" paramType="Object">
+      <description>The BOD Mapping used for the copy</description>
+    </OrmEntityMethodParam>
+  </parameter>
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="d24a94cc-799e-4ea8-9d1c-378d3bd956eb" lastModifiedUtc="2015-01-05T21:16:19.4862482Z" targetType="Sage.SalesLogix.BODMapping.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBodMapping" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets>
+    <methodTarget id="0940e379-cfe7-4f19-bd53-70d8b113c4e4" lastModifiedUtc="2016-01-04T16:04:33.8954405Z" targetType="Sage.SalesLogix.BODMapping.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBodMappingFieldMappings" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </postExecuteTargets>
+</method>

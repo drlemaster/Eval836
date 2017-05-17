@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<MenuDropDownItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b9dd133b-5847-4b57-a9e7-2ac7a389285c">
+  <ItemId>menuItemNewBODFieldMapping</ItemId>
+  <NavUrl>InsertBODFieldMapping.aspx?modeid=Insert</NavUrl>
+  <LargeImageUrl />
+  <SmallImageUrl />
+  <ContextMenuId />
+  <Target />
+  <AppliedSecurity />
+</MenuDropDownItem>

@@ -1,0 +1,23 @@
+define((
+{ colNameComplete: '完成',
+  colNameAttachment: '附件',
+  colNameRecurring: '定期',
+  colNameAlarm: '警报',
+  colNameType: '活动类型',
+  colNameStartDate: '开始日期',
+  colNameDuration: '持续时间',
+  colNameContact: '名称',
+  colNameLead: '销售线索',
+  colNameAccount: '客户/公司',
+  colNameCompany: '公司',
+  colNameRegarding: '事项',
+  colNamePriority: '优先级',
+  colNameUserId: '负责人',
+  colNameTimeless: '无时间限制',
+  colNameTypeName: '类型',
+  colNameContactName: '名称',
+  SnoozeAlarm: '推迟警报',
+  DismissAlarm: '消除警报',
+  colNameUnConfirmStatus: '未确认',
+  colNameAssociationCount: '参与者计数' }
+));

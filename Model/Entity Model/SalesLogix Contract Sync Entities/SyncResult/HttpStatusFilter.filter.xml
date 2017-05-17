@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<entityFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="OrmDistinctEntityFilter" id="5bb12559-30ca-4770-ae8c-dbca0011F327" lastModifiedUtc="2013-09-03T22:29:20.8841569Z" filterName="HttpStatusFilter" propertyName="HttpStatus" characters="0">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmDistinctEntityFilter" />
+  </ExtendedPropertiesCollection>
+</entityFilter>

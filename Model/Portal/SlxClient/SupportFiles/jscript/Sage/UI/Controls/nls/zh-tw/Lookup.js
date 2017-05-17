@@ -1,0 +1,1 @@
+define({ buttonToolTip: '尋找', closeButtonToolTip: '移除' });

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NavigationItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="2b951d72-43ba-4e6c-8a54-86b35634e0f2">
+  <ItemId>navBODFieldMapping</ItemId>
+  <NavUrl>BODFieldMapping.aspx</NavUrl>
+  <LargeImageUrl />
+  <SmallImageUrl />
+  <ContextMenuId>contextBODFieldMapping</ContextMenuId>
+  <Target />
+  <AppliedSecurity>Entities/BODFieldMapping/View</AppliedSecurity>
+</NavigationItem>

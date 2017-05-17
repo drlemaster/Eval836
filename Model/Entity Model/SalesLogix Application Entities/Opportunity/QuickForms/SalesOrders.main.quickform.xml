@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="e831bda4-f93f-4f56-86d3-f4a1f86c729b" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2016-03-01T22:29:55.1988181Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>SalesOrders</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.QFDataGrid, Sage.SalesLogix.QuickForms.QFControls">
+      <QFDataGrid>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>grdSalesorders</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <DataSource>dsSalesorders</DataSource>
+        <EnablePaging>true</EnablePaging>
+        <EnableSorting>true</EnableSorting>
+        <Columns>
+          <QFLinkCol>
+            <StyleScheme />
+            <DataField>SalesOrderNumber</DataField>
+            <ColumnId>daf51d95-799b-4454-8075-f7052fe8ac9f</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>SalesOrderNumber</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>Id</EntityIdField>
+            <EntityTypeName>SalesOrder</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+          </QFLinkCol>
+          <QFDateTimePickerCol>
+            <StyleScheme />
+            <DataField>DueDate</DataField>
+            <ColumnId>a8afa0ec-4834-486c-b15b-81e80c0aa1be</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>DueDate</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <DateOnly>true</DateOnly>
+            <Timeless>false</Timeless>
+          </QFDateTimePickerCol>
+          <QFDataGridCol>
+            <StyleScheme />
+            <DataField>CustomerPurchaseOrderNumber</DataField>
+            <ColumnId>bc35c18e-455e-4d7f-afd8-8eb717fd1a45</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>CustomerPurchaseOrderNumber</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+          </QFDataGridCol>
+          <QFDataGridCol>
+            <StyleScheme />
+            <DataField>Status</DataField>
+            <ColumnId>1a1380fd-7c7d-40f4-b711-7ded50214093</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Status</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+          </QFDataGridCol>
+          <QFDateTimePickerCol>
+            <StyleScheme />
+            <DataField>OrderDate</DataField>
+            <ColumnId>2a230658-4679-4c5f-94d1-dc8e68178b94</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>false</IsSortable>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <DateOnly>true</DateOnly>
+            <Timeless>false</Timeless>
+          </QFDateTimePickerCol>
+          <QFDateTimePickerCol>
+            <StyleScheme />
+            <DataField>DatePromised</DataField>
+            <ColumnId>6d1b252a-e168-4e3b-9822-5b13479fb511</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>DatePromised</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <DateOnly>true</DateOnly>
+            <Timeless>false</Timeless>
+          </QFDateTimePickerCol>
+          <QFSLXCurrencyCol>
+            <StyleScheme />
+            <DataField>DocGrandTotal</DataField>
+            <ColumnId>e87a5ed0-21c9-4f02-8335-9fb94b3b7668</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>DocGrandTotal</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <CurrentCode />
+            <ExchangeRateType>BaseRate</ExchangeRateType>
+            <ExchangeRate />
+            <DecimalDigits>4</DecimalDigits>
+          </QFSLXCurrencyCol>
+          <QFDeleteCol>
+            <StyleScheme />
+            <DataField />
+            <ColumnId>8116ff89-e060-4960-a105-48ea127cddc9</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>false</IsSortable>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <BusinessRule />
+            <BusinessRuleParameters />
+            <AppliedSecurity />
+          </QFDeleteCol>
+        </Columns>
+        <RenderVertical>false</RenderVertical>
+        <OnRowSelectedAction>
+          <ResourceKey>grdSalesorders</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnRowSelectedAction>
+      </QFDataGrid>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.QFControls.QFDataSource, Sage.Platform.QuickForms.QFControls">
+      <QFDataSource>
+        <Column>0</Column>
+        <Row>1</Row>
+        <Visible>false</Visible>
+        <HotKey>48</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>dsSalesorders</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <EntityTypeName>SalesOrder</EntityTypeName>
+        <GetByMethod />
+        <GetByProperty>SalesOrders</GetByProperty>
+        <UseSmartSelection>true</UseSmartSelection>
+        <DataOptional>false</DataOptional>
+      </QFDataSource>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId />
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId />
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms">
+      <QFButton>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFButton</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <ButtonType>Icon</ButtonType>
+        <Image>[Localization!Global_Images:plus_16x16]</Image>
+        <OnClientClick />
+        <OnClickAction>
+          <ResourceKey>QFButton</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.CSharpSnippetActionItem, Sage.Platform.QuickForms">
+            <CSharpSnippetActionItem>
+              <MethodName>QFButton_ClickAction</MethodName>
+              <CSharpCodeSnippet>var opportunity = BindingSource.Current as IOpportunity;
+var salesOrderId = opportunity.CreateSalesOrderFromOpportunity();
+Response.Redirect(string.Format("SalesOrder.aspx?entityId={0}", salesOrderId));</CSharpCodeSnippet>
+            </CSharpSnippetActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity>ENTITIES/SALESORDER/ADD</AppliedSecurity>
+          <RefreshData>False</RefreshData>
+        </OnClickAction>
+      </QFButton>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description>Sales Orders</Description>
+  <UseEntityNameAsTitle>false</UseEntityNameAsTitle>
+  <EntityTypeName>IOpportunity</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

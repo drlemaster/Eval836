@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="a64afb10-d5ba-450f-8aae-e12ff4f77dfa" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2016-08-03T10:25:43.7154324Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>BODMappingFieldMappings</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys>
+    <string>error_StdBODFieldMappingReadOnly</string>
+  </ClientResourceKeys>
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.SDataGrid.QFSDataGrid, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSDataGrid>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>grdFieldMapping</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <GenerateMember>false</GenerateMember>
+        <ReadOnlyCondition>False</ReadOnlyCondition>
+        <AppliedSecurity />
+        <RelateToPropertyName />
+        <PreviewField />
+        <ResourceKind>
+          <Name>BODFieldMappings</Name>
+          <GetPredicate />
+        </ResourceKind>
+        <PathSegments />
+        <Columns>
+          <QFSDataLinkCol>
+            <StyleScheme />
+            <DataField>FieldMappingName</DataField>
+            <ColumnId>d95d45ea-5e95-4fe0-8cf5-6ca81481d776</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>FieldMappingName</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <Destination />
+            <Image />
+            <EntityIdField>Id</EntityIdField>
+            <EntityTypeName>BODFieldMapping</EntityTypeName>
+            <Target />
+            <AppliedSecurity />
+            <HideCondition />
+            <Width>-1</Width>
+          </QFSDataLinkCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>Entity</DataField>
+            <ColumnId>a428f88c-199b-4874-878f-c9fa21c5bfd0</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Entity</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>EntityXPath</DataField>
+            <ColumnId>4a007677-953f-43f1-bdeb-9e4bf44608f3</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>EntityXPath</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>Property</DataField>
+            <ColumnId>86024db6-5428-4ab2-acd1-7b65b2648654</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>Property</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>PropertyXPath</DataField>
+            <ColumnId>5aaa4179-10fa-4510-a997-b30e3c8c6898</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>PropertyXPath</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>SyncDirection</DataField>
+            <ColumnId>cce5ebc4-a64c-47c9-930d-652decb967e5</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>SyncDirection</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFSDataCheckBoxCol>
+            <StyleScheme />
+            <DataField>IsCustom</DataField>
+            <ColumnId>10ac08b7-bd4a-438a-aefd-adb015bac7ca</ColumnId>
+            <HorizontalAlignment>center</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>false</IsSortable>
+            <SortField>IsCustom</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>false</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFSDataCheckBoxCol>
+          <QFSDataCheckBoxCol>
+            <StyleScheme />
+            <DataField>IsActive</DataField>
+            <ColumnId>2525bc7d-5219-4602-b32e-7badaefb48ca</ColumnId>
+            <HorizontalAlignment>center</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>IsActive</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>true</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFSDataCheckBoxCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>SearchClause</DataField>
+            <ColumnId>bb0ed4b9-7284-43bc-9270-75b2b92105a8</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>SearchClause</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>False</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+          <QFEditableCol>
+            <StyleScheme />
+            <DataField>IncludeInSearch</DataField>
+            <ColumnId>1ee0d515-37fe-402b-93b4-b35b51a29de1</ColumnId>
+            <HorizontalAlignment>left</HorizontalAlignment>
+            <HeaderAlignment>left</HeaderAlignment>
+            <SortDirection>None</SortDirection>
+            <IsSortable>true</IsSortable>
+            <SortField>IncludeInSearch</SortField>
+            <MultiCurrencyDependent>false</MultiCurrencyDependent>
+            <IsEditable>False</IsEditable>
+            <HideCondition />
+            <Width>-1</Width>
+            <CustomFormatter />
+            <AbbreviationLength>0</AbbreviationLength>
+          </QFEditableCol>
+        </Columns>
+        <ConditionalWhere />
+        <Select />
+        <Include />
+        <FeedCategory>InternalAppEntities</FeedCategory>
+        <OnGetMappingId />
+        <ParentRelationshipPropertyName>BODMapping</ParentRelationshipPropertyName>
+        <ChildRelationshipPropertyName />
+        <OnDataChange>function (entity, attribute, oldValue, newValue) {
+	
+	if (oldValue === newValue) {
+        return;
+    }
+	//We are showing Error message if we are trying to modify custom BODFieldMapping
+	//Setting back the old value
+	if (entity.IsCustom != null &amp;&amp; entity.IsCustom == false)
+	{
+		Sage.UI.Dialogs.showError(BODMappingFieldMappingsResources['error_StdBODFieldMappingReadOnly']);
+		entity[attribute] = oldValue;
+	}
+}	</OnDataChange>
+        <OnAdd />
+        <Tools>
+          <SDataGridSaveTool>
+            <Name>Save</Name>
+            <Image>[Localization!Global_Images:Save_16x16]</Image>
+            <DisplayInInsert>false</DisplayInInsert>
+            <MergePosition>Default</MergePosition>
+            <MergeControlId />
+            <OnClick />
+            <StyleScheme />
+            <AppliedSecurity />
+          </SDataGridSaveTool>
+          <SDataGridCancelTool>
+            <Name>Cancel</Name>
+            <Image>[Localization!Global_Images:Reset_16x16]</Image>
+            <DisplayInInsert>false</DisplayInInsert>
+            <MergePosition>After</MergePosition>
+            <MergeControlId>btnAdd</MergeControlId>
+            <OnClick>//default Cancel behavior</OnClick>
+            <StyleScheme />
+            <AppliedSecurity />
+          </SDataGridCancelTool>
+          <SDataGridDeleteTool>
+            <Name>Delete</Name>
+            <Image>[Localization!Global_Images:Delete_16x16]</Image>
+            <DisplayInInsert>false</DisplayInInsert>
+            <MergePosition>After</MergePosition>
+            <MergeControlId>btnAdd</MergeControlId>
+            <OnClick />
+            <StyleScheme />
+            <AppliedSecurity>Entities/BODFieldMapping/Delete</AppliedSecurity>
+          </SDataGridDeleteTool>
+        </Tools>
+      </QFSDataGrid>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>c5511d29bc04f939db5dbe9795aab0f</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>ce2fdd27c664896a1e507be3c877904</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms">
+      <QFButton>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>btnAdd</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <ButtonType>Icon</ButtonType>
+        <Image>[Localization!Global_Images:plus_16x16]</Image>
+        <OnClientClick />
+        <OnClickAction>
+          <ResourceKey>btnAdd</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.DialogActionItem, Sage.Platform.QuickForms">
+            <DialogActionItem>
+              <SmartPart>AddEditBODFieldMapping</SmartPart>
+              <Height>400</Height>
+              <Width>600</Width>
+              <Top>0</Top>
+              <Left>0</Left>
+              <EntityType>BODFieldMapping</EntityType>
+              <ResourceKey>300c4567-ad2f-4bf6-87ec-b36dd4ad5c2c</ResourceKey>
+              <CenterDialog>True</CenterDialog>
+            </DialogActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity>ENTITIES/BODFIELDMAPPING/ADD</AppliedSecurity>
+          <RefreshData>False</RefreshData>
+        </OnClickAction>
+      </QFButton>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>false</UseEntityNameAsTitle>
+  <EntityTypeName>IBODMapping</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

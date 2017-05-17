@@ -1,0 +1,50 @@
+{
+    "export": {
+        "transform": "../../../products/argos-icboe/localization/transforms/argos-icboe-export.xslt",
+        "path": "products/argos-icboe/localization/exported/argos-icboe-strings.xml",
+        "split": true
+    },
+    "import": {
+        "transform": "../../../products/argos-icboe/localization/transforms/argos-icboe-import.xslt",
+        "template": "../../../products/argos-icboe/localization/templates/argos-icboe.erb",
+        "map": {
+            "de": {
+                "in": [
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-format_de.xml",
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-text_de.xml"
+                    ],
+                "out": "products/argos-icboe/localization/icboe/de.js"
+            },
+            "fr": {
+                "in": [
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-format_fr.xml",
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-text_fr.xml"
+                    ],
+                "out": "products/argos-icboe/localization/fr.js"
+            },
+            "it": {
+                "in": [
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-format_it.xml",
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-text_it.xml"
+                    ],
+                "out": "products/argos-icboe/localization/it.js"
+            },
+            "ru": {
+                "in": [
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-format_ru.xml",
+                        "products/argos-icboe/localization/imported/argos-icboe-strings-text_ru.xml"
+                    ],
+                "out": "products/argos-icboe/localization/ru.js"
+            },
+            "en-GB": {
+                "in": "products/argos-icboe/localization/imported/argos-icboe-strings-format_en-GB.xml",
+                "out": "products/argos-icboe/localization/en-GB.js"
+            }
+        }
+    },
+    "projects": [{
+        "name": "Infor CRM ION Mobile",
+        "path": "products/argos-icboe/src",
+        "alias": "argos-icboe"
+    }]
+}

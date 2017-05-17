@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="7548cd4c-76a4-4921-b8f0-97e5d700c417" lastModifiedUtc="2016-02-01T20:37:21.8836768Z" name="IsClosed" returnType="Boolean" methodType="Rule" actionType="None" returnMode="Object">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="e62026d2-3556-4f74-a530-0b859f2dd1e5" lastModifiedUtc="2016-02-01T20:37:09.8384724Z" targetType="Sage.SalesLogix.Opportunity.Rules, Sage.SalesLogix.BusinessRules" targetMethod="IsClosed" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+</method>

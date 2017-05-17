@@ -1,0 +1,19 @@
+{
+	"projectName": "Infor CRM ION Module",
+	"licenseText": "",
+	"deployDir": "deploy/",
+	"pkgs": [],
+	"resources": [{
+		"src": "../content",
+		"dest": "content",
+		"filters": ".*(\\.css|\\.jpg|\\.png|\\.gif)"
+	},{
+		"src": "../configuration",
+		"dest": "configuration/icboe",
+		"filters": ".*\\.js"
+	},{
+		"src": "../localization",
+		"dest": "localization/icboe",
+		"filters": ".*\\.js"
+	}]
+}

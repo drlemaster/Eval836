@@ -1,0 +1,19 @@
+define({
+    Dev: '開發人員',
+    Rel: '共用',
+    Family: '系列',
+    Name: '名稱',
+    DisplayName: '顯示名稱',
+    Owner: '擁有者',
+    SharedDate: '共用日期',
+    Type: '類型',
+    CreateDate: '建立日期',
+    ModifyDate: '修改日期',
+    Author: '作者',
+    Company: '公司',
+    Version: '版本',
+    SharedToName: '共用對象名稱',
+    SharedToType: '共用對象類型',
+    UserType: '使用者類型',
+    BasedOn: '依據'
+});

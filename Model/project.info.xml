@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" instanceId="ec018c7e-ee2b-4c1d-967d-11a631bba114" formatVersion="8.3.0.2655">
+  <modelTypeNames>
+    <modelTypeName>
+      <ModelTypeAssemblyQualifiedName>Sage.Platform.Orm.Entities.OrmModel, Sage.Platform</ModelTypeAssemblyQualifiedName>
+    </modelTypeName>
+    <modelTypeName>
+      <ModelTypeAssemblyQualifiedName>Sage.Platform.WebPortal.Design.PortalModel, Sage.Platform.WebPortal.Design</ModelTypeAssemblyQualifiedName>
+    </modelTypeName>
+    <modelTypeName>
+      <ModelTypeAssemblyQualifiedName>Sage.Platform.BundleModel.BundleModel, Sage.Platform.BundleModel</ModelTypeAssemblyQualifiedName>
+    </modelTypeName>
+    <modelTypeName>
+      <ModelTypeAssemblyQualifiedName>Sage.Platform.QuickForms.QuickFormModel, Sage.Platform.QuickForms</ModelTypeAssemblyQualifiedName>
+    </modelTypeName>
+    <modelTypeName>
+      <ModelTypeAssemblyQualifiedName>Sage.Platform.Mashups.MashupModel, Sage.Platform.Mashups</ModelTypeAssemblyQualifiedName>
+    </modelTypeName>
+  </modelTypeNames>
+</projectInfo>

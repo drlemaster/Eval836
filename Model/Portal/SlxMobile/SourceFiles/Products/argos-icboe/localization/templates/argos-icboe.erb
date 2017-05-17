@@ -1,0 +1,6 @@
+define('localization/icboe/<%= culture %>', ['localization/saleslogix/<%= culture %>'], function() {
+<% localized.each do |name, object| %>
+
+localize("<%= name %>", <%= JSON.pretty_generate(object) %>);
+<% end %>
+});

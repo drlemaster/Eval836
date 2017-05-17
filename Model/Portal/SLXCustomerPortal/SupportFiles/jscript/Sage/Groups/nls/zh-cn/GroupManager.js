@@ -1,0 +1,23 @@
+define((
+{ ConfirmDeleteMessage: '是否确定要删除当前组?',
+  ConfirmDeleteFmtMessage: '是否确定要删除该组: ${0}',
+  InvalidSortStringMessage: '错误: 排序字符串无效 -',
+  InvalidConditionStringMessage: '错误: 条件字符串无效 -',
+  InvalidLayoutConditionStringMessage: '错误: 布局字符串无效 -',
+  noneSelectedTitle: '未选择任何记录',
+  noneSelectedPromptFmt: '未选择任何记录。将添加整个组中的 ${0} 条记录。是否继续?',
+  noneSelectedRemovePromptFmt: '未选择任何记录。将移除整个组中的 ${0} 条记录。是否继续?',
+  noRecordsInGroup: '未选择该组中的任何记录。',
+  newGroupTitle: '向新组添加记录',
+  newGroupNamePrompt: '将向该新组添加 ${0} 条选中的记录。<br><br>组名: <br>${1}',
+  newGroupRePrompt: '&nbsp;&nbsp;<i>请输入组名。</i>',
+  invalidCharMsg: '名称不得包含: / \\ : * ? " <> | 和 \'',
+  groupNameText: '组名:',
+  saveLookupDlgTitle: '将查找结果另存为新组',
+  yesCaption: '是',
+  noCaption: '否',
+  cancelCaption: '取消',
+  okCaption: '确定',
+  LOCALSTORE_NAMESPACE: 'SageGroups',
+  exportToExcel: '已弃用此方法，请查看 Sage.TaskPane.CommonTasksTasklet.exportToExcel。' }
+));

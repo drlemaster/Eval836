@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="d2cf2a8a-78e1-4243-9927-0540fd34d643" lastModifiedUtc="2014-12-16T15:51:41.8599631Z" name="CloneBackOffice" methodType="Rule" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter>
+    <OrmEntityMethodParam id="acf8e6c8-930b-4b45-a2b5-fe66cde74853" paramName="copyFromBackOffice" sequence="0" paramType="Object">
+      <description>The Back Office used for the copy</description>
+    </OrmEntityMethodParam>
+  </parameter>
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="476d9a90-4782-4cb9-adc7-8e6df5fb14f7" lastModifiedUtc="2014-11-21T21:06:17.4819905Z" targetType="Sage.SalesLogix.BackOffice.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBackOffice" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets>
+    <methodTarget id="9f4195c6-51b4-4270-b9b1-89c7bad51f94" lastModifiedUtc="2016-01-04T16:00:14.31678Z" targetType="Sage.SalesLogix.BackOffice.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBackOfficeBodMappings" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+    <methodTarget id="d17a598e-0e18-48a0-9f0b-7b1bf3c42d4c" lastModifiedUtc="2016-01-04T16:00:29.9013383Z" targetType="Sage.SalesLogix.BackOffice.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBodMappingsFieldMappings" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+    <methodTarget id="362a399e-116b-4083-920b-285896d2672c" lastModifiedUtc="2016-03-04T12:28:03.9270801Z" targetType="Sage.SalesLogix.BackOffice.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBackOfficBOEPAServices" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+    <methodTarget id="699edc51-6b17-4170-865e-a55d0b7ef619" lastModifiedUtc="2016-03-04T15:44:50.6222477Z" targetType="Sage.SalesLogix.BackOffice.Rules, Sage.SalesLogix.BusinessRules" targetMethod="CloneBOEPAServicePAMappings" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </postExecuteTargets>
+</method>

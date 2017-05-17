@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner v2.3.4</title>
+
+    <link rel="shortcut icon" type="image/png" href="../../Libraries/jasmine/jasmine_favicon.png">
+    <link rel="stylesheet" href="../../Libraries/jasmine/jasmine.css">
+    <script src="../../Libraries/jasmine/jasmine.js"></script>
+    <script src="../../Libraries/jasmine/jasmine-html.js"></script>
+    <script src="src/utility/utility.js"></script>
+    <!-- Dojo -->
+    <script type="text/javascript" src="../../Libraries/dojo/dojo/dojo.js" data-dojo-config="parseOnLoad: false,async: true,isDebug: false"></script>
+    <script type="text/javascript">
+        require({
+            baseUrl: ".",
+            packages: [{
+                name: 'dojo',
+                location: '../../Libraries/dojo/dojo'
+            }, {
+                name: 'dijit',
+                location: '../../Libraries/dojo/dijit'
+            }, {
+                name: 'dojox',
+                location: '../../Libraries/dojo/dojox'
+            }, {
+                name: 'dgrid',
+                location: '../../Libraries/dojo/dgrid'
+            }, {
+                name: 'put-selector',
+                location: '../../Libraries/dojo/put-selector'
+            }, {
+                name: 'xstyle',
+                location: '../../Libraries/dojo/xstyle'
+            }, {
+                name: 'test',
+                location: 'src'
+            }, {
+                name: 'Sage',
+                location: '../Sage'
+            }
+            ]
+        });
+    </script>
+    <script pin="pin" src="../../jscript/sage-platform/sage-platform-servicecontainer.js" type="text/javascript"></script>
+    <script pin="pin" src="../../jscript/sage-platform/sage-platform-servicecontainer.js" type="text/javascript"></script>
+    <script pin="pin" src="../../jscript/sage-platform/gears_init.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/sdata/Base64.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/sdata/ObjTree.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/sdata/sdata-client.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/dhtmlxScheduler_v30/dhtmlxscheduler.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/dhtmlxScheduler_v30/ext/dhtmlxscheduler_timeline.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/Simplate.js" type="text/javascript"></script>
+    <script pin="pin" src="../FusionCharts.js" type="text/javascript"></script>
+    <script pin="pin" src="../../Libraries/jQuery/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./src/mocks.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <script type="text/javascript">
+            require([
+                'test/all'
+            ]);
+            require(['../../Libraries/jasmine/boot.js']);
+
+        </script>
+    </form>
+</body>
+</html>

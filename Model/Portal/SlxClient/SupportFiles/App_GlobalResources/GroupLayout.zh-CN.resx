@@ -1,0 +1,1773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="INTEGRATION_SYNCRUNEND" xml:space="preserve">
+    <value>同步运行结束</value>
+  </data>
+  <data name="LITREQUEST_ZIPCODE" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="OPPORTUNITY_ACTUALAMOUNT" xml:space="preserve">
+    <value>实际金额</value>
+  </data>
+  <data name="LEAD_LATESTLEADS" xml:space="preserve">
+    <value>最新销售线索</value>
+  </data>
+  <data name="CONTACT_MYCONTACTS" xml:space="preserve">
+    <value>我的联系人</value>
+  </data>
+  <data name="CAMPAIGN_OPENCAMPAIGNS" xml:space="preserve">
+    <value>未结销售活动</value>
+  </data>
+  <data name="CALCFIELD_DEFECT_NUMBER" xml:space="preserve">
+    <value>缺陷编号</value>
+  </data>
+  <data name="TICKET_UNASSIGNED" xml:space="preserve">
+    <value>未分配</value>
+  </data>
+  <data name="LEADSOURCE_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="PRODUCT_PRODUCTNAME" xml:space="preserve">
+    <value>产品名称</value>
+  </data>
+  <data name="OPPORTUNITY_MYCLOSEDOPPORTUNITIES" xml:space="preserve">
+    <value>我的已结销售机会</value>
+  </data>
+  <data name="PRODUCT_PRICE" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="TICKET_TICKETID" xml:space="preserve">
+    <value>工单 ID</value>
+  </data>
+  <data name="OPPORTUNITY_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="ACCOUNT_CAMPAIGNNAME" xml:space="preserve">
+    <value>销售活动名称</value>
+  </data>
+  <data name="LEAD_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DEPARTMENT_LASTMODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="LITREQUEST_SENDDATE" xml:space="preserve">
+    <value>最晚发送日期</value>
+  </data>
+  <data name="PACKAGE_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="CALCFIELD_IMPORTHISTORY" xml:space="preserve">
+    <value>导入历史</value>
+  </data>
+  <data name="INTEGRATION_SYNCUSINGSDATA" xml:space="preserve">
+    <value>使用 SData 进行同步</value>
+  </data>
+  <data name="USERSECURITY_CONCURRENTUSERS" xml:space="preserve">
+    <value>并发用户</value>
+  </data>
+  <data name="TEAM_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DEPARTMENT_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DEDUPJOB_JOBNUMBER" xml:space="preserve">
+    <value>作业编号</value>
+  </data>
+  <data name="PACKAGES_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TICKETPROBLEMTYPE_ALLSTANDARDPROBLEMS" xml:space="preserve">
+    <value>所有标准问题</value>
+  </data>
+  <data name="LITREQUEST_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="DEFECT_MYDEFECTS" xml:space="preserve">
+    <value>我的缺陷</value>
+  </data>
+  <data name="DEFECTACTIVITYRATE_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TEAMVIEW_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="TEAM_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="CONTACT_AUTHORIZED" xml:space="preserve">
+    <value>已授权</value>
+  </data>
+  <data name="QUALIFICATION_CATEGORY_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="RMA_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="ACCOUNT_MYHISTORY" xml:space="preserve">
+    <value>我的历史</value>
+  </data>
+  <data name="USER_USERNAME" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="SYNCJOB_ENDTIME1" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="AREACATEGORYISSUE_AREASWITHOUTISSUES" xml:space="preserve">
+    <value>所属范围(不带问题)</value>
+  </data>
+  <data name="SALESORDER_SALESORDERNUMBER" xml:space="preserve">
+    <value>销售订单编号</value>
+  </data>
+  <data name="ACCOUNT_MAINPHONE" xml:space="preserve">
+    <value>主要电话</value>
+  </data>
+  <data name="LITREQUEST_FILLUSER" xml:space="preserve">
+    <value>填写者</value>
+  </data>
+  <data name="ACCOUNT_MYACCOUNTS" xml:space="preserve">
+    <value>我的客户</value>
+  </data>
+  <data name="ACCOUNT_CAMPAIGNOWNER" xml:space="preserve">
+    <value>销售活动所有者</value>
+  </data>
+  <data name="DEFECT_AREA" xml:space="preserve">
+    <value>所属范围</value>
+  </data>
+  <data name="CONTACT_CONTACTSTATUS" xml:space="preserve">
+    <value>联系人状态</value>
+  </data>
+  <data name="CALCFIELD_FULLNAME" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="USER_RETIREDUSERS" xml:space="preserve">
+    <value>退役用户</value>
+  </data>
+  <data name="TICKET_RECEIVEDDATE" xml:space="preserve">
+    <value>接收日期</value>
+  </data>
+  <data name="SYNCRESULT_SYNCJOB" xml:space="preserve">
+    <value>同步作业</value>
+  </data>
+  <data name="ACCOUNT_MYPROSPECTS" xml:space="preserve">
+    <value>我的潜在客户</value>
+  </data>
+  <data name="ACCOUNT_ACCTMANAGER" xml:space="preserve">
+    <value>客户经理</value>
+  </data>
+  <data name="DEDUPJOB_ALLJOBS" xml:space="preserve">
+    <value>所有作业</value>
+  </data>
+  <data name="DEFECT_OPENDEFECTS" xml:space="preserve">
+    <value>未结缺陷</value>
+  </data>
+  <data name="SECUREDACTION_NAME" xml:space="preserve">
+    <value>安全操作</value>
+  </data>
+  <data name="CONTRACT_PENDINGEXPIRATIONS" xml:space="preserve">
+    <value>未决到期</value>
+  </data>
+  <data name="DEDUPJOB_STARTED" xml:space="preserve">
+    <value>已启动</value>
+  </data>
+  <data name="AREACATEGORYISSUE_TICKET" xml:space="preserve">
+    <value>工单</value>
+  </data>
+  <data name="CALCFIELD_OPPORTUNITY" xml:space="preserve">
+    <value>销售机会</value>
+  </data>
+  <data name="OPPORTUNITY_ACCTMANAGER" xml:space="preserve">
+    <value>客户经理</value>
+  </data>
+  <data name="TICKET_ACTIVITY" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="TICKETSOLUTIONTYPE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="OPPORTUNITY_OWNER" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="OPPORTUNITY_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="LEAD_COMPANY" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="RETURN_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="TICKETACTIVITYRATE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="HISTORY_LEADER" xml:space="preserve">
+    <value>负责人</value>
+  </data>
+  <data name="CALCFIELD_RMA_STREET_ADDRESS" xml:space="preserve">
+    <value>RMA 街道地址</value>
+  </data>
+  <data name="LITERATUREITEM_AUTHOR" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="CALCFIELD_PRODUCT_FORECAST" xml:space="preserve">
+    <value>产品预测</value>
+  </data>
+  <data name="CONTRACTQUANTITY" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="CONTRACT_QUANTITY" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="USER_INTEGRATION" xml:space="preserve">
+    <value>集成</value>
+  </data>
+  <data name="INTEGRATION_SYNCHANDLER" xml:space="preserve">
+    <value>同步处理程序</value>
+  </data>
+  <data name="AREACATEGORYISSUE_AREA/CATEGORY/ISSUE" xml:space="preserve">
+    <value>所属范围/类别/问题</value>
+  </data>
+  <data name="SYNCRESULT_RESOURCE" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_QUALIFICATION" xml:space="preserve">
+    <value>资格</value>
+  </data>
+  <data name="USER_INTEGRATIONENABLED" xml:space="preserve">
+    <value>已启用集成</value>
+  </data>
+  <data name="AREACATEGORYISSUE_ALLAREA/CATEGORY/ISSUE" xml:space="preserve">
+    <value>所有所属范围/类别/问题</value>
+  </data>
+  <data name="OPPORTUNITY_POTENTIAL" xml:space="preserve">
+    <value>潜力</value>
+  </data>
+  <data name="DEFECT_SPEEDSEARCHDEFECTS" xml:space="preserve">
+    <value>快速搜索缺陷</value>
+  </data>
+  <data name="CONTACT_WORKPHONE" xml:space="preserve">
+    <value>单位电话</value>
+  </data>
+  <data name="LEAD_EMAIL" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="HISTORY_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="LITREQUEST_CREATE_DATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="SALESORDER_ACCTMANAGER" xml:space="preserve">
+    <value>客户经理</value>
+  </data>
+  <data name="RETURN_EXPECTEDRETURNS" xml:space="preserve">
+    <value>预计退货</value>
+  </data>
+  <data name="USERSECURITY_INTEGRATIONENABLED" xml:space="preserve">
+    <value>已启用集成</value>
+  </data>
+  <data name="AREACATEGORYISSUE_ALL" xml:space="preserve">
+    <value>所有所属范围/类别/问题</value>
+  </data>
+  <data name="INTEGRATION_SYNCINTERVALMINUTES1" xml:space="preserve">
+    <value>同步间隔(分钟)</value>
+  </data>
+  <data name="ROLE_ALLROLES" xml:space="preserve">
+    <value>所有角色</value>
+  </data>
+  <data name="SALESORDER_ALLSALESORDERS" xml:space="preserve">
+    <value>所有销售订单</value>
+  </data>
+  <data name="ACCOUNT_STATUSDUPLICATE" xml:space="preserve">
+    <value>状态 = 重复</value>
+  </data>
+  <data name="HISTORY_COMPLETEDDATE" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="USER_WEBONLYUSERS" xml:space="preserve">
+    <value>仅限 Web 用户</value>
+  </data>
+  <data name="OPPORTUNITY_SALESPROCESS" xml:space="preserve">
+    <value>销售流程</value>
+  </data>
+  <data name="INTEGRATION_ENABLED" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="DEDUPJOB_USER" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="ACCOUNT_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="PACKAGE_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="ACCOUNT_MYLEADS" xml:space="preserve">
+    <value>我的销售线索</value>
+  </data>
+  <data name="OPPORTUNITY_CLOSEDWON" xml:space="preserve">
+    <value>已结 - 赢得</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="PRODUCT_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="CONTACT_ACTIVECAMPAIGNS" xml:space="preserve">
+    <value>正在进行的销售活动</value>
+  </data>
+  <data name="SYNCRESULT_SYNCHISTORY" xml:space="preserve">
+    <value>同步历史</value>
+  </data>
+  <data name="ROLE_CREATEUSER" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="QUALIFICATION_CATEGORY_QUALIFICATION" xml:space="preserve">
+    <value>资格</value>
+  </data>
+  <data name="TICKET_WEBPORTALOPENTICKETS" xml:space="preserve">
+    <value>Web 门户的已结工单</value>
+  </data>
+  <data name="SYNCJOB_ENDPOINT" xml:space="preserve">
+    <value>端点</value>
+  </data>
+  <data name="PRODUCT_PRODUCT" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="PICKLISTVIEW_CREATEUSER" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="USER_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="COMPETITOR_RATING" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="TICKETSOLUTIONTYPE_ALLSTANDARDRESOLUTIONS" xml:space="preserve">
+    <value>所有标准解决方案</value>
+  </data>
+  <data name="TICKET_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="USER_NETWORKUSERS" xml:space="preserve">
+    <value>网络用户</value>
+  </data>
+  <data name="PACKAGE_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="DEDUPJOB_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="TEAM_ALLTEAMS" xml:space="preserve">
+    <value>所有团队</value>
+  </data>
+  <data name="CALCFIELD_EXTENDED_PRICE" xml:space="preserve">
+    <value>总价</value>
+  </data>
+  <data name="USER_ENABLEDFORSYNC" xml:space="preserve">
+    <value>已启用同步</value>
+  </data>
+  <data name="LITERATURE_ITEMNUMBER" xml:space="preserve">
+    <value>项目编号</value>
+  </data>
+  <data name="CALCFIELD_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="LITERATURE_ONHAND" xml:space="preserve">
+    <value>现有</value>
+  </data>
+  <data name="OPPORTUNITY_CLOSEDLOST" xml:space="preserve">
+    <value>已结 - 失去</value>
+  </data>
+  <data name="OPPORTUNITY_MYOPENOPPS" xml:space="preserve">
+    <value>我的未结销售机会</value>
+  </data>
+  <data name="ACCOUNT_IMPORTEDACCOUNTS" xml:space="preserve">
+    <value>已导入的客户</value>
+  </data>
+  <data name="OPPORTUNITY_WEIGHTED" xml:space="preserve">
+    <value>加权</value>
+  </data>
+  <data name="DEFECT_SEVERITY" xml:space="preserve">
+    <value>严重性</value>
+  </data>
+  <data name="PACKAGES_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="ACCOUNT_CREATEDDATE" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="PRODUCT_ALLPRODUCTS" xml:space="preserve">
+    <value>所有产品</value>
+  </data>
+  <data name="USERSECURITY_INTEGRATION" xml:space="preserve">
+    <value>集成</value>
+  </data>
+  <data name="QUALIFICATION_CATEGORY_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="HISTORY_NOTES" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="QUALIFICATION_CREATEUSER" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="SECUREDACTION_ALLSECUREDACTIONS" xml:space="preserve">
+    <value>所有安全操作</value>
+  </data>
+  <data name="LEAD_CITY" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="CALCFIELD_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="PACKAGE_ALLPACKAGES" xml:space="preserve">
+    <value>所有包</value>
+  </data>
+  <data name="ACCOUNT_CITY" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="LITERATURE_AUTHOR" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="USER_REMOTEUSERS" xml:space="preserve">
+    <value>远程用户</value>
+  </data>
+  <data name="PRODUCT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="RESOURCELIST_MODIFYUSER" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="TICKETACTIVITYRATE_RATEHOUR" xml:space="preserve">
+    <value>费率/小时</value>
+  </data>
+  <data name="IMPORTHISTORY_ENTITYNAME" xml:space="preserve">
+    <value>实体名称</value>
+  </data>
+  <data name="DEDUPRESULT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="DEFECT_PENDINGDEFECTS" xml:space="preserve">
+    <value>未决缺陷</value>
+  </data>
+  <data name="RMA_LASTMODIFIED" xml:space="preserve">
+    <value>上次修改时间</value>
+  </data>
+  <data name="AREACATEGORYISSUE_MODIFYDATE" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="CALCFIELD_MAILING_COUNTY__COUNTRY" xml:space="preserve">
+    <value>邮寄县，国家/地区</value>
+  </data>
+  <data name="INTEGRATION_SYNCINTERVALMINUTES" xml:space="preserve">
+    <value>同步间隔(分钟)</value>
+  </data>
+  <data name="RETURN_MYRETURNS" xml:space="preserve">
+    <value>我的退货</value>
+  </data>
+  <data name="LEAD_WORKPHONE" xml:space="preserve">
+    <value>单位电话</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_CREATEDBY" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="TEAMVIEW_MODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="SECUREDACTION_SECUREDACTION" xml:space="preserve">
+    <value>安全操作</value>
+  </data>
+  <data name="TICKET_WEBPORTALCLOSEDTICKETS" xml:space="preserve">
+    <value>Web 门户的已结工单</value>
+  </data>
+  <data name="ACCOUNT_SUBTYPE" xml:space="preserve">
+    <value>子类型</value>
+  </data>
+  <data name="SYNCRESULT_RESOURCETYPE" xml:space="preserve">
+    <value>资源类型</value>
+  </data>
+  <data name="USER_SITECODE" xml:space="preserve">
+    <value>站点代码</value>
+  </data>
+  <data name="LITREQUEST_CONTACTNAME" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="LITERATUREITEM_FAMILY" xml:space="preserve">
+    <value>系列</value>
+  </data>
+  <data name="TEAM_MODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="USERSECURITY_USERNAME" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="CALCFIELD_LEAD_NAME__FIRST_LAST_" xml:space="preserve">
+    <value>销售线索姓名 (名字，姓氏)</value>
+  </data>
+  <data name="CONTACT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="LITERATURE_COST" xml:space="preserve">
+    <value>成本</value>
+  </data>
+  <data name="HISTORY_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="SYNCRESULT_ERRORSEQUENCE" xml:space="preserve">
+    <value>错误序列</value>
+  </data>
+  <data name="CAMPAIGN_OWNER" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="LITREQUEST_DATEREQ" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="SYNCRESULT_INTEGRATION" xml:space="preserve">
+    <value>集成</value>
+  </data>
+  <data name="AREACATEGORYISSUE_MODIFYUSER" xml:space="preserve">
+    <value>修改用户</value>
+  </data>
+  <data name="OPPORTUNITY_STAGE" xml:space="preserve">
+    <value>阶段</value>
+  </data>
+  <data name="IMPORTHISTORY_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="DEFECT_SUBJECT" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="SECUREDACTION_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="CAMPAIGN_MANAGER" xml:space="preserve">
+    <value>经理</value>
+  </data>
+  <data name="LITREQUEST_COVERNAME" xml:space="preserve">
+    <value>封面</value>
+  </data>
+  <data name="DEPARTMENT_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="INTEGRATION_SYNCENABLED" xml:space="preserve">
+    <value>已启用同步</value>
+  </data>
+  <data name="SALESORDER_DATEREQ" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_MODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="TICKET_OVERDUE" xml:space="preserve">
+    <value>过期</value>
+  </data>
+  <data name="CALCFIELD_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="QUALIFICATION_MODIFYUSER" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="LITREQUEST_FILLDATE" xml:space="preserve">
+    <value>填写日期</value>
+  </data>
+  <data name="DEPARTMENT_ALLDEPARTMENTS" xml:space="preserve">
+    <value>所有部门</value>
+  </data>
+  <data name="SYNCRESULT_HTTPSTATUS" xml:space="preserve">
+    <value>Http 状态</value>
+  </data>
+  <data name="OPPORTUNITY_NOTES" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="CALCFIELD_WEIGHTED_SALES" xml:space="preserve">
+    <value>加权销售</value>
+  </data>
+  <data name="USERSECURITY_LOGINATTEMPTS" xml:space="preserve">
+    <value>登录尝试次数</value>
+  </data>
+  <data name="DEFECT_REPORTDATE" xml:space="preserve">
+    <value>报告日期</value>
+  </data>
+  <data name="QUALIFICATION_DESCRIPTION" xml:space="preserve">
+    <value>资格</value>
+  </data>
+  <data name="USER_ACTIVE" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="CALCFIELD_MAILING_CITY_STATE_ZIP" xml:space="preserve">
+    <value>邮寄城市或省或邮政编码</value>
+  </data>
+  <data name="LITERATUREITEM_ONHAND" xml:space="preserve">
+    <value>现有</value>
+  </data>
+  <data name="USERSECURITY_SITECODE" xml:space="preserve">
+    <value>站点代码</value>
+  </data>
+  <data name="LITREQUEST_ALLLITERATUREITEMS" xml:space="preserve">
+    <value>所有营销材料项目</value>
+  </data>
+  <data name="DEFECT_DEFECTID" xml:space="preserve">
+    <value>缺陷 ID</value>
+  </data>
+  <data name="USERSECURITY_TEMPLATES" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="SECUREDACTION_MODIFYUSER" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="TEAM_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="OPPORTUNITY_ALLOPPORTUNITIES" xml:space="preserve">
+    <value>所有销售机会</value>
+  </data>
+  <data name="LEADSOURCE_SOURCEDATE" xml:space="preserve">
+    <value>来源日期</value>
+  </data>
+  <data name="RETURN_OPENRETURNS" xml:space="preserve">
+    <value>未结退货</value>
+  </data>
+  <data name="LEAD_MYLEADS" xml:space="preserve">
+    <value>我的销售线索</value>
+  </data>
+  <data name="RETURN_REQUESTEDDATE" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="ACCOUNT_LASTSYNC" xml:space="preserve">
+    <value>上次同步</value>
+  </data>
+  <data name="CALCFIELD_DEFECT" xml:space="preserve">
+    <value>缺陷</value>
+  </data>
+  <data name="CALCFIELD_SALES_ORDER_CITY_STATE_ZIP" xml:space="preserve">
+    <value>销售订单城市或省或邮政编码</value>
+  </data>
+  <data name="RETURN_RETURNEDBY" xml:space="preserve">
+    <value>退货方</value>
+  </data>
+  <data name="CALCFIELD_CITY_STATE_ZIP" xml:space="preserve">
+    <value>城市或省或邮政编码</value>
+  </data>
+  <data name="CALCFIELD_LEAD_NAME__LAST__FIRST_" xml:space="preserve">
+    <value>销售线索姓名 (姓氏，名字)</value>
+  </data>
+  <data name="LEAD_STATE" xml:space="preserve">
+    <value>省</value>
+  </data>
+  <data name="RETURN_LASTMODIFIED" xml:space="preserve">
+    <value>上次修改时间</value>
+  </data>
+  <data name="AREACATEGORYISSUE_ISSUE" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="PICKLISTVIEW_CREATEDATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="HISTORY_COMPLETEDUSER" xml:space="preserve">
+    <value>完成的用户</value>
+  </data>
+  <data name="OPPORTUNITY_MYHISTORY" xml:space="preserve">
+    <value>我的历史</value>
+  </data>
+  <data name="CALCFIELD_SALES_ORDER_STREET_ADDRESS" xml:space="preserve">
+    <value>销售订单街道地址</value>
+  </data>
+  <data name="SALESORDER_GRANDTOTAL" xml:space="preserve">
+    <value>总计</value>
+  </data>
+  <data name="SYNCRESULT_LOGCREATEDATE" xml:space="preserve">
+    <value>日志创建日期</value>
+  </data>
+  <data name="USER_WEBVIEWERUSERS" xml:space="preserve">
+    <value>Web 查看者用户</value>
+  </data>
+  <data name="DEDUPJOB_PROCESSEDCOUNT" xml:space="preserve">
+    <value>已处理项计数</value>
+  </data>
+  <data name="CAMPAIGN_TASKOWNER" xml:space="preserve">
+    <value>任务所有者</value>
+  </data>
+  <data name="RETURN_ALLRETURNS" xml:space="preserve">
+    <value>所有退货</value>
+  </data>
+  <data name="TICKET_LASTUPDATED" xml:space="preserve">
+    <value>上次更新时间</value>
+  </data>
+  <data name="LITERATUREITEM_ITEMNUMBER" xml:space="preserve">
+    <value>项目编号</value>
+  </data>
+  <data name="TICKET_PUNCHEDIN" xml:space="preserve">
+    <value>已切入</value>
+  </data>
+  <data name="HISTORY_CREATEDATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="CAMPAIGN_COMPLETEDDATE" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="DEDUPRESULT_JOBNUMBER" xml:space="preserve">
+    <value>作业编号</value>
+  </data>
+  <data name="ROLE_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TICKET_COMPLETEDDATE" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="AREACATEGORYISSUE_CATEGORIESWITHOUTISSUES" xml:space="preserve">
+    <value>类别(不带问题)</value>
+  </data>
+  <data name="ACCOUNT_LATESTACCOUNTS" xml:space="preserve">
+    <value>最新客户</value>
+  </data>
+  <data name="TICKETAREAOWNER_AREA" xml:space="preserve">
+    <value>所属范围</value>
+  </data>
+  <data name="TICKETACTIVITYRATE_RATEHOUR1" xml:space="preserve">
+    <value>费率/小时</value>
+  </data>
+  <data name="RETURN_PRODUCTSINREPAIR" xml:space="preserve">
+    <value>正在维修的产品</value>
+  </data>
+  <data name="TEAMVIEW_ALLTEAMS" xml:space="preserve">
+    <value>所有团队</value>
+  </data>
+  <data name="CALCFIELD_SALES_ORDER_COUNTY_COUNTRY" xml:space="preserve">
+    <value>销售订单县或国家/地区</value>
+  </data>
+  <data name="SYNCRESULT_SYNCHISTORYJOBNAME" xml:space="preserve">
+    <value>同步历史作业名称</value>
+  </data>
+  <data name="USERSECURITY_TITLE" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="PRODUCT_PRICELEVEL" xml:space="preserve">
+    <value>价位</value>
+  </data>
+  <data name="DEDUPRESULT_SOURCEENTITY" xml:space="preserve">
+    <value>源实体</value>
+  </data>
+  <data name="AREACATEGORYISSUE_AREASWITHOUTCATEGORIES" xml:space="preserve">
+    <value>所属范围(不带类别)</value>
+  </data>
+  <data name="CONTACT_MYACTIVITIESFORTODAY" xml:space="preserve">
+    <value>我今天的活动</value>
+  </data>
+  <data name="CALCFIELD_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="USERSECURITY_ACTIVE" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="RETURN_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="DEDUPJOB_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="OAUTHPROVIDER_PROVIDERNAME" xml:space="preserve">
+    <value>提供程序名称</value>
+  </data>
+  <data name="DEDUPRESULT_ALLDEDUPRESULTS" xml:space="preserve">
+    <value>所有去重结果</value>
+  </data>
+  <data name="CALCFIELD_RETURN_NUMBER" xml:space="preserve">
+    <value>退货编号</value>
+  </data>
+  <data name="CONTRACT_ACTIVE" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="INTEGRATION_SYNCRUNSTART" xml:space="preserve">
+    <value>同步运行开始</value>
+  </data>
+  <data name="RMA_REQUESTEDDATE" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="LITREQUEST_PRIORITY" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="CONTRACT_STARTDATE" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="CONTRACT_ALLCONTRACTS" xml:space="preserve">
+    <value>所有合同</value>
+  </data>
+  <data name="ACCOUNT_INTERESTLEVEL" xml:space="preserve">
+    <value>兴趣级别</value>
+  </data>
+  <data name="TICKET_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="CALCFIELD_TICKET" xml:space="preserve">
+    <value>工单</value>
+  </data>
+  <data name="LITERATURE_FAMILY" xml:space="preserve">
+    <value>系列</value>
+  </data>
+  <data name="SYNCRESULT_RECORD" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="CALCFIELD_RMA_CITY_STATE_ZIP" xml:space="preserve">
+    <value>RMA 城市或省或邮政编码</value>
+  </data>
+  <data name="CONTACT_CAMPAIGNCODE" xml:space="preserve">
+    <value>销售活动代码</value>
+  </data>
+  <data name="HISTORY_RESULT" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="OPPORTUNITY_REASONWON" xml:space="preserve">
+    <value>赢得的原因</value>
+  </data>
+  <data name="LITREQUEST_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="RETURN_SHIPTO" xml:space="preserve">
+    <value>送货地址</value>
+  </data>
+  <data name="LITREQUEST_SENDVIA" xml:space="preserve">
+    <value>发送方式</value>
+  </data>
+  <data name="COMPETITOR_STRENGTHS" xml:space="preserve">
+    <value>优点</value>
+  </data>
+  <data name="ACCOUNT_CAMPAIGNCODE" xml:space="preserve">
+    <value>销售活动代码</value>
+  </data>
+  <data name="TEAMVIEW_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CONTRACT_SERVICETYPE" xml:space="preserve">
+    <value>服务类型</value>
+  </data>
+  <data name="ACCOUNT_ACTIVECAMPAIGNS" xml:space="preserve">
+    <value>正在进行的销售活动</value>
+  </data>
+  <data name="CONTRACT_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="TICKETACTIVITYRATE_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="OPPORTUNITY_ESTCLOSE" xml:space="preserve">
+    <value>预计结束日期</value>
+  </data>
+  <data name="USER_CONCURRENTUSERS" xml:space="preserve">
+    <value>并发用户</value>
+  </data>
+  <data name="ACCOUNT_OWNER" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="CALCFIELD_SALES_ORDER_NUMBER" xml:space="preserve">
+    <value>销售订单编号</value>
+  </data>
+  <data name="DEFECT_ALLDEFECTS" xml:space="preserve">
+    <value>所有缺陷</value>
+  </data>
+  <data name="RMA_RETURNEDBY" xml:space="preserve">
+    <value>退货方</value>
+  </data>
+  <data name="TICKET_ALLOPEN" xml:space="preserve">
+    <value>所有未结项</value>
+  </data>
+  <data name="ACCOUNT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="CONTACT_CONTACTID" xml:space="preserve">
+    <value>联系人 ID</value>
+  </data>
+  <data name="RESOURCELIST_EMAIL" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="CALCFIELD_IMPORT_NUMBER" xml:space="preserve">
+    <value>导入编号</value>
+  </data>
+  <data name="RMA_SHIPTO" xml:space="preserve">
+    <value>送货地址</value>
+  </data>
+  <data name="USER_TEMPLATENAME" xml:space="preserve">
+    <value>模板名称</value>
+  </data>
+  <data name="PICKLISTVIEW_MODIFYDATE" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="USERSECURITY_WEBVIEWERUSERS" xml:space="preserve">
+    <value>Web 查看者用户</value>
+  </data>
+  <data name="AREACATEGORYISSUE_DEFECT" xml:space="preserve">
+    <value>缺陷</value>
+  </data>
+  <data name="CONTACT_MOBILE" xml:space="preserve">
+    <value>移动电话</value>
+  </data>
+  <data name="ACCOUNT_CAMPAIGN" xml:space="preserve">
+    <value>销售活动</value>
+  </data>
+  <data name="IMPORTHISTORY_IMPORTNUMBER" xml:space="preserve">
+    <value>导入编号</value>
+  </data>
+  <data name="ACCOUNT_CREATEUSER" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="CONTRACT_CONTRACTTYPE" xml:space="preserve">
+    <value>合同类型</value>
+  </data>
+  <data name="CONTACT_CONTACTTYPE" xml:space="preserve">
+    <value>联系人类型</value>
+  </data>
+  <data name="CONTACT_EMAIL" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="LITERATURE_REORDERQTY" xml:space="preserve">
+    <value>重新订购数量</value>
+  </data>
+  <data name="SYNCRESULT_GLOBALSYNCID" xml:space="preserve">
+    <value>全局同步 ID</value>
+  </data>
+  <data name="OPPORTUNITY_SALESPROCESSES" xml:space="preserve">
+    <value>销售流程</value>
+  </data>
+  <data name="PRODUCT_LASTMODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="LEADSOURCE_ALLLEADSOURCES" xml:space="preserve">
+    <value>所有销售线索来源</value>
+  </data>
+  <data name="QUALIFICATION_VISIBLE" xml:space="preserve">
+    <value>可见</value>
+  </data>
+  <data name="DEFECT_UNASSIGNEDDEFECTS" xml:space="preserve">
+    <value>未分配的缺陷</value>
+  </data>
+  <data name="CAMPAIGN_CAMPAIGNCODE" xml:space="preserve">
+    <value>销售活动代码</value>
+  </data>
+  <data name="CONTACT_MYHISTORY" xml:space="preserve">
+    <value>我的历史</value>
+  </data>
+  <data name="OPPORTUNITY_LATESTOPPORTUNITIES" xml:space="preserve">
+    <value>最新销售机会</value>
+  </data>
+  <data name="CALCFIELD_RMAADDRESS" xml:space="preserve">
+    <value>RMA 地址</value>
+  </data>
+  <data name="QUALIFICATION_SHOWNOTES" xml:space="preserve">
+    <value>显示备注</value>
+  </data>
+  <data name="PRODUCT_PRODUCTCODE" xml:space="preserve">
+    <value>产品代码</value>
+  </data>
+  <data name="USERSECURITY_ENABLEDFORSYNC" xml:space="preserve">
+    <value>已启用同步</value>
+  </data>
+  <data name="QUALIFICATION_CREATEDATE" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="CAMPAIGN_ENDDATE" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="CONTACT_ACCTMANAGER" xml:space="preserve">
+    <value>客户经理</value>
+  </data>
+  <data name="RESOURCELIST_NAME" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="HISTORY_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="PICKLISTVIEW_MODIFYUSER" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="ACCOUNT_RESPONSEDATE" xml:space="preserve">
+    <value>回应日期</value>
+  </data>
+  <data name="TICKET_FOLLOWUP" xml:space="preserve">
+    <value>后续</value>
+  </data>
+  <data name="CAMPAIGN_DUEDATE" xml:space="preserve">
+    <value>到期日期</value>
+  </data>
+  <data name="SYNCRESULT_STARTTIME" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="OPPORTUNITY_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="OPPORTUNITY_COMPLETEDDATE" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="CALCFIELD_RMARECEIVEDPRODUCT" xml:space="preserve">
+    <value>RMA 已接收产品</value>
+  </data>
+  <data name="LEADSOURCE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="LITREQUEST_REQUESTUSER" xml:space="preserve">
+    <value>申请者</value>
+  </data>
+  <data name="PACKAGES_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SECUREDACTION_CREATEDATE" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="QUALIFICATIONCATEGORY_ALLQUALIFICATIONS" xml:space="preserve">
+    <value>所有资格</value>
+  </data>
+  <data name="USERSECURITY_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CALCFIELD_LEAD_CTY_ST_ZIP" xml:space="preserve">
+    <value>销售线索城市或省或邮政编码</value>
+  </data>
+  <data name="CONTACT_STATUSDUPLICATE" xml:space="preserve">
+    <value>状态 = 重复</value>
+  </data>
+  <data name="CONTACT_STATE" xml:space="preserve">
+    <value>省</value>
+  </data>
+  <data name="IMPORTHISTORY_CREATEDATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="SYNCRESULT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="OPPORTUNITY_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="IMPORT_NUMBER" xml:space="preserve">
+    <value>导入编号</value>
+  </data>
+  <data name="LITERATUREITEM_ALLLITERATUREITEMS" xml:space="preserve">
+    <value>所有营销材料项目</value>
+  </data>
+  <data name="ACCOUNT_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="CONTACT_CREATEUSER" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="TICKET_URGENCY" xml:space="preserve">
+    <value>紧急性</value>
+  </data>
+  <data name="CALCFIELD_ADDRESS" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TICKET_USER" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="RMA_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="OPPORTUNITY_MYOPPORTUNITIES" xml:space="preserve">
+    <value>我的销售机会</value>
+  </data>
+  <data name="ACCOUNT_STATE" xml:space="preserve">
+    <value>省</value>
+  </data>
+  <data name="LITREQUEST_ALLOPEN" xml:space="preserve">
+    <value>所有未结项</value>
+  </data>
+  <data name="PACKAGES_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="AREACATEGORYISSUE_AREA" xml:space="preserve">
+    <value>所属范围</value>
+  </data>
+  <data name="DEDUPRESULT_RESULTENTITYTYPENAME" xml:space="preserve">
+    <value>结果实体类型名称</value>
+  </data>
+  <data name="ACCOUNT_STATUSPURGE" xml:space="preserve">
+    <value>状态 = 清除</value>
+  </data>
+  <data name="CALCFIELD_RMA_COUNTY_COUNTRY" xml:space="preserve">
+    <value>RMA 县或国家/地区</value>
+  </data>
+  <data name="RMA_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="USERSECURITY_NETWORKUSERS" xml:space="preserve">
+    <value>网络用户</value>
+  </data>
+  <data name="DEDUPRESULT_RESULTENTITY" xml:space="preserve">
+    <value>结果实体</value>
+  </data>
+  <data name="DEFECT_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="COMPETITOR_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="CALCFIELD_STREET_ADDRESS" xml:space="preserve">
+    <value>街道地址</value>
+  </data>
+  <data name="ACCOUNT_PARTNERS" xml:space="preserve">
+    <value>合作伙伴</value>
+  </data>
+  <data name="CAMPAIGN_TASKDESCRIPTION" xml:space="preserve">
+    <value>任务描述</value>
+  </data>
+  <data name="TICKET_MYTICKETS" xml:space="preserve">
+    <value>我的工单</value>
+  </data>
+  <data name="ACCOUNT_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="DEPARTMENTVIEW_ALLDEPARTMENTS" xml:space="preserve">
+    <value>所有部门</value>
+  </data>
+  <data name="CONTACT_CAMPAIGNOWNER" xml:space="preserve">
+    <value>销售活动所有者</value>
+  </data>
+  <data name="TEAMVIEW_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="LEAD_OWNER" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="CONTACT_ALLCONTACTS" xml:space="preserve">
+    <value>所有联系人</value>
+  </data>
+  <data name="CONTACT_DUPLICATEEMAILS" xml:space="preserve">
+    <value>重复电子邮件</value>
+  </data>
+  <data name="ACCOUNT_ALLACCOUNTS" xml:space="preserve">
+    <value>所有客户</value>
+  </data>
+  <data name="RESOURCELIST_COORDINATOR" xml:space="preserve">
+    <value>协调员</value>
+  </data>
+  <data name="SECUREDACTION_MODIFYDATE" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="CONTACT_DONOTSOLICIT" xml:space="preserve">
+    <value>请勿推销</value>
+  </data>
+  <data name="LITREQUEST_USERNAME" xml:space="preserve">
+    <value>申请者</value>
+  </data>
+  <data name="USER_TITLE" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="CAMPAIGN_ALLCAMPAIGNS" xml:space="preserve">
+    <value>所有销售活动</value>
+  </data>
+  <data name="CONTACT_ACCTTYPE" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
+  <data name="DEFECTACTIVITYRATE_RATEHOUR" xml:space="preserve">
+    <value>费率/小时</value>
+  </data>
+  <data name="DEDUPRESULT_RESULTDATE" xml:space="preserve">
+    <value>结果日期</value>
+  </data>
+  <data name="DEFECTACTIVITYRATE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="LITERATUREITEM_REORDERQTY" xml:space="preserve">
+    <value>重新订购数量</value>
+  </data>
+  <data name="LEAD_ALLLEADS" xml:space="preserve">
+    <value>所有销售线索</value>
+  </data>
+  <data name="INTEGRATION_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CALCFIELD_CONTACT_NAME__LAST__FIRST_" xml:space="preserve">
+    <value>联系人姓名(姓氏，名字)</value>
+  </data>
+  <data name="RETURN_RETURNID" xml:space="preserve">
+    <value>退货 ID</value>
+  </data>
+  <data name="COMPETITOR_COMPETITOR" xml:space="preserve">
+    <value>竞争对手</value>
+  </data>
+  <data name="LEAD_TOUCHEDLEADS" xml:space="preserve">
+    <value>已接触的销售线索</value>
+  </data>
+  <data name="RETURN_RETURNSNEEDINGPO" xml:space="preserve">
+    <value>需要采购订单的退货</value>
+  </data>
+  <data name="PRODUCT_AVAILABLEPRODUCTS" xml:space="preserve">
+    <value>可用产品</value>
+  </data>
+  <data name="SYNCRESULT_ERRORMESSAGE" xml:space="preserve">
+    <value>错误消息</value>
+  </data>
+  <data name="RESOURCELIST_PHONE" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="CONTRACT_REFERENCE" xml:space="preserve">
+    <value>参考编号</value>
+  </data>
+  <data name="SALESORDER_ALLORDERSANDQUOTES" xml:space="preserve">
+    <value>所有订单和报价</value>
+  </data>
+  <data name="SYNCJOB_ENDTIME" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="IMPORTHISTORY_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="LITREQUEST_DESCRIPTION" xml:space="preserve">
+    <value>营销材料申请</value>
+  </data>
+  <data name="OPPORTUNITY_ALLOPEN" xml:space="preserve">
+    <value>所有未结项</value>
+  </data>
+  <data name="CONTRACT_REMAINING" xml:space="preserve">
+    <value>剩余</value>
+  </data>
+  <data name="RETURN_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="AREACATEGORYISSUE_CREATEDATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="DEFECT_CATEGORY" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="CONTACT_OWNER" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="DEDUPJOB_RECORDCOUNT" xml:space="preserve">
+    <value>记录计数</value>
+  </data>
+  <data name="CALCFIELD_CONTACT_NAME__PREFIX_FIRST_LAST_" xml:space="preserve">
+    <value>联系人姓名(前缀，名字，姓氏)</value>
+  </data>
+  <data name="USER_DEPARTMENT" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="SYNCRESULT_DIAGNOSISCODE" xml:space="preserve">
+    <value>诊断代码</value>
+  </data>
+  <data name="CONTACT_CONTACT" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="USER_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TICKET_WEBPORTALALLTICKETS" xml:space="preserve">
+    <value>Web 门户的所有工单</value>
+  </data>
+  <data name="TICKETSOLUTIONTYPE_STANDARDSOLUTIONID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="LITERATUREITEM_COST" xml:space="preserve">
+    <value>成本</value>
+  </data>
+  <data name="USERSECURITY_REMOTEUSERS" xml:space="preserve">
+    <value>远程用户</value>
+  </data>
+  <data name="SYNCRESULT_SYNCJOBNAME" xml:space="preserve">
+    <value>同步作业名称</value>
+  </data>
+  <data name="OPPORTUNITY_REASONLOST" xml:space="preserve">
+    <value>失去的原因</value>
+  </data>
+  <data name="CAMPAIGN_OPENCAMPAIGNTASKS" xml:space="preserve">
+    <value>未结销售活动任务</value>
+  </data>
+  <data name="LITERATURE_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CONTACT_CAMPAIGNNAME" xml:space="preserve">
+    <value>销售活动名称</value>
+  </data>
+  <data name="IMPORTHISTORY_ERRORCOUNT" xml:space="preserve">
+    <value>错误计数</value>
+  </data>
+  <data name="LITERATUREITEM_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="AREACATEGORYISSUE_CUSTOMER" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="PRODUCT_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="LITREQUEST_STATUS" xml:space="preserve">
+    <value>填写状态</value>
+  </data>
+  <data name="DEFECT_PRIORITY" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="USERSECURITY_ALLUSERS" xml:space="preserve">
+    <value>所有用户</value>
+  </data>
+  <data name="AREACATEGORYISSUE_CREATEUSER" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="SYNCRESULT_RECEIVEDBY" xml:space="preserve">
+    <value>接收者</value>
+  </data>
+  <data name="PRODUCT_DISCONTINUEDPRODUCTS" xml:space="preserve">
+    <value>停产产品</value>
+  </data>
+  <data name="SYNCRESULT_SENTFROM" xml:space="preserve">
+    <value>发送自</value>
+  </data>
+  <data name="SYNCRESULT_APPLICATIONCODE" xml:space="preserve">
+    <value>应用程序代码</value>
+  </data>
+  <data name="RMA_RETURNID" xml:space="preserve">
+    <value>退货 ID</value>
+  </data>
+  <data name="OPPORTUNITY_ACTUALCLOSE" xml:space="preserve">
+    <value>实际结束日期</value>
+  </data>
+  <data name="LEAD_UNTOUCHEDLEADS" xml:space="preserve">
+    <value>未接触的销售线索</value>
+  </data>
+  <data name="CAMPAIGN_CAMPAIGNNAME" xml:space="preserve">
+    <value>销售活动</value>
+  </data>
+  <data name="CALCFIELD_LEAD" xml:space="preserve">
+    <value>销售线索</value>
+  </data>
+  <data name="CALCFIELD_SALESORDER" xml:space="preserve">
+    <value>销售订单</value>
+  </data>
+  <data name="OPPORTUNITY_MYTOPOPPORTUNITIES" xml:space="preserve">
+    <value>我的排名靠前的销售机会</value>
+  </data>
+  <data name="LITREQUEST_SENDBY" xml:space="preserve">
+    <value>最晚发送日期</value>
+  </data>
+  <data name="DEDUPJOB_COMPLETED" xml:space="preserve">
+    <value>完成时间</value>
+  </data>
+  <data name="PACKAGE_LASTMODIFIED" xml:space="preserve">
+    <value>上次修改时间</value>
+  </data>
+  <data name="USERSECURITY_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TICKET_AREA" xml:space="preserve">
+    <value>所属范围</value>
+  </data>
+  <data name="CONTACT_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CONTACT_TITLE" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="LITREQUEST_TOTALCOST" xml:space="preserve">
+    <value>成本总计</value>
+  </data>
+  <data name="TICKETPROBLEMTYPE_STANDARDPROBLEMID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="TICKETPROBLEMTYPE_AREA" xml:space="preserve">
+    <value>所属范围</value>
+  </data>
+  <data name="TICKETAREAOWNER_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="DEDUPJOB_SOURCEDESCRIPTION" xml:space="preserve">
+    <value>来源描述</value>
+  </data>
+  <data name="COMPETITOR_ALLCOMPETITORS" xml:space="preserve">
+    <value>所有竞争对手</value>
+  </data>
+  <data name="CAMPAIGN_STARTDATE" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="TICKETSOLUTIONTYPE_CREATEUSER" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="RMA_PRIORITY" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="AREACATEGORYISSUE_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="USERSECURITY_WEBONLYUSERS" xml:space="preserve">
+    <value>仅限 Web 用户</value>
+  </data>
+  <data name="DEFECTACTIVITYRATE_RATEHOUR1" xml:space="preserve">
+    <value>费率/小时</value>
+  </data>
+  <data name="USER_ALLUSERS" xml:space="preserve">
+    <value>所有用户</value>
+  </data>
+  <data name="CALCFIELD_SALESORDERADDRESS" xml:space="preserve">
+    <value>销售订单地址</value>
+  </data>
+  <data name="SALESORDER_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="IMPORTHISTORY_DUPLICATECOUNT" xml:space="preserve">
+    <value>重复项计数</value>
+  </data>
+  <data name="AREACATEGORYISSUE_CATEGORY" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="PRODUCT_CREATED" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="CALCFIELD_OPPORTUNITY_PRODUCT" xml:space="preserve">
+    <value>销售机会产品</value>
+  </data>
+  <data name="CONTACT_LATESTCONTACTS" xml:space="preserve">
+    <value>最新联系人</value>
+  </data>
+  <data name="CALCFIELD_TICKET_NUMBER" xml:space="preserve">
+    <value>工单编号</value>
+  </data>
+  <data name="CALCFIELD_MAILING_STREET_ADDRESS" xml:space="preserve">
+    <value>邮寄街道地址</value>
+  </data>
+  <data name="PACKAGES_LASTMODIFIED" xml:space="preserve">
+    <value>上次修改时间</value>
+  </data>
+  <data name="DEPARTMENTVIEW_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TICKETPROBLEMTYPE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="PRODUCT_VENDOR" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="HISTORY_PRIORITY" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="DEDUPRESULT_SCORE" xml:space="preserve">
+    <value>分数</value>
+  </data>
+  <data name="DEDUPJOB_DUPLICATECOUNT" xml:space="preserve">
+    <value>重复项计数</value>
+  </data>
+  <data name="DEPARTMENT_MODIFIEDBY" xml:space="preserve">
+    <value>修改者</value>
+  </data>
+  <data name="USERSECURITY_DEPARTMENT" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="RESOURCELIST_ALLRESOURCES" xml:space="preserve">
+    <value>所有资源</value>
+  </data>
+  <data name="CONTRACT_ENDDATE" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="DEDUPRESULT_RESULTCOUNT" xml:space="preserve">
+    <value>结果计数</value>
+  </data>
+  <data name="CALCFIELD_LEAD_FULLNAME" xml:space="preserve">
+    <value>销售线索全名</value>
+  </data>
+  <data name="SALESORDER_MYORDERSANDQUOTES" xml:space="preserve">
+    <value>我的订单和报价</value>
+  </data>
+  <data name="TICKET_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="PICKLISTVIEW_ALLPICKLISTS" xml:space="preserve">
+    <value>所有下拉列表</value>
+  </data>
+  <data name="TICKET_WORKPHONE" xml:space="preserve">
+    <value>单位电话</value>
+  </data>
+  <data name="TICKET_ISSUE" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="LEADSOURCE_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="CONTACT_STATUSPURGE" xml:space="preserve">
+    <value>状态 = 清除</value>
+  </data>
+  <data name="OPPORTUNITY_MYPIPELINE" xml:space="preserve">
+    <value>我的销售管道</value>
+  </data>
+  <data name="CONTACT_CITY" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="QUALIFICATION_CATEGORY_MODIFIED" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="OPPORTUNITY_PROB" xml:space="preserve">
+    <value>概率</value>
+  </data>
+  <data name="QUALIFICATION_SORTPOSITION" xml:space="preserve">
+    <value>排序位置</value>
+  </data>
+  <data name="INTEGRATION_AUTHORIZATIONTYPE" xml:space="preserve">
+    <value>授权类型</value>
+  </data>
+  <data name="ACCOUNT_DUPLICATESUSPECTS" xml:space="preserve">
+    <value>重复准客户</value>
+  </data>
+  <data name="CONTACT_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="SYNCRESULT_USER" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="CONTRACT_ACTIVECONTRACTS" xml:space="preserve">
+    <value>现行合同</value>
+  </data>
+  <data name="RESOURCELIST_MODIFYDATE" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="PRODUCT_FAMILY" xml:space="preserve">
+    <value>系列</value>
+  </data>
+  <data name="SALESDASHBOARD_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="CALCFIELD_LEAD_ADDRESS" xml:space="preserve">
+    <value>销售线索地址</value>
+  </data>
+  <data name="LITREQUEST_REQUESTEDBY" xml:space="preserve">
+    <value>申请者</value>
+  </data>
+  <data name="IMPORTHISTORY_IMPORTEDCOUNT" xml:space="preserve">
+    <value>导入项计数</value>
+  </data>
+  <data name="IMPORTHISTORY_MERGECOUNT" xml:space="preserve">
+    <value>合并计数</value>
+  </data>
+  <data name="USERSECURITY_TEMPLATENAME" xml:space="preserve">
+    <value>模板名称</value>
+  </data>
+  <data name="SYNCJOB_JOBNAME" xml:space="preserve">
+    <value>作业名称</value>
+  </data>
+  <data name="TICKET_CATEGORY" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="LITREQUEST_REQUESTDATE" xml:space="preserve">
+    <value>已申请</value>
+  </data>
+  <data name="ACCOUNT_OPENRESPONSES" xml:space="preserve">
+    <value>未结回应</value>
+  </data>
+  <data name="SYNCRESULT_CREATEDATE" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="PACKAGE_NAME" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ACCOUNT_CUSTOMERS" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="CAMPAIGN_MYCAMPAIGNS" xml:space="preserve">
+    <value>我的销售活动</value>
+  </data>
+  <data name="RESOURCELIST_TYPE" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="SALESORDER_ACCOUNT" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="CALCFIELD_LEAD_NAME__PREFIX_FIRST_LAST_" xml:space="preserve">
+    <value>销售线索姓名 (前缀，名字，姓氏)</value>
+  </data>
+  <data name="DEDUPJOB_ENTITYNAME" xml:space="preserve">
+    <value>实体名称</value>
+  </data>
+  <data name="USERSECURITY_RETIREDUSERS" xml:space="preserve">
+    <value>退役用户</value>
+  </data>
+  <data name="CAMPAIGN_ASSIGNEDDATE" xml:space="preserve">
+    <value>分配日期</value>
+  </data>
+  <data name="PICKLISTVIEW_PICKLISTNAME" xml:space="preserve">
+    <value>下拉列表名称</value>
+  </data>
+  <data name="ACCOUNT_LEADSOURCE" xml:space="preserve">
+    <value>销售线索来源</value>
+  </data>
+  <data name="SYNCRESULT_SEVERITY" xml:space="preserve">
+    <value>严重性</value>
+  </data>
+  <data name="RETURN_RECEIVEDRETURNS" xml:space="preserve">
+    <value>已接收的退货</value>
+  </data>
+  <data name="SALESORDER_QUOTES" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="SYNCRESULT_LINK" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="ROLE_DESCRIPTION" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="SYNCJOB_LINK" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="CALCFIELD_COUNTY__COUNTRY" xml:space="preserve">
+    <value>县或国家/地区</value>
+  </data>
+  <data name="SYNCJOB_STARTTIME" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="RETURN_PRIORITY" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="SALESORDER_MYSALESORDERS" xml:space="preserve">
+    <value>我的销售订单</value>
+  </data>
+  <data name="SYNCRESULT_APPLICATION" xml:space="preserve">
+    <value>应用程序</value>
+  </data>
+  <data name="TICKET_ASSIGNEDTO" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="CONTACT_ACCTSTATUS" xml:space="preserve">
+    <value>客户状态</value>
+  </data>
+  <data name="DEFECT_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SALESORDER_STATUS" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="USER_TEMPLATES" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="ACCOUNT_PROMOTEDACCOUNTS" xml:space="preserve">
+    <value>已提升的客户</value>
+  </data>
+  <data name="QUALIFICATION_MODIFYDATE" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="OPPORTUNITY_MYOPENOPPORTUNITIES" xml:space="preserve">
+    <value>我的未结销售机会</value>
+  </data>
+  <data name="CONTACT_CREATEDATE" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="CAMPAIGN_OVERDUECAMPAIGNTASKS" xml:space="preserve">
+    <value>过期销售活动任务</value>
+  </data>
+  <data name="ACCOUNT_INTEREST" xml:space="preserve">
+    <value>兴趣</value>
+  </data>
+</root>
