@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<PortalPage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="701319b7-468f-4e91-b48b-8fa97fec0c78" disablePageValidation="false">
+  <PageAlias>CustomerSystem</PageAlias>
+  <TemplateUrl>Masters\base.master</TemplateUrl>
+  <InheritsFrom>Sage.Platform.WebPortal.EntityPage, Sage.Platform.WebPortal</InheritsFrom>
+  <Properties>
+    <Property Name="EntityTypeName" TypeConverter="">Sage.Entity.Interfaces.ICustomerSystem, Sage.Entity.Interfaces, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</Property>
+  </Properties>
+  <TemplateProperties />
+  <IsDefaultPage>false</IsDefaultPage>
+  <ExcludedGlobalModules />
+  <AppliedSecurity />
+  <IncludeScript />
+</PortalPage>

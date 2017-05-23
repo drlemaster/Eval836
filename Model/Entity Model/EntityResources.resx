@@ -21738,4 +21738,58 @@
   <data name="DiscountChargeItem.SODistributedCharge.DisplayName" xml:space="preserve">
     <value>Sales Order Distributed Charge</value>
   </data>
+  <data name="CustomerSystem.DisplayName" xml:space="preserve">
+    <value>CustomerSystem</value>
+  </data>
+  <data name="CustomerSystem.CustomerSystemId.DisplayName" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="CustomerSystem.AccountId.DisplayName" xml:space="preserve">
+    <value>Account ID</value>
+  </data>
+  <data name="CustomerSystem.CreateUser.DisplayName" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="CustomerSystem.CreateDate.DisplayName" xml:space="preserve">
+    <value>Create Date</value>
+  </data>
+  <data name="CustomerSystem.ModifyUser.DisplayName" xml:space="preserve">
+    <value>Modify User</value>
+  </data>
+  <data name="CustomerSystem.ModifyDate.DisplayName" xml:space="preserve">
+    <value>Modify Date</value>
+  </data>
+  <data name="CustomerSystem.Type.DisplayName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CustomerSystem.Description.DisplayName" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CustomerSystem.Environment.DisplayName" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="CustomerSystem.URL.DisplayName" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="CustomerSystem.User.DisplayName" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="CustomerSystem.Password.DisplayName" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="CustomerSystem.ValidDate.DisplayName" xml:space="preserve">
+    <value>ValidDate</value>
+  </data>
+  <data name="CustomerSystem.Notes.DisplayName" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Account.CustomerSystems.DisplayName" xml:space="preserve">
+    <value>CustomerSystems</value>
+  </data>
+  <data name="CustomerSystem.Account.DisplayName" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="CustomerSystem.DisplayNamePlural" xml:space="preserve">
+    <value>CustomerSystems</value>
+  </data>
 </root>

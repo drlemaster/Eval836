@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ModelItems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item Id="50c6fdb1-b0b5-41eb-9a70-54b31652d10b">LiveGroupViewer.smartpart.xml</Item>
+  <Item Id="e3b98610-ae90-4511-8d1b-c5ed4f95fcec">ClientSystemDetails.smartpart.xml</Item>
+</ModelItems>

@@ -1,0 +1,479 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="79d8fe0c-74f9-49d9-8ce9-696c55b0ef81" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-05-22T21:45:18.555235Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>ClientSystemDetails</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Account.AccountName</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <OnChangeAction>
+          <ResourceKey>QFTextBox</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>0</Column>
+        <Row>1</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox2</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Description</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>128</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox2</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <ColumnSpan>2</ColumnSpan>
+        <Column>0</Column>
+        <Row>2</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox7</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>URL</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>256</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox7</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>0</Column>
+        <Row>3</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox8</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>User</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>32</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox8</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.QFDateTimePicker, Sage.SalesLogix.QuickForms.QFControls">
+      <QFDateTimePicker>
+        <Column>0</Column>
+        <Row>4</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFDateTimePicker</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>ValidDate</DataItemName>
+            <ControlItemName>DateTimeValue</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <OnChangeAction>
+          <ResourceKey>QFDateTimePicker</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+        <DateTimeValue xsi:nil="true" />
+        <SelectedDateTime>0001-01-01T00:00:00</SelectedDateTime>
+        <DateOnly>true</DateOnly>
+        <DisplayTime>false</DisplayTime>
+        <BoundFieldType>DateTime</BoundFieldType>
+        <AutoPostBack>false</AutoPostBack>
+        <Timeless>false</Timeless>
+      </QFDateTimePicker>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <ColumnSpan>2</ColumnSpan>
+        <RowSpan>2</RowSpan>
+        <Column>0</Column>
+        <Row>5</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox4</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Notes</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>512</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox4</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>1</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox6</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Type</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>32</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox6</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>1</Column>
+        <Row>1</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox3</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Environment</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>32</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox3</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
+      <QFTextBox>
+        <Column>1</Column>
+        <Row>3</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFTextBox5</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Password</DataItemName>
+            <ControlItemName>Text</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>32</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFTextBox5</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+      </QFTextBox>
+    </Control>
+  </Controls>
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>ea063b58e4484b00b882747951cb09b6</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>a710d85eb3234b69a4a76e6b5718767a</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms">
+      <QFButton>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>tbrSave</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>none</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <ButtonType>Icon</ButtonType>
+        <Image>[Localization!Global_Images:Save_16x16]</Image>
+        <OnClientClick />
+        <OnClickAction>
+          <ResourceKey>tbrSave</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.BusinessRuleActionItem, Sage.Platform.QuickForms">
+            <BusinessRuleActionItem>
+              <BusinessRule>Save</BusinessRule>
+              <Object>CustomerSystem</Object>
+              <Parameters />
+              <PassResultsToNextAction>False</PassResultsToNextAction>
+              <OnComplete typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+                <NoActionActionItem>
+                  <MethodName />
+                </NoActionActionItem>
+              </OnComplete>
+            </BusinessRuleActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>True</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnClickAction>
+      </QFButton>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>50</Width>
+    </ColumnStyle>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>50</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>true</UseEntityNameAsTitle>
+  <EntityTypeName>ICustomerSystem</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>
