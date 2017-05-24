@@ -21771,9 +21771,6 @@
   <data name="CustomerSystem.URL.DisplayName" xml:space="preserve">
     <value>URL</value>
   </data>
-  <data name="CustomerSystem.User.DisplayName" xml:space="preserve">
-    <value>User</value>
-  </data>
   <data name="CustomerSystem.Password.DisplayName" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -21791,5 +21788,8 @@
   </data>
   <data name="CustomerSystem.DisplayNamePlural" xml:space="preserve">
     <value>CustomerSystems</value>
+  </data>
+  <data name="CustomerSystem.UserName.DisplayName" xml:space="preserve">
+    <value>UserName</value>
   </data>
 </root>

@@ -212,26 +212,6 @@
         </TextDataType>
       </SystemDataType>
     </property>
-    <property xsi:type="OrmFieldProperty" id="f04b4be1-b04a-4ddf-b9fd-8867ca39c603" lastModifiedUtc="2017-05-19T20:46:15.2857206Z" name="User" audited="false" columnName="USER" maxLength="32" precision="0" scale="0" ordinal="10" isReadOnly="false">
-      <ExtendedPropertiesCollection>
-        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty">
-          <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
-            <OrmEntityPropertySDataExtension generate="true" />
-          </extender>
-          <extender guid="ac7a8695-7689-4c4b-819d-6c3ab7c2e15f">
-            <OrmEntityPropertyImportExtension />
-          </extender>
-          <extender guid="cbb948ad-9154-4174-847a-690a81c1c2e4">
-            <OrmEntityPropertyBulkActionExtension />
-          </extender>
-        </extendee>
-      </ExtendedPropertiesCollection>
-      <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
-        <TextDataType>
-          <Length>32</Length>
-        </TextDataType>
-      </SystemDataType>
-    </property>
     <property xsi:type="OrmFieldProperty" id="91e49eff-0ec3-4b41-a823-d7e3d9f77ea8" lastModifiedUtc="2017-05-19T20:46:15.2857206Z" name="Password" audited="false" columnName="PASSWORD" maxLength="32" precision="0" scale="0" ordinal="11" isReadOnly="false">
       <ExtendedPropertiesCollection>
         <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty">
@@ -287,6 +267,26 @@
       <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
         <TextDataType>
           <Length>512</Length>
+        </TextDataType>
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="b83378e1-57d1-4995-8832-7c504282c7e0" lastModifiedUtc="2017-05-24T17:49:41.2545987Z" name="UserName" audited="false" columnName="USERNAME" maxLength="32" precision="0" scale="0" ordinal="14" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty">
+          <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+            <OrmEntityPropertySDataExtension generate="true" />
+          </extender>
+          <extender guid="ac7a8695-7689-4c4b-819d-6c3ab7c2e15f">
+            <OrmEntityPropertyImportExtension />
+          </extender>
+          <extender guid="cbb948ad-9154-4174-847a-690a81c1c2e4">
+            <OrmEntityPropertyBulkActionExtension />
+          </extender>
+        </extendee>
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
+        <TextDataType>
+          <Length>32</Length>
         </TextDataType>
       </SystemDataType>
     </property>

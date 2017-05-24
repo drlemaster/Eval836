@@ -117,10 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Title" xml:space="preserve">
-    <value>LiveGroupViewer</value>
+  <data name="Description.Caption" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>LiveGroupViewer</value>
+  <data name="Environment.Caption" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="Notes.Caption" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Password.Caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Type.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="URL.Caption" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="User.Caption" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ValidDate.Caption" xml:space="preserve">
+    <value>ValidDate</value>
+  </data>
+  <data name="grdCustomerSystems.43a0665b-4851-4f9f-ac65-0b41277c1682.ColumnHeading" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="grdCustomerSystems.c857ae18-9cd3-4ebe-baf5-2d96c141d932.ColumnHeading" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="grdCustomerSystems.1f3d914a-a886-49a8-a237-b6bfe4e703fd.ColumnHeading" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="grdCustomerSystems.973ca657-a472-44a0-9c3c-8ab6a7c654d5.ColumnHeading" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="grdCustomerSystems.75d69d40-0316-4baf-a5cb-de6949c743ec.ColumnHeading" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="grdCustomerSystems.80149b6a-a5b9-4b41-96c3-6d7a18f4812d.ColumnHeading" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="grdCustomerSystems.ec5275dd-3fce-40e3-8eb9-ffb38fd454d1.ColumnHeading" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="grdCustomerSystems.e9bb9664-65b7-47fe-8d41-e1dc8da024c6.ColumnHeading" xml:space="preserve">
+    <value>ValidDate</value>
   </data>
 </root>

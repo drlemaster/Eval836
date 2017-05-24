@@ -48,4 +48,5 @@
   <Item Id="eaa1d7fd-5706-4fa8-9b5d-a2f822ddd799">SyncResultsHistory.smartpart.xml</Item>
   <Item Id="13b64eb5-6b65-41ad-b6e4-efa7ea4bb823">AccountDistanceSearch.smartpart.xml</Item>
   <Item Id="598bf43f-cfd1-4f33-a506-9cf6b59dc946">MapGroup.smartpart.xml</Item>
+  <Item Id="1511e4c8-095b-4652-8293-de0a5c0253bc">AccountCustomerSystem.smartpart.xml</Item>
 </ModelItems>
