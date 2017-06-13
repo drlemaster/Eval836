@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="890b9fcc-48d4-47cb-9be5-0e2080a7e8c3" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-05-24T18:14:08.9758299Z">
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="890b9fcc-48d4-47cb-9be5-0e2080a7e8c3" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-05-30T22:21:19.8153505Z">
   <ActiveControl />
   <ImagePath />
   <LoadActions />
@@ -11,18 +11,18 @@
   <ReadOnly>false</ReadOnly>
   <GeneratePrintView>false</GeneratePrintView>
   <Controls>
-    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
-      <QFTextBox>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.QFSLXLookup, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSLXLookup>
         <Column>0</Column>
         <Row>0</Row>
         <HotKey>0</HotKey>
         <TabIndex>0</TabIndex>
-        <ControlId>QFTextBox</ControlId>
+        <ControlId>QFSLXLookup</ControlId>
         <DataBindings>
           <QuickFormPropertyDataBindingDefinition>
             <DataSourceID>MainEntity</DataSourceID>
-            <DataItemName>AccountId</DataItemName>
-            <ControlItemName>Text</ControlItemName>
+            <DataItemName>Account</DataItemName>
+            <ControlItemName>LookupResultValue</ControlItemName>
             <FormatString />
             <NullValueString />
           </QuickFormPropertyDataBindingDefinition>
@@ -32,7 +32,7 @@
         <CaptionAlignment>left</CaptionAlignment>
         <StyleScheme />
         <OnChangeAction>
-          <ResourceKey>QFTextBox</ResourceKey>
+          <ResourceKey>QFSLXLookup</ResourceKey>
           <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
             <NoActionActionItem>
               <MethodName />
@@ -46,15 +46,45 @@
           <RefreshData>False</RefreshData>
         </OnChangeAction>
         <Required>false</Required>
-      </QFTextBox>
+        <LookupImage />
+        <LookupDialogWidth xsi:nil="true" />
+        <LookupDialogHeight xsi:nil="true" />
+        <LookupBindingMode>Object</LookupBindingMode>
+        <LookupResultValue xsi:type="xsd:string" />
+        <SeedProperty />
+        <SeedValue />
+        <DropDownDisplayProperty />
+        <AllowClearingResult>false</AllowClearingResult>
+        <AppendStringValues>false</AppendStringValues>
+        <OverrideSeedOnSearch>false</OverrideSeedOnSearch>
+        <LookupEntityName>Account</LookupEntityName>
+        <LookupEntityTypeName>Sage.Entity.Interfaces.IAccount, Sage.Entity.Interfaces, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</LookupEntityTypeName>
+        <AutoPostBack>false</AutoPostBack>
+        <EnableHyperLinking>false</EnableHyperLinking>
+        <InitializeLookup>false</InitializeLookup>
+        <LookupProperties>
+          <LookupProperty>
+            <PropertyName>AccountName</PropertyName>
+            <PropertyType>System.String</PropertyType>
+            <PropertyHeader>AccountName (Account Name)</PropertyHeader>
+            <PropertyFormat>None</PropertyFormat>
+            <PropertyFormatString />
+            <UseAsResult>false</UseAsResult>
+            <ExcludeFromFilters>false</ExcludeFromFilters>
+            <IsSortable>false</IsSortable>
+            <HideCondition />
+          </LookupProperty>
+        </LookupProperties>
+        <LookupPreFilters />
+      </QFSLXLookup>
     </Control>
-    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
-      <QFTextBox>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.QFSLXPickList, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSLXPickList>
         <Column>0</Column>
         <Row>1</Row>
         <HotKey>0</HotKey>
         <TabIndex>0</TabIndex>
-        <ControlId>QFTextBox2</ControlId>
+        <ControlId>QFSLXPickList2</ControlId>
         <DataBindings>
           <QuickFormPropertyDataBindingDefinition>
             <DataSourceID>MainEntity</DataSourceID>
@@ -68,9 +98,9 @@
         <ExtendedProperties />
         <CaptionAlignment>left</CaptionAlignment>
         <StyleScheme />
-        <MaxLength>32</MaxLength>
+        <MaxLength>64</MaxLength>
         <OnChangeAction>
-          <ResourceKey>QFTextBox2</ResourceKey>
+          <ResourceKey>QFSLXPickList2</ResourceKey>
           <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
             <NoActionActionItem>
               <MethodName />
@@ -84,7 +114,18 @@
           <RefreshData>False</RefreshData>
         </OnChangeAction>
         <Required>false</Required>
-      </QFTextBox>
+        <AutoPostBack>false</AutoPostBack>
+        <PickListName>CustomerSystemEnviron</PickListName>
+        <StorageMode>Text</StorageMode>
+        <NameFormatString />
+        <AllowMultiples>false</AllowMultiples>
+        <AlphaSort>false</AlphaSort>
+        <MustExistInList>false</MustExistInList>
+        <NoneEditable>false</NoneEditable>
+        <PickListId />
+        <PickListFilter />
+        <ValueStoredAsText>true</ValueStoredAsText>
+      </QFSLXPickList>
     </Control>
     <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
       <QFTextBox>
@@ -126,15 +167,17 @@
     </Control>
     <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
       <QFTextBox>
-        <Column>1</Column>
-        <Row>0</Row>
+        <ColumnSpan>3</ColumnSpan>
+        <RowSpan>2</RowSpan>
+        <Column>0</Column>
+        <Row>3</Row>
         <HotKey>0</HotKey>
         <TabIndex>0</TabIndex>
-        <ControlId>QFTextBox5</ControlId>
+        <ControlId>QFTextBox3</ControlId>
         <DataBindings>
           <QuickFormPropertyDataBindingDefinition>
             <DataSourceID>MainEntity</DataSourceID>
-            <DataItemName>Type</DataItemName>
+            <DataItemName>Notes</DataItemName>
             <ControlItemName>Text</ControlItemName>
             <FormatString />
             <NullValueString />
@@ -144,9 +187,9 @@
         <ExtendedProperties />
         <CaptionAlignment>left</CaptionAlignment>
         <StyleScheme />
-        <MaxLength>32</MaxLength>
+        <MaxLength>512</MaxLength>
         <OnChangeAction>
-          <ResourceKey>QFTextBox5</ResourceKey>
+          <ResourceKey>QFTextBox3</ResourceKey>
           <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
             <NoActionActionItem>
               <MethodName />
@@ -161,6 +204,55 @@
         </OnChangeAction>
         <Required>false</Required>
       </QFTextBox>
+    </Control>
+    <Control typeName="Sage.SalesLogix.QuickForms.QFControls.QFSLXPickList, Sage.SalesLogix.QuickForms.QFControls">
+      <QFSLXPickList>
+        <Column>1</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>QFSLXPickList</ControlId>
+        <DataBindings>
+          <QuickFormPropertyDataBindingDefinition>
+            <DataSourceID>MainEntity</DataSourceID>
+            <DataItemName>Type</DataItemName>
+            <ControlItemName>PickListValue</ControlItemName>
+            <FormatString />
+            <NullValueString />
+          </QuickFormPropertyDataBindingDefinition>
+        </DataBindings>
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+        <MaxLength>64</MaxLength>
+        <OnChangeAction>
+          <ResourceKey>QFSLXPickList</ResourceKey>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
+            <NoActionActionItem>
+              <MethodName />
+            </NoActionActionItem>
+          </Action>
+          <IsDialogCloseAction>False</IsDialogCloseAction>
+          <RunOnEveryRePaint>False</RunOnEveryRePaint>
+          <DialogActionResult>NoResult</DialogActionResult>
+          <PerformsUpdate>False</PerformsUpdate>
+          <AppliedSecurity />
+          <RefreshData>False</RefreshData>
+        </OnChangeAction>
+        <Required>false</Required>
+        <AutoPostBack>false</AutoPostBack>
+        <PickListName>CustomerSystemType</PickListName>
+        <StorageMode>Text</StorageMode>
+        <NameFormatString />
+        <AllowMultiples>false</AllowMultiples>
+        <AlphaSort>false</AlphaSort>
+        <MustExistInList>false</MustExistInList>
+        <NoneEditable>false</NoneEditable>
+        <PickListId />
+        <PickListFilter />
+        <ValueStoredAsText>true</ValueStoredAsText>
+      </QFSLXPickList>
     </Control>
     <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
       <QFTextBox>
@@ -223,44 +315,6 @@
         <MaxLength>32</MaxLength>
         <OnChangeAction>
           <ResourceKey>QFTextBox4</ResourceKey>
-          <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
-            <NoActionActionItem>
-              <MethodName />
-            </NoActionActionItem>
-          </Action>
-          <IsDialogCloseAction>False</IsDialogCloseAction>
-          <RunOnEveryRePaint>False</RunOnEveryRePaint>
-          <DialogActionResult>NoResult</DialogActionResult>
-          <PerformsUpdate>False</PerformsUpdate>
-          <AppliedSecurity />
-          <RefreshData>False</RefreshData>
-        </OnChangeAction>
-        <Required>false</Required>
-      </QFTextBox>
-    </Control>
-    <Control typeName="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms">
-      <QFTextBox>
-        <Column>1</Column>
-        <Row>3</Row>
-        <HotKey>0</HotKey>
-        <TabIndex>0</TabIndex>
-        <ControlId>QFTextBox3</ControlId>
-        <DataBindings>
-          <QuickFormPropertyDataBindingDefinition>
-            <DataSourceID>MainEntity</DataSourceID>
-            <DataItemName>Notes</DataItemName>
-            <ControlItemName>Text</ControlItemName>
-            <FormatString />
-            <NullValueString />
-          </QuickFormPropertyDataBindingDefinition>
-        </DataBindings>
-        <ControlLabelPlacement>left</ControlLabelPlacement>
-        <ExtendedProperties />
-        <CaptionAlignment>left</CaptionAlignment>
-        <StyleScheme />
-        <MaxLength>512</MaxLength>
-        <OnChangeAction>
-          <ResourceKey>QFTextBox3</ResourceKey>
           <Action typeName="Sage.Platform.QuickForms.ActionItems.NoActionActionItem, Sage.Platform.QuickForms">
             <NoActionActionItem>
               <MethodName />
@@ -366,7 +420,7 @@
         <Row>0</Row>
         <HotKey>0</HotKey>
         <TabIndex>0</TabIndex>
-        <ControlId>2e1a59ac2ca4331832f53f6a4b07de8</ControlId>
+        <ControlId>e1a59ac2ca4331832f53f6a4b07de8</ControlId>
         <DataBindings />
         <ControlLabelPlacement>left</ControlLabelPlacement>
         <ExtendedProperties />
@@ -443,6 +497,10 @@
     </ColumnStyle>
   </Columns>
   <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
     <RowStyle>
       <SizeType>Absolute</SizeType>
       <Height>35</Height>

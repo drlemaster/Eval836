@@ -246,4 +246,145 @@
   <data name="txtPropensityScore.Caption" xml:space="preserve">
     <value>Purchase Likelihood Score</value>
   </data>
+  <data name="AccountName.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountName.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Division.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Division.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Division.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Address.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Address.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lueParentAccount.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lueParentAccount.LookupDialogTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lueParentAccount.DialogButtonText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lueParentAccount.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPropensityScore.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPropensityScore.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPropensityScore.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MainPhone.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MainPhone.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Fax.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Fax.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TollFree.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TollFree.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebAddress.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebAddress.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Owner.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Owner.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Owner.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccManager.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccManager.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklType.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklType.ButtonToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklType.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklSubType.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklSubType.ButtonToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pklSubType.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Status.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Status.ButtonToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Status.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Industry.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Industry.ButtonToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Industry.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BusinessDescription.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BusinessDescription.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BusinessDescription.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name=".ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name=".Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveAccount.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdReset.ActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
 </root>

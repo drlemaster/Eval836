@@ -177,4 +177,22 @@
   <data name="tbrButton.ToolTip" xml:space="preserve">
     <value>Add New Customer System</value>
   </data>
+  <data name="grdCustomerSystems.45dac9b0-dd22-489e-8c73-fea22f6444e0.ColumnHeading" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="grdCustomerSystems.45dac9b0-dd22-489e-8c73-fea22f6444e0.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="grdCustomerSystems.866de2b8-d152-48de-9902-2befa840b283.ColumnHeading" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="grdCustomerSystems.866de2b8-d152-48de-9902-2befa840b283.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="grdCustomerSystems.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="1aab54e9-4104-498e-a395-7f73b427f99b.DialogTitleOverride" xml:space="preserve">
+    <value>Edit Customer System</value>
+  </data>
 </root>

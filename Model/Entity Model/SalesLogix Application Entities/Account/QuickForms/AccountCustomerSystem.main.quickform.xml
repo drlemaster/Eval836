@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b5993b13-fb8c-48f6-b5ef-9f89fe95c26a" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-05-24T20:52:31.4449994Z">
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b5993b13-fb8c-48f6-b5ef-9f89fe95c26a" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-06-02T17:33:24.0418879Z">
   <ActiveControl />
   <ImagePath />
   <LoadActions />
@@ -37,7 +37,7 @@
             <IsSortable>false</IsSortable>
             <MultiCurrencyDependent>false</MultiCurrencyDependent>
             <DialogSpecs>
-              <SmartPart />
+              <SmartPart>CustomerSystemDetails</SmartPart>
               <Height>400</Height>
               <Width>600</Width>
               <Top>0</Top>
@@ -145,7 +145,8 @@
             <SortDirection>None</SortDirection>
             <IsSortable>false</IsSortable>
             <MultiCurrencyDependent>false</MultiCurrencyDependent>
-            <BusinessRule />
+            <BusinessRule>Delete</BusinessRule>
+            <BusinessRuleObjectName>CustomerSystem</BusinessRuleObjectName>
             <BusinessRuleParameters />
             <AppliedSecurity />
           </QFDeleteCol>
@@ -209,7 +210,7 @@
         <Row>0</Row>
         <HotKey>0</HotKey>
         <TabIndex>0</TabIndex>
-        <ControlId>83d843634924f3789d0394943201e0a</ControlId>
+        <ControlId>d843634924f3789d0394943201e0a</ControlId>
         <DataBindings />
         <ControlLabelPlacement>left</ControlLabelPlacement>
         <ExtendedProperties />
@@ -236,7 +237,7 @@
           <ResourceKey>tbrButton</ResourceKey>
           <Action typeName="Sage.Platform.QuickForms.ActionItems.RedirectActionItem, Sage.Platform.QuickForms">
             <RedirectActionItem>
-              <MethodName />
+              <MethodName>tbrButton_ClickAction</MethodName>
               <RawURL>InsertCustomerSystem.aspx?modeid=Insert</RawURL>
               <MainViewEntityName />
               <UseCurrentIdInLink>true</UseCurrentIdInLink>

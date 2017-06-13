@@ -117,46 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="QFSLXLookup.LookupProperties.AccountName.PropertyHeader" xml:space="preserve">
-    <value>AccountName (Account Name)</value>
+  <data name="Title" xml:space="preserve">
+    <value>CustomerSystemDetails</value>
   </data>
-  <data name="QFTextBox1.Caption" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="QFSLXPickList2.ButtonToolTip" xml:space="preserve">
-    <value>Environment</value>
-  </data>
-  <data name="QFTextBox3.Caption" xml:space="preserve">
-    <value>Notes</value>
-  </data>
-  <data name="QFTextBox4.Caption" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="QFSLXPickList.ButtonToolTip" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="QFTextBox6.Caption" xml:space="preserve">
-    <value>URL</value>
-  </data>
-  <data name="QFTextBox7.Caption" xml:space="preserve">
-    <value>UserName</value>
-  </data>
-  <data name="QFDateTimePicker.Caption" xml:space="preserve">
-    <value>ValidDate</value>
-  </data>
-  <data name="tbrSave.Caption" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="QFSLXLookup.ButtonToolTip" xml:space="preserve">
-    <value>Account</value>
-  </data>
-  <data name="QFSLXLookup.Caption" xml:space="preserve">
-    <value>Account</value>
-  </data>
-  <data name="QFSLXPickList.Caption" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="QFSLXPickList2.Caption" xml:space="preserve">
-    <value>Environment</value>
+  <data name="Description" xml:space="preserve">
+    <value>CustomerSystemDetails</value>
   </data>
 </root>

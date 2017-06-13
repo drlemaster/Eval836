@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <ModelItems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Item Id="b160748c-699a-4073-89a9-623df46123e0">AccountDetails.smartpart.xml</Item>
+  <Item Id="952f7676-5159-4cef-8e7f-445794f878aa">AccountCustomerSystem.smartpart.xml</Item>
   <Item Id="5e54df83-7f33-4633-9984-7c1c1d464d00">AccountExtendedDetails.smartpart.xml</Item>
   <Item Id="1ed85fe4-d563-4087-8d1a-bd7cfa0c7051">AccountErpDetails.smartpart.xml</Item>
   <Item Id="4b5d1b3b-8309-4389-b7ab-07ea47297bc2">AccountContacts.smartpart.xml</Item>
@@ -48,5 +49,5 @@
   <Item Id="eaa1d7fd-5706-4fa8-9b5d-a2f822ddd799">SyncResultsHistory.smartpart.xml</Item>
   <Item Id="13b64eb5-6b65-41ad-b6e4-efa7ea4bb823">AccountDistanceSearch.smartpart.xml</Item>
   <Item Id="598bf43f-cfd1-4f33-a506-9cf6b59dc946">MapGroup.smartpart.xml</Item>
-  <Item Id="1511e4c8-095b-4652-8293-de0a5c0253bc">AccountCustomerSystem.smartpart.xml</Item>
+  <Item Id="1d336c13-d85f-44b0-b2d0-e6417a089ef6">CustomerSystemDetails.smartpart.xml</Item>
 </ModelItems>
