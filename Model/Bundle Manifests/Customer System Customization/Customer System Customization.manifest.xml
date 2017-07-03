@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<BundleManifest id="5a453fb2-bdaf-47dd-bc21-3b14e70ce9ce">
+  <bundleProperties>
+    <name>Customer System Customization</name>
+    <description><![CDATA[]]></description>
+    <address><![CDATA[]]></address>
+    <company />
+    <copyright><![CDATA[]]></copyright>
+    <majorVersion>0</majorVersion>
+    <minorVersion>0</minorVersion>
+    <revision>0</revision>
+    <build>0</build>
+    <autoIncrement>false</autoIncrement>
+    <installDate>0001-01-01T00:00:00</installDate>
+    <installPassword />
+    <formatVersion>8.3.0.2066</formatVersion>
+  </bundleProperties>
+  <bundleItemHierarchy>
+    <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.Platform.BundleModel.BundleManifestItem, Sage.Platform.BundleModel">
+      <BundleManifestItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ItemId>5a453fb2-bdaf-47dd-bc21-3b14e70ce9ce</ItemId>
+        <Url>\</Url>
+        <BundleItemType>Container</BundleItemType>
+        <Caption>Customer System Customization</Caption>
+      </BundleManifestItem>
+      <children>
+        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntityModelContext, Sage.Platform">
+          <EntityModelContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>entitymodel</ItemId>
+            <Url>\::Entity Model</Url>
+            <BundleItemType>Container</BundleItemType>
+            <Caption>Entity Model</Caption>
+          </EntityModelContext>
+          <children>
+            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PackagesContext, Sage.Platform">
+              <PackagesContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <ItemId>entitymodel\packages</ItemId>
+                <Url>\::Entity Model::Packages</Url>
+                <BundleItemType>Container</BundleItemType>
+                <Caption>Packages</Caption>
+              </PackagesContext>
+              <children>
+                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PackageBundleItem, Sage.Platform">
+                  <PackageBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <ItemId>7ddc7cbe-e71d-483a-8599-6c5c483ee050</ItemId>
+                    <Url>\Entity Model\Saleslogix Application Entities\SalesLogix Application Entities.T.package.xml</Url>
+                    <BundleItemType>Context</BundleItemType>
+                    <Caption>Saleslogix Application Entities</Caption>
+                  </PackageBundleItem>
+                  <children>
+                    <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntityBundleItem, Sage.Platform">
+                      <EntityBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5ae</ItemId>
+                        <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</Url>
+                        <BundleItemType>ModelItem</BundleItemType>
+                        <Caption>CustomerSystem</Caption>
+                      </EntityBundleItem>
+                      <children>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aeproperties</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Properties</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>properties</CaptionKey>
+                          </EntitySubFolderContext>
+                          <children>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>9a112277-ebb6-42fb-a192-d8cd0c3c96cf</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::CustomerSystemId</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>CustomerSystemId</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>fad503de-83ff-4fe0-9cf0-4a1b9bca3b8f</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::AccountId</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>AccountId</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>0c348776-5017-4925-b804-86efe8330fd5</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::CreateUser</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>CreateUser</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>3bf9aadf-4c7c-448b-a7cd-5eeeb4c80723</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::CreateDate</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>CreateDate</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>889310bd-e0e9-4d9f-8d67-283d8e8840e4</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::ModifyUser</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>ModifyUser</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>0830ce79-1262-40ca-8c19-81531f9fb45e</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::ModifyDate</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>ModifyDate</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>60fdbec2-dc30-488f-9707-f12fcddae4b1</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::Type</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>Type</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>92800709-efd5-490b-915c-991c43b22041</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::Description</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>Description</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>3b7d9bbb-ada8-4c8e-be36-43820e2c0da4</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::Environment</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>Environment</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>9e7c8586-1cb6-4c3c-a883-679d10b017c8</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::URL</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>URL</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>91e49eff-0ec3-4b41-a823-d7e3d9f77ea8</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::Password</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>Password</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>deac0c04-49e1-471c-b908-271d36ee772c</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::ValidDate</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>ValidDate</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>30bc6c06-5cde-4ac5-a1c1-f66ec931001b</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::Notes</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>Notes</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>b83378e1-57d1-4995-8832-7c504282c7e0</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::UserName</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>UserName</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.PropertyBundleItem, Sage.Platform">
+                              <PropertyBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>66e39669-c8c5-47b9-8d9a-d0ca3b904cea</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Properties::ContactID</Url>
+                                <BundleItemType>Other</BundleItemType>
+                                <Caption>ContactID</Caption>
+                                <SerializationOptions>RecurseChildren</SerializationOptions>
+                                <InstallOptions>RecurseChildren</InstallOptions>
+                              </PropertyBundleItem>
+                            </bundleItem>
+                          </children>
+                        </bundleItem>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aerules</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Business Rules</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Business Rules</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>rules</CaptionKey>
+                          </EntitySubFolderContext>
+                        </bundleItem>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aeevents</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Events</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Events</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>events</CaptionKey>
+                          </EntitySubFolderContext>
+                          <children>
+                            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.BusinessRuleBundleItem, Sage.Platform">
+                              <BusinessRuleBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>a9728d23-0aeb-4d0f-8c8a-8ae14eb96267</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>OnCreate</Caption>
+                              </BusinessRuleBundleItem>
+                              <children>
+                                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.StepsSubFolderContext, Sage.Platform">
+                                  <StepsSubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                    <ItemId>a9728d23-0aeb-4d0f-8c8a-8ae14eb96267pre</ItemId>
+                                    <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml::Pre Execute Steps</Url>
+                                    <BundleItemType>Container</BundleItemType>
+                                    <Caption>Pre Execute Steps</Caption>
+                                    <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml</ParentUrl>
+                                    <CaptionKey>pre</CaptionKey>
+                                  </StepsSubFolderContext>
+                                </bundleItem>
+                                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.StepsSubFolderContext, Sage.Platform">
+                                  <StepsSubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                    <ItemId>a9728d23-0aeb-4d0f-8c8a-8ae14eb96267primary</ItemId>
+                                    <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml::Primary Steps</Url>
+                                    <BundleItemType>Container</BundleItemType>
+                                    <Caption>Primary Steps</Caption>
+                                    <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml</ParentUrl>
+                                    <CaptionKey>primary</CaptionKey>
+                                  </StepsSubFolderContext>
+                                  <children>
+                                    <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.BusinessRuleStepBundleItem, Sage.Platform">
+                                      <BusinessRuleStepBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                        <ItemId>d743eafa-9bcf-4755-9f75-655ffe9626ad</ItemId>
+                                        <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml::Primary Steps::OnCreateStep</Url>
+                                        <BundleItemType>Other</BundleItemType>
+                                        <Caption>OnCreateStep</Caption>
+                                        <SerializationOptions>ProcessDependentUrls</SerializationOptions>
+                                        <InstallOptions>ProcessDependentUrls</InstallOptions>
+                                      </BusinessRuleStepBundleItem>
+                                    </bundleItem>
+                                  </children>
+                                </bundleItem>
+                                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.StepsSubFolderContext, Sage.Platform">
+                                  <StepsSubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                    <ItemId>a9728d23-0aeb-4d0f-8c8a-8ae14eb96267post</ItemId>
+                                    <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml::Post Execute Steps</Url>
+                                    <BundleItemType>Container</BundleItemType>
+                                    <Caption>Post Execute Steps</Caption>
+                                    <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\OnCreate.method.xml</ParentUrl>
+                                    <CaptionKey>post</CaptionKey>
+                                  </StepsSubFolderContext>
+                                </bundleItem>
+                              </children>
+                            </bundleItem>
+                          </children>
+                        </bundleItem>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aefilters</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Filters</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Filters</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>filters</CaptionKey>
+                          </EntitySubFolderContext>
+                        </bundleItem>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aevalidationrules</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Validation Rules</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Validation Rules</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>validationrules</CaptionKey>
+                          </EntitySubFolderContext>
+                        </bundleItem>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>35f8950f-53fa-4bfc-9c81-32f5e644b5aequickforms</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml::Forms</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Forms</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\CustomerSystem\CustomerSystem.CUSTOMERSYSTEM.entity.xml</ParentUrl>
+                            <CaptionKey>quickforms</CaptionKey>
+                          </EntitySubFolderContext>
+                          <children>
+                            <bundleItem modelId="b2741b79-02a2-4f4c-81cd-c204f82cf41c" itemTypeName="Sage.Platform.QuickForms.BundleSupport.QuickFormBundleItem, Sage.Platform.QuickForms">
+                              <QuickFormBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>890b9fcc-48d4-47cb-9be5-0e2080a7e8c3</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\QuickForms\CustomerSystemDetails.main.quickform.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>CustomerSystemDetails</Caption>
+                              </QuickFormBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="b2741b79-02a2-4f4c-81cd-c204f82cf41c" itemTypeName="Sage.Platform.QuickForms.BundleSupport.QuickFormBundleItem, Sage.Platform.QuickForms">
+                              <QuickFormBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>5dce4370-06f2-4608-bf75-608f5def3d4a</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\CustomerSystem\QuickForms\CustomerSystemForm.main.quickform.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>CustomerSystemForm</Caption>
+                              </QuickFormBundleItem>
+                            </bundleItem>
+                          </children>
+                        </bundleItem>
+                      </children>
+                    </bundleItem>
+                    <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntityBundleItem, Sage.Platform">
+                      <EntityBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <ItemId>ebfd715e-2b2f-4e5e-8c6d-cfc0d9b4ae52</ItemId>
+                        <Url>\Entity Model\Saleslogix Application Entities\Account\Account.ACCOUNT.entity.xml</Url>
+                        <BundleItemType>Context</BundleItemType>
+                        <Caption>Account</Caption>
+                      </EntityBundleItem>
+                      <children>
+                        <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.EntitySubFolderContext, Sage.Platform">
+                          <EntitySubFolderContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>ebfd715e-2b2f-4e5e-8c6d-cfc0d9b4ae52quickforms</ItemId>
+                            <Url>\Entity Model\Saleslogix Application Entities\Account\Account.ACCOUNT.entity.xml::Forms</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>Forms</Caption>
+                            <ParentUrl>\Entity Model\Saleslogix Application Entities\Account\Account.ACCOUNT.entity.xml</ParentUrl>
+                            <CaptionKey>quickforms</CaptionKey>
+                          </EntitySubFolderContext>
+                          <children>
+                            <bundleItem modelId="b2741b79-02a2-4f4c-81cd-c204f82cf41c" itemTypeName="Sage.Platform.QuickForms.BundleSupport.QuickFormBundleItem, Sage.Platform.QuickForms">
+                              <QuickFormBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>b5993b13-fb8c-48f6-b5ef-9f89fe95c26a</ItemId>
+                                <Url>\Entity Model\Saleslogix Application Entities\Account\QuickForms\AccountCustomerSystem.main.quickform.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>AccountCustomerSystem</Caption>
+                              </QuickFormBundleItem>
+                            </bundleItem>
+                          </children>
+                        </bundleItem>
+                      </children>
+                    </bundleItem>
+                  </children>
+                </bundleItem>
+              </children>
+            </bundleItem>
+            <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.RelationshipsContext, Sage.Platform">
+              <RelationshipsContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <ItemId>entitymodel\relationships</ItemId>
+                <Url>\::Entity Model::Relationships</Url>
+                <BundleItemType>Container</BundleItemType>
+                <Caption>Relationships</Caption>
+              </RelationshipsContext>
+              <children>
+                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.RelationshipBundleItem, Sage.Platform">
+                  <RelationshipBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <ItemId>37063ecb-6db8-4b03-9a7d-05f45fe6f8c2</ItemId>
+                    <Url>\Entity Model\Relationships\Account.CustomerSystem.37063ecb6db84b039a7d05f45fe6f8c2.relationship.xml</Url>
+                    <BundleItemType>ModelItem</BundleItemType>
+                    <Caption>Account.CustomerSystems 1:M CustomerSystem.Account</Caption>
+                  </RelationshipBundleItem>
+                </bundleItem>
+                <bundleItem modelId="a7bdd2d9-93b0-499d-9fd4-c3f7a5f94e28" itemTypeName="Sage.Platform.Orm.Entities.BundleSupport.RelationshipBundleItem, Sage.Platform">
+                  <RelationshipBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <ItemId>4c35ec2a-83d0-4738-8f43-9ae48f7ae3e8</ItemId>
+                    <Url>\Entity Model\Relationships\Contact.CustomerSystem.4c35ec2a83d047388f439ae48f7ae3e8.relationship.xml</Url>
+                    <BundleItemType>ModelItem</BundleItemType>
+                    <Caption>Contact.CustomerSystems 1:M CustomerSystem.Contact</Caption>
+                  </RelationshipBundleItem>
+                </bundleItem>
+              </children>
+            </bundleItem>
+          </children>
+        </bundleItem>
+        <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ManagerBundleItem, Sage.Platform.WebPortal.Design">
+          <ManagerBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Portal</ItemId>
+            <Url>\Portal</Url>
+            <BundleItemType>Container</BundleItemType>
+            <Caption>Portals</Caption>
+          </ManagerBundleItem>
+          <children>
+            <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ModelItemBundleItem, Sage.Platform.WebPortal.Design">
+              <ModelItemBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <ItemId>861ac5fe-b571-4015-a55d-bf63e400e1e7</ItemId>
+                <Url>\Portal\SlxClient\SlxClient.cabapp.ptl.xml</Url>
+                <BundleItemType>Context</BundleItemType>
+                <Caption>SlxClient</Caption>
+              </ModelItemBundleItem>
+              <children>
+                <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ContainerBundleItem, Sage.Platform.WebPortal.Design">
+                  <ContainerBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <ItemId>\Portal\SlxClient\SlxClient.cabapp.ptl.xml\Pages</ItemId>
+                    <Url>\Portal\SlxClient\SlxClient.cabapp.ptl.xml\Pages</Url>
+                    <BundleItemType>Container</BundleItemType>
+                    <Caption>Pages</Caption>
+                  </ContainerBundleItem>
+                  <children>
+                    <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ModelItemBundleItem, Sage.Platform.WebPortal.Design">
+                      <ModelItemBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <ItemId>518351c3-c2a1-4e88-8f1c-e26cfbf31ae8</ItemId>
+                        <Url>\Portal\SlxClient\ChildPages\Account\Account.page.xml</Url>
+                        <BundleItemType>Context</BundleItemType>
+                        <Caption>Account Detail</Caption>
+                        <InstallOrderOptions>
+                          <BeforeAll>true</BeforeAll>
+                          <InstallAfter>00000000-0000-0000-0000-000000000000</InstallAfter>
+                        </InstallOrderOptions>
+                      </ModelItemBundleItem>
+                      <children>
+                        <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ContainerBundleItem, Sage.Platform.WebPortal.Design">
+                          <ContainerBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                            <ItemId>\Portal\SlxClient\ChildPages\Account\Account.page.xml\SmartParts</ItemId>
+                            <Url>\Portal\SlxClient\ChildPages\Account\Account.page.xml\SmartParts</Url>
+                            <BundleItemType>Container</BundleItemType>
+                            <Caption>SmartParts</Caption>
+                          </ContainerBundleItem>
+                          <children>
+                            <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ModelItemBundleItem, Sage.Platform.WebPortal.Design">
+                              <ModelItemBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>952f7676-5159-4cef-8e7f-445794f878aa</ItemId>
+                                <Url>\Portal\SlxClient\ChildPages\Account\SmartParts\AccountCustomerSystem.smartpart.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>AccountCustomerSystem</Caption>
+                                <InstallOrderOptions>
+                                  <BeforeAll>false</BeforeAll>
+                                  <InstallAfter>b160748c-699a-4073-89a9-623df46123e0</InstallAfter>
+                                </InstallOrderOptions>
+                              </ModelItemBundleItem>
+                            </bundleItem>
+                            <bundleItem modelId="73d4e7d0-a7fa-40ae-8b45-1ad7ed954154" itemTypeName="Sage.Platform.WebPortal.Design.BundleSupport.ModelItemBundleItem, Sage.Platform.WebPortal.Design">
+                              <ModelItemBundleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                <ItemId>1d336c13-d85f-44b0-b2d0-e6417a089ef6</ItemId>
+                                <Url>\Portal\SlxClient\ChildPages\Account\SmartParts\CustomerSystemDetails.smartpart.xml</Url>
+                                <BundleItemType>ModelItem</BundleItemType>
+                                <Caption>CustomerSystemDetails</Caption>
+                                <InstallOrderOptions>
+                                  <BeforeAll>false</BeforeAll>
+                                  <InstallAfter>598bf43f-cfd1-4f33-a506-9cf6b59dc946</InstallAfter>
+                                </InstallOrderOptions>
+                              </ModelItemBundleItem>
+                            </bundleItem>
+                          </children>
+                        </bundleItem>
+                      </children>
+                    </bundleItem>
+                  </children>
+                </bundleItem>
+              </children>
+            </bundleItem>
+          </children>
+        </bundleItem>
+      </children>
+    </bundleItem>
+  </bundleItemHierarchy>
+  <bundleActionHierarchy>
+    <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.Platform.BundleModel.RootBundleAction, Sage.Platform.BundleModel">
+      <RootBundleAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ItemId>\Actions</ItemId>
+        <Url>\Actions</Url>
+        <BundleItemType>Container</BundleItemType>
+        <Caption>Bundle Actions</Caption>
+      </RootBundleAction>
+      <children>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000ES.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000ES.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [CustomerSystemEnviron]</Caption>
+            <PickListId>kDEMOA0000ES</PickListId>
+            <PickListName>CustomerSystemEnviron</PickListName>
+            <ReplaceTargetList>true</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+        <bundleItem modelId="af988c91-97c8-4527-b072-e021c9e2cb1a" itemTypeName="Sage.SalesLogix.BundleModel.BundleActions.PickListAction, Sage.SalesLogix.BundleModel.BundleActions">
+          <PickListAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <ItemId>\Actions\InsertPickList\kDEMOA0000EJ.xml</ItemId>
+            <Url>\Actions\InsertPickList\kDEMOA0000EJ.xml</Url>
+            <BundleItemType>Action</BundleItemType>
+            <Caption>Insert Picklist [CustomerSystemType]</Caption>
+            <PickListId>kDEMOA0000EJ</PickListId>
+            <PickListName>CustomerSystemType</PickListName>
+            <ReplaceTargetList>false</ReplaceTargetList>
+            <Skip>false</Skip>
+          </PickListAction>
+        </bundleItem>
+      </children>
+    </bundleItem>
+  </bundleActionHierarchy>
+  <itemsToDelete />
+  <globalResources />
+</BundleManifest>

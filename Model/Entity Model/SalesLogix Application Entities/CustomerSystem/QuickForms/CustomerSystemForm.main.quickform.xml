@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="5dce4370-06f2-4608-bf75-608f5def3d4a" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-07-03T18:48:58.7066899Z">
+  <ActiveControl />
+  <ImagePath />
+  <LoadActions />
+  <Name>CustomerSystemForm</Name>
+  <ClientScriptIncludes />
+  <ClientResourceKeys />
+  <ExtendedProperties />
+  <HelpFile />
+  <ReadOnly>false</ReadOnly>
+  <GeneratePrintView>false</GeneratePrintView>
+  <Controls />
+  <ToolControls>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>cf3f5d4aa324f15837a24db06c0cd3e</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+    <Control typeName="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms">
+      <QFElementSpacer>
+        <Column>0</Column>
+        <Row>0</Row>
+        <HotKey>0</HotKey>
+        <TabIndex>0</TabIndex>
+        <ControlId>a721f2487904e989c7543d6b9d55741</ControlId>
+        <DataBindings />
+        <ControlLabelPlacement>left</ControlLabelPlacement>
+        <ExtendedProperties />
+        <CaptionAlignment>left</CaptionAlignment>
+        <StyleScheme />
+      </QFElementSpacer>
+    </Control>
+  </ToolControls>
+  <Columns>
+    <ColumnStyle>
+      <SizeType>Percent</SizeType>
+      <Width>100</Width>
+    </ColumnStyle>
+  </Columns>
+  <Rows>
+    <RowStyle>
+      <SizeType>Absolute</SizeType>
+      <Height>35</Height>
+    </RowStyle>
+  </Rows>
+  <Description />
+  <UseEntityNameAsTitle>true</UseEntityNameAsTitle>
+  <EntityTypeName>ICustomerSystem</EntityTypeName>
+  <DefaultNamespace>Sage.Entity.Interfaces</DefaultNamespace>
+  <AssemblyName>Sage.Entity.Interfaces</AssemblyName>
+</QuickForm>

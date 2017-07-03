@@ -195,4 +195,7 @@
   <data name="1aab54e9-4104-498e-a395-7f73b427f99b.DialogTitleOverride" xml:space="preserve">
     <value>Edit Customer System</value>
   </data>
+  <data name="c3bad769-d6e5-4756-a161-091642ef6399.DialogTitleOverride" xml:space="preserve">
+    <value>Add New Customer System</value>
+  </data>
 </root>

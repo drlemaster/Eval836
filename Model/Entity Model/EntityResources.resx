@@ -21792,4 +21792,13 @@
   <data name="CustomerSystem.UserName.DisplayName" xml:space="preserve">
     <value>UserName</value>
   </data>
+  <data name="CustomerSystem.ContactID.DisplayName" xml:space="preserve">
+    <value>ContactID</value>
+  </data>
+  <data name="Contact.CustomerSystems.DisplayName" xml:space="preserve">
+    <value>CustomerSystems</value>
+  </data>
+  <data name="CustomerSystem.Contact.DisplayName" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>

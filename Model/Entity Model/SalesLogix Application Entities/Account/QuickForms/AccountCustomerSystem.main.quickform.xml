@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b5993b13-fb8c-48f6-b5ef-9f89fe95c26a" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-06-02T17:33:24.0418879Z">
+<QuickForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b5993b13-fb8c-48f6-b5ef-9f89fe95c26a" DefinitionType="Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms" lastModifiedUtc="2017-07-03T17:58:50.237068Z">
   <ActiveControl />
   <ImagePath />
   <LoadActions />
@@ -39,7 +39,7 @@
             <DialogSpecs>
               <SmartPart>CustomerSystemDetails</SmartPart>
               <Height>400</Height>
-              <Width>600</Width>
+              <Width>800</Width>
               <Top>0</Top>
               <Left>0</Left>
               <EntityType>CustomerSystem</EntityType>
@@ -235,14 +235,18 @@
         <OnClientClick />
         <OnClickAction>
           <ResourceKey>tbrButton</ResourceKey>
-          <Action typeName="Sage.Platform.QuickForms.ActionItems.RedirectActionItem, Sage.Platform.QuickForms">
-            <RedirectActionItem>
-              <MethodName>tbrButton_ClickAction</MethodName>
-              <RawURL>InsertCustomerSystem.aspx?modeid=Insert</RawURL>
-              <MainViewEntityName />
-              <UseCurrentIdInLink>true</UseCurrentIdInLink>
-              <EntityViewMode>Insert</EntityViewMode>
-            </RedirectActionItem>
+          <Action typeName="Sage.Platform.QuickForms.ActionItems.InsertChildDialogActionItem, Sage.Platform.QuickForms">
+            <InsertChildDialogActionItem>
+              <SmartPart>CustomerSystemDetails</SmartPart>
+              <Height>400</Height>
+              <Width>800</Width>
+              <Top>0</Top>
+              <Left>0</Left>
+              <ResourceKey>c3bad769-d6e5-4756-a161-091642ef6399</ResourceKey>
+              <ParentRelationshipPropertyName>Account</ParentRelationshipPropertyName>
+              <DataSource>dsCustomerSystems</DataSource>
+              <CenterDialog>True</CenterDialog>
+            </InsertChildDialogActionItem>
           </Action>
           <IsDialogCloseAction>False</IsDialogCloseAction>
           <RunOnEveryRePaint>False</RunOnEveryRePaint>

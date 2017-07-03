@@ -159,4 +159,13 @@
   <data name="QFSLXPickList2.Caption" xml:space="preserve">
     <value>Environment</value>
   </data>
+  <data name="QFSLXLookup2.LookupProperties.FirstName.PropertyHeader" xml:space="preserve">
+    <value>FirstName (First Name)</value>
+  </data>
+  <data name="QFSLXLookup2.LookupProperties.LastName.PropertyHeader" xml:space="preserve">
+    <value>LastName (Last Name)</value>
+  </data>
+  <data name="QFSLXLookup2.Caption" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>

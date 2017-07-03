@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="35f8950f-53fa-4bfc-9c81-32f5e644b5ae" lastModifiedUtc="2017-05-23T15:03:35.5825798Z" manageSchema="true" tableName="CUSTOMERSYSTEM" name="CustomerSystem" displayPropertyId="92800709-efd5-490b-915c-991c43b22041" isExtension="false" audited="false">
+<entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="35f8950f-53fa-4bfc-9c81-32f5e644b5ae" lastModifiedUtc="2017-07-03T18:22:27.6406195Z" manageSchema="true" tableName="CUSTOMERSYSTEM" name="CustomerSystem" displayPropertyId="92800709-efd5-490b-915c-991c43b22041" isExtension="false" audited="false" onCreateId="a9728d23-0aeb-4d0f-8c8a-8ae14eb96267">
   <extendedMetaData />
   <ExtendedPropertiesCollection>
     <extendee type="Sage.Platform.Orm.Entities.OrmEntity">
@@ -288,6 +288,24 @@
         <TextDataType>
           <Length>32</Length>
         </TextDataType>
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="66e39669-c8c5-47b9-8d9a-d0ca3b904cea" lastModifiedUtc="2017-07-03T18:28:38.8630754Z" name="ContactID" audited="false" columnName="CONTACTID" maxLength="12" precision="0" scale="0" ordinal="14" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty">
+          <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+            <OrmEntityPropertySDataExtension generate="true" />
+          </extender>
+          <extender guid="ac7a8695-7689-4c4b-819d-6c3ab7c2e15f">
+            <OrmEntityPropertyImportExtension />
+          </extender>
+          <extender guid="cbb948ad-9154-4174-847a-690a81c1c2e4">
+            <OrmEntityPropertyBulkActionExtension />
+          </extender>
+        </extendee>
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
       </SystemDataType>
     </property>
   </properties>

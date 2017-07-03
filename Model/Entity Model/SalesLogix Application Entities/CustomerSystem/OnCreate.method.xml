@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="a9728d23-0aeb-4d0f-8c8a-8ae14eb96267" lastModifiedUtc="2017-07-03T18:22:27.6516186Z" name="OnCreate" methodType="CrudEvent" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="d743eafa-9bcf-4755-9f75-655ffe9626ad" lastModifiedUtc="2017-07-03T18:21:54.570465Z" targetType="Sage.BusinessRules.CodeSnippets.CustomerSystemBusinessRules, Sage.SnippetLibrary.CSharp" targetMethod="OnCreateStep" active="true" codeSnippetId="ff28082f-4ea9-4045-8c8c-d9495834caae">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+</method>
