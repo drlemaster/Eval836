@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dynamicEntityCache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<dynamicEntityCache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <entity name="Ticket" tableName="TICKET" sDataPathName="tickets">
+    <property name="InforTicket" columnName="InforTicket" options="Length=15" />
+  </entity>
+</dynamicEntityCache>

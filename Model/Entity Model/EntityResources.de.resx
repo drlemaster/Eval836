@@ -1800,7 +1800,7 @@
   <data name="OpportunityUser.ModifyUser.DisplayName" xml:space="preserve">
     <value>Benutzer ändern</value>
   </data>
-  <data name="Ticket.UserField1.DisplayName" xml:space="preserve">
+  <data name="Ticket.InforIncident.DisplayName" xml:space="preserve">
     <value>Benutzerfeld 1</value>
   </data>
   <data name="DefectActivityItem.Defect.DisplayName" xml:space="preserve">

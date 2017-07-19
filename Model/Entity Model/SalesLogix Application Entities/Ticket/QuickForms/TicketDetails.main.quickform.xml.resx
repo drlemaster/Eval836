@@ -423,4 +423,7 @@
   <data name="Yes_Text" xml:space="preserve">
     <value>Yes</value>
   </data>
+  <data name="InforTicket.Caption" xml:space="preserve">
+    <value>Infor Ticket #</value>
+  </data>
 </root>

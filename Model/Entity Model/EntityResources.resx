@@ -10551,8 +10551,8 @@
   <data name="Ticket.UrgencyId.DisplayName" xml:space="preserve">
     <value>Urgency ID</value>
   </data>
-  <data name="Ticket.UserField1.DisplayName" xml:space="preserve">
-    <value>User Field 1</value>
+  <data name="Ticket.InforIncident.DisplayName" xml:space="preserve">
+    <value>Infor Incident #</value>
   </data>
   <data name="Ticket.UserField10.DisplayName" xml:space="preserve">
     <value>User Field 10</value>
@@ -21800,5 +21800,8 @@
   </data>
   <data name="CustomerSystem.Contact.DisplayName" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="Ticket.InforTicket.DisplayName" xml:space="preserve">
+    <value>Infor Ticket #</value>
   </data>
 </root>

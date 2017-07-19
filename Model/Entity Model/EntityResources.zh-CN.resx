@@ -1797,7 +1797,7 @@
   <data name="OpportunityUser.ModifyUser.DisplayName" xml:space="preserve">
     <value>修改用户</value>
   </data>
-  <data name="Ticket.UserField1.DisplayName" xml:space="preserve">
+  <data name="Ticket.InforIncident.DisplayName" xml:space="preserve">
     <value>用户字段 1</value>
   </data>
   <data name="DefectActivityItem.Defect.DisplayName" xml:space="preserve">
