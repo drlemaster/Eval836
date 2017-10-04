@@ -21804,4 +21804,46 @@
   <data name="Ticket.InforTicket.DisplayName" xml:space="preserve">
     <value>Infor Ticket #</value>
   </data>
+  <data name="Widget.DisplayName" xml:space="preserve">
+    <value>Widget</value>
+  </data>
+  <data name="Widget.WidgetId.DisplayName" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Widget.CreateUser.DisplayName" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="Widget.CreateDate.DisplayName" xml:space="preserve">
+    <value>Create Date</value>
+  </data>
+  <data name="Widget.ModifyUser.DisplayName" xml:space="preserve">
+    <value>Modify User</value>
+  </data>
+  <data name="Widget.ModifyDate.DisplayName" xml:space="preserve">
+    <value>Modify Date</value>
+  </data>
+  <data name="Widget.Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Widget.Type.DisplayName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Widget.PrimaryContactID.DisplayName" xml:space="preserve">
+    <value>PrimaryContactID</value>
+  </data>
+  <data name="Widget.AccountID.DisplayName" xml:space="preserve">
+    <value>AccountID</value>
+  </data>
+  <data name="Account.Widgets.DisplayName" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="Widget.Account.DisplayName" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Contact.Widgets.DisplayName" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="Widget.Contact.DisplayName" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>

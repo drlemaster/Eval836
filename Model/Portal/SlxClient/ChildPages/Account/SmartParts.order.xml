@@ -50,4 +50,7 @@
   <Item Id="13b64eb5-6b65-41ad-b6e4-efa7ea4bb823">AccountDistanceSearch.smartpart.xml</Item>
   <Item Id="598bf43f-cfd1-4f33-a506-9cf6b59dc946">MapGroup.smartpart.xml</Item>
   <Item Id="1d336c13-d85f-44b0-b2d0-e6417a089ef6">CustomerSystemDetails.smartpart.xml</Item>
+  <Item Id="ce8b9d34-ab23-4de2-a21e-3ad148c44dde">TestForm.smartpart.xml</Item>
+  <Item Id="fb80c611-2f4f-410a-9ff9-91efaf6b76fd">AccountWidgets.smartpart.xml</Item>
+  <Item Id="9c78f194-36af-48d8-864e-bf0bb79afa9c">WidgetDetail.smartpart.xml</Item>
 </ModelItems>
